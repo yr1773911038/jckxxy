@@ -1,0 +1,83 @@
+<admintpl file="header"/>
+
+   <script type="text/javascript"> 
+   $(document).ready(function(){
+           $("#ssyhid").change(function(){ 
+       $("#ssyhmc").val ($(this).children('option:selected').text());
+
+      });
+
+       });         
+       </script>       
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+     <li><a href="{:U('Aqwmsgfadmin/index')}">安全文明施工费管理</a></li>
+     <li class="active"><a href="{:U('Aqwmsgfadmin/add')}">添加</a></li>
+  </ul>
+  <form class="form-horizontal J_ajaxForm" action="{:U('Aqwmsgfadmin/update')}" method="post" id="myform">
+  <div class="table_full">
+      <table width="100%" cellpadding="2" cellspacing="2">
+        <tr>
+          <th width="180">项目名称</th>
+          <td>
+              <select name="projectid" class="normal_select"> 
+                <option value="">请选择</option>
+                {$select_categorys}
+                </select>
+           </td>
+        </tr>
+        <tr>
+          <th width="180">工程总造价</th>
+          <td><input type="text" name="gczzj" value="{$vo.gczzj}" class="input" id="gczzj" style="width:200px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">保证金比例</th>
+          <td><input type="text" name="bzjbl" value="{$vo.bzjbl}" class="input" id="bzjbl" style="width:50px;">  </input>%</td>
+        </tr>
+          <tr>
+          <th width="180">保证金金额</th>
+          <td><input type="text" name="bzjje" value="{$vo.bzjje}" class="input" id="bzjje" style="width:200px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">保证金缴纳时间</th>
+          <td>
+              <input type="text" name="bzjjnsj" class="input length_2 J_date" value="{$vo.bzjjnsj}" style="width:100px;" autocomplete="off"></td>
+        </tr>
+       <tr>
+          <th width="180">农民工工资发放比例</th>
+          <td><input type="text" name="nmggzffbl" value="{$vo.nmggzffbl}" class="input" id="nmggzffbl" style="width:200px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">农民工工资发放金额</th>
+          <td><input type="text" name="nmggzffje" value="{$vo.nmggzffje}" class="input" id="nmggzffje" style="width:200px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">工期</th>
+          <td><input type="text" name="gq" value="{$vo.gq}" class="input" id="gq" style="width:200px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">每期应缴金额</th>
+          <td><input type="text" name="mqyjje" value="{$vo.mqyjje}" class="input" id="mqyjje" style="width:80px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">已缴纳期数</th>
+          <td><input type="text" name="yjnqs" value="{$vo.yjnqs}" class="input" id="yjnqs" style="width:80px;">  </input></td>
+        </tr>
+
+      </table>
+
+      <input type="hidden" name="id" value="{$vo.id}" />
+
+        <input type="hidden" class="input" name="ssyhmc" id="ssyhmc"  value="{$vo.ssyhmc}" />
+  </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+        <a class="btn" href="__URL__">返回</a>
+    </div>
+    </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<admintpl file="header"/>
+
+   <script type="text/javascript"> 
+   $(document).ready(function(){
+
+       $("#companyid").change(function(){   
+           $("#companyname").val ($(this).children('option:selected').text());
+
+      });
+
+       });         
+       </script>          
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+     <li><a href="{:U('Workeradmin/index')}">工人管理</a></li>
+     <li class="active"><a href="{:U('Workeradmin/add')}">添加工人</a></li>
+      <li><a href="{:U('Workeradmin/importExcel')}">导入工人</a></li>
+  </ul>
+  <form class="form-horizontal J_ajaxForm" action="{:U('Workeradmin/update')}" method="post" id="myform">
+  <div class="table_full">
+      <table width="100%" cellpadding="2" cellspacing="2">
+        <tr>
+          <th width="180">姓名</th>
+          <td><input type="text" name="xm" value="{$vo.xm}" class="input" id="xm" style="width:100px;">  </input><span class="must_red">*</span></td>
+        </tr>
+ 
+    <tr>
+          <th width="180">身份证号</th>
+          <td>{$vo.sfzh}<input type="hidden" name="sfzh" value="{$vo.sfzh}" class="input" id="sfzh" style="width:300px;">  </input><span class="must_red">*</span></td>
+        </tr>
+        <tr>
+          <th>所在公司</th>
+          <td>
+             <select name="companyid" id="companyid" class="normal_select"> 
+                {$select_categorys}
+              </select>
+
+          </td>
+        </tr>
+       
+
+         <php>$user_status_active_true=($vo['user_status'] ==1)?"checked":"";</php>
+          <php>$user_status_active_false=($vo['user_status'] ==0)?"checked":"";</php>
+ 
+        <tr>
+          <th>是否开启</th>
+          <td>
+            <label class="radio inline" for="active_true">
+                <input type="radio" name="user_status" value="1" {$user_status_active_true} id="user_status_active_true"/>开启
+            </label>
+            <label class="radio inline" for="active_false">
+                <input type="radio" name="user_status" value="0" id="user_status_active_false" {$user_status_active_false} >禁止
+            </label>
+          </td>
+        </tr>
+      </table>
+ 
+
+        <input type="hidden" class="input" name="companyname" id="companyname"  value="{$vo.companyname}" />
+  </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+        <a class="btn" href="__URL__">返回</a>
+    </div>
+    </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

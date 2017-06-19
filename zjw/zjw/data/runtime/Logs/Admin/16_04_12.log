@@ -1,0 +1,12 @@
+[ 2016-04-12T10:53:03+08:00 ] ::1 /zjw/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-12T10:53:13+08:00 ] ::1 /zjw/index.php?g=&m=Menu&a=edit&id=170&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-12T10:54:25+08:00 ] ::1 /zjw/index.php?g=&m=Menu&a=edit&id=170&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-12T10:55:33+08:00 ] ::1 /zjw/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+

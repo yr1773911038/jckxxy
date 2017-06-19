@@ -1,0 +1,45 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Companyadmin/index')}">建筑商管理</a></li>
+			<li><a href="{:U('Companyadmin/add')}">添加建筑商</a></li>
+		</ul>
+		<form name="myform" action="{:U('Companyadmin/index')}" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="30">ID</th>
+						<th align="left">建筑商名称</th>
+						<th align="left">建筑商描述</th>
+						<th width="40" align="left">状态</th>
+						<th width="120">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.dwqc}</td>
+						<td>{$vo.content}</td>
+						<td>
+							<if condition="$vo['dw_status'] eq 1">
+								<font color="red">√</font>
+							<else /> 
+								<font color="red">╳</font>
+							</if>
+						</td>
+						<td> 
+								<a href="{:U('Companyadmin/edit',array('id'=>$vo['id']))}">修改</a>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

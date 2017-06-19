@@ -1,0 +1,6 @@
+[ 2016-04-16T16:30:24+08:00 ] 127.0.0.1 /zjw/index.php?g=&m=Rbac&a=authorize&id=3
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2016-04-16T16:30:36+08:00 ] 127.0.0.1 /zjw/index.php?g=&m=Rbac&a=authorize&id=3
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+

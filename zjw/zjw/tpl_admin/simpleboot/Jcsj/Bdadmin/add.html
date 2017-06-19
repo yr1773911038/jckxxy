@@ -1,0 +1,77 @@
+<admintpl file="header"/>
+   <script type="text/javascript"> 
+   $(document).ready(function(){
+      
+        $("#ssyhid").change(function(){ 
+           $("#ssyhmc").val ($(this).children('option:selected').text());
+          });
+
+        $("#ssdwid").change(function(){ 
+           $("#ssdwmc").val ($(this).children('option:selected').text());
+          });
+
+          $("#sgfid").change(function(){ 
+           $("#sgfmc").val ($(this).children('option:selected').text());
+          }); 
+
+
+       });         
+       </script>       
+</head>
+   
+    <body class="J_scroll_fixed">
+    <div class="wrap J_check_wrap">
+        <ul class="nav nav-tabs">
+		<li class="active"><a href="{:U('Bdadmin/add')}">添加标段</a></li>
+		<!--<li><a href="{:U('Bdadmin/add')}">添加标段</a></li>-->
+        </ul>
+    <form class="form-horizontal J_ajaxForm" action="{:U('Bdadmin/insert')}" method="post" id="myform">
+    <div class="table_full">
+        <table width="100%" cellpadding="2" cellspacing="2"> 
+          <input type="hidden"  name="projectid"  value="{$_GET['projectid']}" />  
+          <tr>
+            <th width="180">标段名称</th>
+            <td><input type="text" name="bdmc" value="" class="input" id="bdmc" style="width:300px;"/></td>
+          </tr>          
+          <tr>
+          <th>所属银行</th>
+          <td>
+              <select name="ssyhid" id="ssyhid"  class="normal_select"> 
+                <option value="">请选择</option>
+                {$select_categorys}
+              </select>
+          </td>
+        </tr>
+         <!--  <tr>
+            <th width="180">银行账号</th>
+            <td><input type="text" name="yhzh" value="" class="input" id="yhzh" style="width:300px;"/></td>
+          </tr> -->
+ 
+          <tr>
+          <th>是否开启</th>
+            <td>
+              <label class="radio inline" for="active_true">
+            		<input type="radio" name="bd_status" value="1" checked id="dw_status_active_true"/>开启
+              </label>
+              <label class="radio inline" for="active_false">
+            		<input type="radio" name="bd_status" value="0" id="dw_status_active_false">禁止
+              </label>
+            </td>
+          </tr>
+        </table> 
+            <input type="hidden" name="id" value="{$vo.id}" />
+            <input type="hidden" class="input" name="ssyhmc" id="ssyhmc"  value="" />
+            <input type="hidden" class="input" name="sgfmc" id="sgfmc"  value="" />
+            <input type="hidden" class="input" name="ssdwmc" id="ssdwmc"  value="" />         
+    </div>
+        
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+        <a class="btn" onclick="history.go(-1)">返回</a>
+        <!--<a class="btn" href="__URL__">返回</a>-->
+    </div>
+    </form>
+    </div>
+    <script src="__ROOT__/statics/js/common.js"></script>
+    </body>
+</html>

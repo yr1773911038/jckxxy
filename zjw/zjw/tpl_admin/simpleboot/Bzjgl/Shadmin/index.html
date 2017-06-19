@@ -1,0 +1,57 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Shadmin/index')}">开发商保证金审核</a></li>
+		</ul>
+		<form name="myform" action="{:U('Shadmin/index')}" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="30">ID</th>
+						<th align="left">项目名称</th>
+                                            <th align="left">标段名称</th>
+                                                <th align="left">开发商名称</th>
+						<th align="left">缴纳银行</th>
+                                                <th align="left">银行账号</th>
+                                                <th align="left">工程总造价</th>
+                                            <th align="left">保证金金额</th>
+                                            <th align="left">保证金缴纳时间</th>
+                                            <th align="left">工资支付归属日期</th>
+                                                <th align="left">保证金比例</th>
+                                                <th align="left">农民工工资发放比例</th>
+                                            <th align="left">备注</th>
+						<th width="120">审核</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.xmmc}</td>
+                                            <td>{$vo.bdmc}</td>    
+                                                <td>{$vo.jsfmc}</td>     
+						<td>{$vo.ssyhmc}</td>
+                                                <td>{$vo.yhzh}</td>
+                                                <td>{$vo.gczzj}</td>
+                                            <td>{$vo.bzjje}</td>
+                                            <td>{$vo.bzjjnsj}</td>
+                                            <td>{$vo.gzzfgsrq}</td>
+                                                <td>{$vo.bzjbl}</td>
+                                                <td>{$vo.nmggzffbl}</td>
+                                            <td>{$vo.bz}</td>   
+						<td> 
+								<a href="{:U('Shadmin/shcg',array('id'=>$vo['id']))}">审核通过</a> | 
+							<a  href="{:U('Shadmin/shsb',array('id'=>$vo['id']))}">未通过</a>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

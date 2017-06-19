@@ -1,0 +1,54 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Companyadmin/index')}">开发商管理</a></li>
+			<li><a href="{:U('Companyadmin/add')}">添加开发商</a></li>
+		</ul>
+                <form action="{:U('Companyadmin/search')}" method="post" id="form">
+                        <input type="text" name="dwqc1" value="" class="input" id="dwqc1" style="width:200px" placeholder="请输入开发商名称"> 
+                        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">查询</button>
+                </form>
+		<form name="myform" action="{:U('Companyadmin/index')}" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="30">ID</th>
+						<th align="left">开发商名称</th>
+						<th align="left">开发商描述</th>
+                        <th align="left">所属银行</th>
+                        <th align="left">银行账号</th>
+						<th width="40" align="left">状态</th>
+						<th width="120">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.dwqc}</td>
+						<td>{$vo.content}</td>
+                        <td>{$vo.ssyhmc}</td>
+                        <td>{$vo.yhzh}</td>
+						<td>
+							<if condition="$vo['dw_status'] eq 1">
+								<font color="red">√</font>
+							<else /> 
+								<font color="red">╳</font>
+							</if>
+						</td>
+						<td> 
+								<a href="{:U('Companyadmin/edit',array('id'=>$vo['id']))}">修改</a>| 
+							<a class="J_ajax_del" href="{:U('Companyadmin/delete',array('id'=>$vo['id']))}">删除</a>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

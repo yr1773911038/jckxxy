@@ -1,0 +1,135 @@
+<admintpl file="header"/>
+
+   <script type="text/javascript"> 
+   $(document).ready(function(){
+           $("#ssyhid").change(function(){ 
+       $("#ssyhmc").val ($(this).children('option:selected').text());
+
+      });
+	  $('#projectids').change(function(){
+		var id =  $("#projectids").find("option:selected").val(); //获取切换的类别的id
+		
+		//alert(url);
+		$.post('__URL__/ld1',{id:id},function(data){
+		
+		//var bdmc = data[1].length;
+		//redata = data.replace(/s/, 'a');
+		$("#bdmc").show().html(data);
+		//alert(redata);
+		//alert(bdmc);
+		});
+
+	});
+
+
+	$('#bdmc').change(function(){
+		var bdmc =  $("#bdmc").find("option:selected").text(); //获取切换的类别的id
+		//alert(url);
+		$.post('__URL__/ld2',{bdmc:bdmc},function(data){
+		var data = data.substr(5);//去掉srray
+		//var bdmc = data[1].length;
+		//redata = data.replace(/s/, 'a');
+		//$("#yhzh").show().html($dataaa);
+		 $('#yhzh').html(data);
+		//alert();
+		//alert(dataaa);
+		});
+
+	});
+
+
+});         
+</script>       
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+     <li><a href="{:U('Sgfadmin/index')}">施工方保证金管理</a></li>
+     <li class="active"><a href="{:U('Sgfadmin/add')}">添加保证金</a></li>
+  </ul>
+  <form class="form-horizontal J_ajaxForm" action="{:U('Sgfadmin/insert')}" method="post" id="myform">
+  <div class="table_full">
+      <table width="100%" cellpadding="2" cellspacing="2">
+        <tr>
+          <th width="180">项目名称</th>
+          <td>
+              <select id="projectids" name="projectid" class="normal_select"> 
+                <option value="">请选择</option>
+                {$select_categorys}
+                </select>
+           </td>
+        </tr>
+         
+          <tr>
+          <th width="180">标段名称</th>
+          <td>
+               <select name="bdmc" id="bdmc" class="normal_select"> 
+             		  
+                </select>
+           </td>
+        </tr>
+		<tr>
+          <th width="180">标段所属银行账户</th>
+          <td>
+		  <div id="yhzh"></div>
+		   <!--<select id="yhzh" name="yhzh" class="normal_select" style="border-style: none;appearance:none;-moz-appearance:none; /* Firefox */-webkit-appearance:none; /* Safari 和 Chrome */">--> 
+             		  
+            </select>
+		  </td>
+        </tr> 
+		 <tr>
+          <th width="180">工程总造价</th>
+          <td><input type="text" name="gczzj" value="" class="input" id="gczzj" style="width:200px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">保证金比例</th>
+          <td><input type="text" name="bzjbl" value="" class="input" id="bzjbl" style="width:50px;">  </input>%</td>
+        </tr>
+          <tr>
+          <th width="180">保证金金额</th>
+          <td><input type="text" name="bzjje" value="" class="input" id="bzjje" style="width:200px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">保证金缴纳时间</th>
+          <td>
+              <input type="text" name="bzjjnsj" class="input length_2 J_date" value="{$formget.start_time}" style="width:100px;" autocomplete="off"></td>
+        </tr>
+        
+        <tr>
+          <th width="180">农民工工资发放比例</th>
+          <td><input type="text" name="nmggzffbl" value="" class="input" id="nmggzffbl" style="width:200px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">农民工工资发放金额</th>
+          <td><input type="text" name="nmggzffje" value="" class="input" id="nmggzffje" style="width:200px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">工期</th>
+          <td><input type="text" name="gq" value="" class="input" id="gq" style="width:200px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">每期应缴金额</th>
+          <td><input type="text" name="mqyjje" value="" class="input" id="mqyjje" style="width:80px;">  </input></td>
+        </tr>
+          <tr>
+          <th width="180">已缴纳期数</th>
+          <td><input type="text" name="yjnqs" value="" class="input" id="yjnqs" style="width:80px;">  </input></td>
+        </tr>
+         
+          <tr>
+          <th width="180">备注</th>         
+          <td><textarea name="bz" rows="2" cols="20" id="bz" class="inputtext" style="height:100px;width:500px;"></textarea></td>
+        </tr>
+        
+      </table>
+        <input type="hidden" class="input" name="ssyhmc" id="ssyhmc"  value="" />
+  </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+        <a class="btn" href="__URL__">返回</a>
+    </div>
+    </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

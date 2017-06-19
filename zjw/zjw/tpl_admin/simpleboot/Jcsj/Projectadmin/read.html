@@ -1,0 +1,182 @@
+<admintpl file="header"/>
+
+   <script type="text/javascript"> 
+   $(document).ready(function(){
+           $("#ssyhid").change(function(){ 
+       $("#ssyhmc").val ($(this).children('option:selected').text());
+
+      });
+
+       });         
+       </script>       
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+     <li><a href="{:U('Projectadmin/index')}">工程项目管理</a></li>
+     <li class="active"><a href="{:U('Projectadmin/read',array('id'=>I('id')),'')}">项目详情</a></li> 
+     <li><a href="{:U('Gzgl/Payadmin/index',array('projectid'=>I('id')),'')}">工资信息</a></li> 
+     <li><a href="{:U('Sfgl/Enregisteradmin/index',array('projectid'=>I('id')),'')}">上访信息</a></li> 
+ 
+
+  </ul>
+  <form class="form-horizontal J_ajaxForm" action="{:U('Projectadmin/update')}" method="post" id="myform">
+  <div class="table_full">
+      <table width="100%" cellpadding="2" cellspacing="2">
+        <tr>
+          <th width="180">项目名称</th>
+          <td>{$vo.projectname}</td>
+        </tr>
+        <tr>
+          <th>项目描述</th>
+          <td>{$vo.xmjj}</td>
+        </tr>
+
+        <tr>
+          <th>所属银行</th>
+          <td>{$vo.ssyhmc} 
+          </td>
+        </tr>
+       <tr>
+            <th>开发商</th>
+            <td>
+              {$vo.ssdwmc} 
+            </td>
+        </tr>
+        <tr>
+            <th>施工方</th>
+            <td>
+                 {$vo.sgfmc} 
+
+            </td>
+        </tr>
+      
+        <!--tr>
+            <th>工资发放情况</th>
+            <td>
+                <a href="{:U('Jcsj/Statistics/index',array('project_id'=>$vo['id'],'ssdwid'=>$vo['ssdwid']),'')}">查看</a> 
+            </td>
+        </tr-->
+        
+          <tr> 
+            <td colspan="2"> 
+
+                   <table class="table table-hover table-bordered">
+                      <caption>  施工方保证金</caption>
+                        <thead>
+                          <tr>
+                            <th width="30">ID</th>
+                            <th align="left">工程总造价</th>
+                            <th align="left">保证金比例</th> 
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                              <foreach name="voSgfbzj" item="vo">
+                                <tr>
+                                    <td>{$vo.id}</td>
+                                    <td>{$vo.gczzj}</td>
+                                    <td>{$vo.bzjbl}</td> 
+                                </tr>
+                              </foreach>
+                            </tbody>
+                  </table>
+            </td> 
+          </tr>
+          <tr>
+              <td colspan="2"> 
+                
+                  <table class="table table-hover table-bordered">
+                        <caption>  开发商保证金</caption>
+
+                  <thead>
+                    <tr>
+                      <th width="30">ID</th>
+                      <th align="left">工程总造价</th>
+                      <th align="left">保证金比例</th> 
+                      <th align="left">农民工工资发放比例</th> 
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                        <foreach name="voJsfbzj" item="vo">
+                          <tr>
+                              <td>{$vo.id}</td>
+                              <td>{$vo.gczzj}</td>
+                              <td>{$vo.bzjbl}</td> 
+                              <td>{$vo.nmggzffbl}</td> 
+                          </tr>
+                        </foreach>
+                      </tbody>
+            </table>
+            </td> 
+        </tr>
+       
+        <!--项目标段表-->
+        <tr> 
+            <td colspan="2">                
+               <table class="table table-hover table-bordered">
+                   <caption>  项目标段</caption>
+                   <thead>
+                     <tr>
+                         <th width="30">ID</th>
+                         <th align="left">标段名称</th>
+                         <th align="left">所属银行</th>
+                         <th align="left">银行账号</th>                     
+                      </tr>
+                    </thead>
+                    <tbody>
+	<!--		<php>
+				$listbd = M("projectsbd")->select();                       
+			</php> -->
+                    <foreach name="list_bd" item="vo">
+		           <tr>
+			        <td>{$vo.id}</td>	
+    			        <td>{$vo.bdmc}</td>
+				<td>{$vo.ssyh}</td>			 		
+				<td>{$vo.yhzh}</td>                                                                                                                        
+		           </tr>
+		     </foreach>
+	            </tbody>
+                    </table>
+            </td> 
+        </tr>
+        <!--项目人员表-->
+        <tr> 
+            <td colspan="2"> 
+            <table class="table table-hover table-bordered">
+                <caption>  项目联系人</caption>
+                <thead>
+                    <tr>
+                         <th width="30">ID</th>
+                         <th align="left">类别</th>
+                         <th align="left">姓名</th>
+                         <th align="left">联系方式</th>
+                    </tr>
+                </thead>    
+               <tbody>
+		<!--	<php>
+				$listlxr = M("projectsry")->select();
+			</php> -->
+		    <foreach name="list_ry" item="vo"> 
+		        <tr>
+			    <td>{$vo.id}</td>
+			    <td>{$vo.rylb}</td> 
+			    <td>{$vo.name}</td>                                              
+                            <td>{$vo.lxfs}</td>                                                                               
+		        </tr>
+		    </foreach>
+	       </tbody>
+             </table>
+            </td> 
+        </tr>
+      </table>  
+  </div>
+    <div class="form-actions"> 
+        <a class="btn" href="__URL__">返回</a>
+    </div>
+    </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+[ 2016-04-10T14:46:13+08:00 ] ::1 /zjw/index.php?g=Bzjgl&m=Jsfadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005972s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_jsfbzj` [ RunTime:0.0068s ]
+SQL: UPDATE `sp_jsfbzj` SET `projectid`='4',`bdmc`='',`gczzj`='2242342',`bzjbl`='34',`bzjje`='34',`bzjjnsj`='2015-11-20',`nmggzffbl`='34',`nmggzffje`='343',`gq`='34',`mqyjje`='343',`yjnqs`='43',`shenhe`='0' WHERE `id` = 3 [ RunTime:0.0678s ]
+
+[ 2016-04-10T14:46:17+08:00 ] ::1 /zjw/index.php?g=Bzjgl&m=Jsfadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001687s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005834s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_jsfbzj` [ RunTime:0.0068s ]
+SQL: UPDATE `sp_jsfbzj` SET `projectid`='4',`bdmc`='',`gczzj`='',`bzjbl`='',`bzjje`='',`bzjjnsj`='',`nmggzffbl`='',`nmggzffje`='',`gq`='',`mqyjje`='',`yjnqs`='',`shenhe`='0' WHERE `id` = 5 [ RunTime:0.0367s ]
+
+[ 2016-04-10T14:46:21+08:00 ] ::1 /zjw/index.php?g=Bzjgl&m=Jsfadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002505s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006552s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_jsfbzj` [ RunTime:0.0081s ]
+SQL: UPDATE `sp_jsfbzj` SET `projectid`='24',`bdmc`='',`gczzj`='111111111',`bzjbl`='11',`bzjje`='111111111111',`bzjjnsj`='2016-03-07',`nmggzffbl`='111',`nmggzffje`='111',`gq`='111',`mqyjje`='111',`yjnqs`='111',`shenhe`='0' WHERE `id` = 6 [ RunTime:0.0312s ]
+
+[ 2016-04-10T14:46:26+08:00 ] ::1 /zjw/index.php?g=Bzjgl&m=Jsfadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002063s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006477s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0717s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_jsfbzj` [ RunTime:0.0059s ]
+SQL: UPDATE `sp_jsfbzj` SET `projectid`='24',`bdmc`='',`gczzj`='111',`bzjbl`='11',`bzjje`='11',`bzjjnsj`='2016-04-06',`nmggzffbl`='11',`nmggzffje`='1',`gq`='1',`mqyjje`='1',`yjnqs`='1',`shenhe`='0' WHERE `id` = 33 [ RunTime:0.0527s ]
+

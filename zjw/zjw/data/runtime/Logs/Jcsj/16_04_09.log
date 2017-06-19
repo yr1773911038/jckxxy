@@ -1,0 +1,12 @@
+[ 2016-04-09T16:36:31+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Projectbdadmin&a=index&menuid=181
+ERR: 无法加载控制器:Projectbdadmin
+
+[ 2016-04-09T16:37:19+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Projectbdadmin&a=index&menuid=181
+ERR: 无法加载控制器:Projectbdadmin
+
+[ 2016-04-09T16:38:36+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=index&menuid=181
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DEBC LIMIT 0,10' at line 1
+
+[ 2016-04-09T16:39:14+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=index&menuid=181
+ERR: 模板不存在:tpl_admin/simpleboot/Jcsj/Bdadmin/index.html
+

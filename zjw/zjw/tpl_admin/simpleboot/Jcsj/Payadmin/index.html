@@ -1,0 +1,46 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Payadmin/index')}">工资管理</a></li>
+			<li><a href="{:U('Payadmin/add')}">添加工资</a></li>
+     <li><a href="{:U('Payadmin/importExcel')}">导入工资</a></li>
+		</ul>
+		<form name="myform" action="{:U('Payadmin/index')}" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="60">姓名</th>
+						<th align="left">卡号</th>
+						<th align="left">身份证号</th>
+						<th align="left">工资月份</th> 
+						<th align="left">工资金额</th> 
+						<th align="left">所属银行</th> 
+						<th align="left">所在公司</th>  
+						<th width="120">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr>
+						<td>{$vo.xm}</td>
+						<td>{$vo.kh}</td>
+						<td>{$vo.sfzh}</td>
+						<td>{$vo.gzny}</td>
+						<td>{$vo.je}</td>
+						<td>{$vo.orgname}</td>
+						<td>{$vo.companyname}</td> 
+						<td> 
+								<a href="{:U('Payadmin/edit',array('payid'=>$vo['payid']))}">修改</a>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

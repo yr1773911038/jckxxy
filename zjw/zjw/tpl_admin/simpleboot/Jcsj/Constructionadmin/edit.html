@@ -1,0 +1,73 @@
+<admintpl file="header"/>
+
+   <script type="text/javascript"> 
+   $(document).ready(function(){
+           $("#ssyhid").change(function(){ 
+       $("#ssyhmc").val ($(this).children('option:selected').text());
+
+      });
+
+       });         
+       </script>       
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+     <li><a href="{:U('Constructionadmin/index')}">施工方管理</a></li>
+     <li class="active"><a href="{:U('Constructionadmin/add')}">添加施工方</a></li>
+  </ul>
+  <form class="form-horizontal J_ajaxForm" action="{:U('Constructionadmin/update')}" method="post" id="myform">
+  <div class="table_full">
+      <table width="100%" cellpadding="2" cellspacing="2">
+        <tr>
+          <th width="180">施工方名称</th>
+          <td><input type="text" name="dwqc" value="{$vo.dwqc}" class="input" id="dwqc" style="width:500px;">  </input><span class="must_red">*</span></td>
+        </tr>
+        <tr>
+          <th>施工方描述</th>
+          <td><textarea name="content" rows="2" cols="20" id="content" class="inputtext" style="height:100px;width:500px;">{$vo.content}</textarea></td>
+        </tr>
+
+        <tr>
+          <th>所属银行</th>
+          <td>
+             <select name="ssyhid" name="ssyhid" class="normal_select"> 
+                {$select_categorys}
+              </select>
+
+          </td>
+        </tr>       
+
+         <php>$dw_status_active_true=($vo['dw_status'] ==1)?"checked":"";</php>
+          <php>$dw_status_active_false=($vo['dw_status'] ==0)?"checked":"";</php>
+        
+        <tr>
+          <th width="180">银行账号</th>
+          <td><input type="text" name="yhzh" value="" class="input" id="yhzh" style="width:500px;" maxlength="50">  </input></td>
+        </tr>
+        <tr>
+          <th>是否开启</th>
+          <td>
+            <label class="radio inline" for="active_true">
+                <input type="radio" name="dw_status" value="1" {$dw_status_active_true} id="dw_status_active_true"/>开启
+            </label>
+            <label class="radio inline" for="active_false">
+                <input type="radio" name="dw_status" value="0" id="dw_status_active_false" {$dw_status_active_false} >禁止
+            </label>
+          </td>
+        </tr>
+      </table>
+
+      <input type="hidden" name="id" value="{$vo.id}" />
+
+        <input type="hidden" class="input" name="ssyhmc" id="ssyhmc"  value="{$vo.ssyhmc}" />
+  </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+        <a class="btn" href="__URL__">返回</a>
+    </div>
+    </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

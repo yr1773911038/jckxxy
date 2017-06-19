@@ -1,0 +1,55 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+     <li><a href="{:U('Jcsj/Projectadmin/read',array('id'=>I('projectid')),'')}">项目详情</a></li>  
+     <li class="active"><a href="{:U('Sfgl/Enregisteradmin/index',array('projectid'=>I('projectid')),'')}">上访信息</a></li> 
+		</ul>
+		<form name="myform" action="{:U('Enregisteradmin/index')}" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="60">姓名</th>						
+						<th align="left">身份证号</th>
+						<th align="left">联系方式</th> 
+						<th align="left">所在项目</th> 
+						<th align="left">拖欠金额</th> 
+						<th width="40" align="left">是否处理</th>
+                        <th width="40" align="left">是否结清</th> 
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr>
+						<td>{$vo.xm}</td>
+						<td>{$vo.cardid}</td>
+						<td>{$vo.lxfs}</td>
+						<td>{$vo.szxmmc}</td>
+						<td>{$vo.tqje}</td>
+						<td>
+							<if condition="$vo['visit_status'] eq 1">
+								<font color="red">√</font>
+							<else /> 
+								<font color="red">╳</font>
+							</if>
+						</td>
+                        <td>
+							<if condition="$vo['sfjs'] eq 1">
+								<font color="red">√</font>
+							<else /> 
+								<font color="red">╳</font>
+							</if>
+						</td>
+					 
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

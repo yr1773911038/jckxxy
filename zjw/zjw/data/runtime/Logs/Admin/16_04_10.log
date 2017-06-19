@@ -1,0 +1,71 @@
+[ 2016-04-10T13:01:34+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"is null ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T13:02:12+08:00 ] ::1 /zjw/index.php?g=Admin&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"is null ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T13:10:27+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is NULL ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T13:16:08+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: 表达式错误:is
+
+[ 2016-04-10T13:16:23+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: 表达式错误:is NULL
+
+[ 2016-04-10T13:16:59+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is NULL ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T13:36:22+08:00 ] ::1 /zjw/index.php?g=Admin&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'yhzh is NULL ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T13:36:52+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ANDyhzh is NULL ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T13:36:53+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ANDyhzh is NULL ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T14:04:50+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is NULL ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T14:07:53+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'eq "" ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T14:08:09+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'EQ "" ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T14:08:10+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'EQ "" ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T14:08:25+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"" ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T14:08:34+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'EQ "" ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T14:08:34+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'EQ "" ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T14:08:45+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"" ) ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T14:09:07+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'EQ' in 'where clause'
+
+[ 2016-04-10T14:14:18+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Ahzh' in 'where clause'
+
+[ 2016-04-10T14:15:48+08:00 ] ::1 /zjw/index.php?g=&m=Main&a=index
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY sp_projectsbd.id LIMIT 0,10' at line 1
+
+[ 2016-04-10T14:45:18+08:00 ] ::1 /zjw/index.php?g=&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006898s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `sp_role_user` [ RunTime:0.0975s ]
+SQL: SELECT `role_id` FROM sp_role_user a INNER JOIN sp_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0533s ]
+SQL: UPDATE `sp_users` SET `user_login`='admin',`user_pass`='c535018ee94621232f297a57a5a743894a0e4a801fc389af',`user_nicename`='admin',`user_email`='w@q.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2016-04-10 14:45:18',`create_time`='2015-10-02 06:35:20',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`orgid`='6',`orgname`='住建委' WHERE `id` = '1' [ RunTime:0.0010s ]
+

@@ -1,0 +1,121 @@
+[ 2016-04-13T21:36:47+08:00 ] ::1 /zjw/index.php/Bzjgl/Jsfadmin/ld1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004418s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`bdmc` FROM `sp_projectsbd` WHERE `projectid` = 24  [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 101 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'referer' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'status' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+NOTIC: [2] Illegal string offset 'state' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+
+[ 2016-04-13T21:36:50+08:00 ] ::1 /zjw/index.php/Bzjgl/Jsfadmin/ld1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004288s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`bdmc` FROM `sp_projectsbd` WHERE `projectid` = 7  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: url F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [8] Undefined index: status F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+
+[ 2016-04-13T21:36:51+08:00 ] ::1 /zjw/index.php/Bzjgl/Jsfadmin/ld1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004343s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`bdmc` FROM `sp_projectsbd` WHERE `projectid` = 22  [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 89 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 91 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'referer' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'status' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+NOTIC: [2] Illegal string offset 'state' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+
+[ 2016-04-13T21:36:54+08:00 ] ::1 /zjw/index.php/Bzjgl/Jsfadmin/ld2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004340s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sp_projectsbd` WHERE `bdmc` = '标段a'  [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 125 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'referer' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'status' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+NOTIC: [2] Illegal string offset 'state' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+
+[ 2016-04-13T21:36:56+08:00 ] ::1 /zjw/index.php/Bzjgl/Jsfadmin/ld1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004349s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`bdmc` FROM `sp_projectsbd` WHERE `projectid` = 24  [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 101 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'referer' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'status' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+NOTIC: [2] Illegal string offset 'state' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+
+[ 2016-04-13T21:37:16+08:00 ] ::1 /zjw/index.php/Bzjgl/Jsfadmin/ld1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004340s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`bdmc` FROM `sp_projectsbd` WHERE `projectid` = 24  [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 101 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [8] Undefined variable: id F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 102 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'referer' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'status' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+NOTIC: [2] Illegal string offset 'state' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+
+[ 2016-04-13T21:37:17+08:00 ] ::1 /zjw/index.php/Bzjgl/Jsfadmin/ld2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004349s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sp_projectsbd` WHERE `bdmc` = '1212121'  [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion F:\wamp\www\zjw\application\Bzjgl\Controller\JsfadminController.class.php 第 125 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'url' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'referer' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 45 行.
+NOTIC: [2] Illegal string offset 'status' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+NOTIC: [2] Illegal string offset 'state' F:\wamp\www\zjw\application\Common\Controller\AppframeController.class.php 第 46 行.
+

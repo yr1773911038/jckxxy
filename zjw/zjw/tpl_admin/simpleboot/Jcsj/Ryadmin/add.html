@@ -1,0 +1,71 @@
+<admintpl file="header"/>
+   <script type="text/javascript"> 
+   $(document).ready(function(){
+      
+        $("#ssyhid").change(function(){ 
+           $("#ssyhmc").val ($(this).children('option:selected').text());
+          });
+
+        $("#ssdwid").change(function(){ 
+           $("#ssdwmc").val ($(this).children('option:selected').text());
+          });
+
+          $("#sgfid").change(function(){ 
+           $("#sgfmc").val ($(this).children('option:selected').text());
+          }); 
+
+
+       });         
+       </script>       
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+    <ul class="nav nav-tabs">
+		<li class="active"><a href="{:U('Ryadmin/add')}">项目联系人</a></li>
+		<!--<li><a href="{:U('Ryadmin/add')}">添加联系人</a></li>-->
+    </ul>
+    <form class="form-horizontal J_ajaxForm" action="{:U('Ryadmin/insert')}" method="post" id="myform">
+    <div class="table_full">
+        <table width="100%" cellpadding="2" cellspacing="2"> 
+          <input type="hidden"  name="projectid"  value="{$_GET['projectid']}" />   
+          <tr>
+	    <th width="180">人员类别</th>
+	    <td><input type="text" name="rylb" value="" class="input" id="rylb" style="width:300px;"/></td>
+          </tr>             
+          <tr>
+            <th width="180">姓名</th>
+            <td><input type="text" name="name" value="" class="input" id="name" style="width:300px;"/></td>
+          </tr>
+          <tr>
+            <th width="180">联系方式</th>
+            <td><input type="text" name="lxfs" value="" class="input" id="lxfs" style="width:300px;"/></td>
+          </tr>
+ 
+          <tr>
+          <th>是否开启</th>
+            <td>
+              <label class="radio inline" for="active_true">
+            		<input type="radio" name="ry_status" value="1" checked id="dw_status_active_true"/>开启
+              </label>
+              <label class="radio inline" for="active_false">
+            		<input type="radio" name="ry_status" value="0" id="dw_status_active_false">禁止
+              </label>
+            </td>
+          </tr>
+        </table> 
+            <input type="hidden" name="id" value="{$vo.id}" />
+            <input type="hidden" class="input" name="ssyhmc" id="ssyhmc"  value="" />
+            <input type="hidden" class="input" name="sgfmc" id="sgfmc"  value="" />
+            <input type="hidden" class="input" name="ssdwmc" id="ssdwmc"  value="" />         
+    </div>
+        
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+        <a class="btn" onclick="history.go(-1)">返回</a>
+        <!--<a class="btn" href="__URL__">返回</a>-->
+    </div>
+    </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

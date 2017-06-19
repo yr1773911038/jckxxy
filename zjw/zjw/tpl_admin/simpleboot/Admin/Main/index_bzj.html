@@ -1,0 +1,90 @@
+<admintpl file="header"/>
+<style>
+.home_info li em {
+float: left;
+width: 100px;
+font-style: normal;
+}
+li {
+list-style: none;
+}
+
+</style>
+</head>
+
+<body>
+<div class="wrap">
+  <div id="home_toptip"></div>
+   
+  <h4 class="well">待办事项</h4>
+  <div class="home_info">
+  <ul class="nav nav-tabs">
+            <li ><a href="{:U('Admin/Main/index')}">项目标段模块</a></li>
+            <li class="active"><a href="{:U('Admin/Main/index_bzj')}">保证金模块</a></li>
+            <li ><a href="{:U('Admin/Main/index_qt')}">其他模块</a></li>
+        </ul>
+
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th width="30">ID</th>
+                        <th align="left">项目名称</th>
+                                            <th align="left">标段名称</th>
+                                                <th align="left">开发商名称</th>
+                        <th align="left">缴纳银行</th>
+                                                <th align="left">银行账号</th>
+                                                <th align="left">工程总造价</th>
+                                            <th align="left">保证金金额</th>
+                                            <th align="left">保证金缴纳时间</th>
+                                            <th align="left">工资支付归属日期</th>
+                                                <th align="left">保证金比例</th>
+                                                <th align="left">农民工工资发放比例</th>
+                                            <th align="left">备注</th>
+                        <th width="120">审核</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <foreach name="lists" item="vo">
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td><a href="{:U('Bzjgl/Shadmin/index')}">{$vo.xmmc}</a></td>
+                                            <td>{$vo.bdmc}</td>    
+                                                <td>{$vo.jsfmc}</td>     
+                        <td>{$vo.ssyhmc}</td>
+                                                <td>{$vo.yhzh}</td>
+                                                <td>{$vo.gczzj}</td>
+                                            <td>{$vo.bzjje}</td>
+                                            <td>{$vo.bzjjnsj}</td>
+                                            <td>{$vo.gzzfgsrq}</td>
+                                                <td>{$vo.bzjbl}</td>
+                                                <td>{$vo.nmggzffbl}</td>
+                                            <td>{$vo.bz}</td>   
+                                            <td>未审核</td>  
+                               
+                           
+                    </tr>
+                    </foreach>
+                </tbody>
+            </table>
+
+            <div class="pagination">{$page}</div>
+  </div>
+  
+</div>
+<script src="__ROOT__/statics/js/common.js"></script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

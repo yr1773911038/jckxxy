@@ -1,0 +1,75 @@
+<admintpl file="header"/>
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+     <li><a href="{:U('Orgadmin/index')}">机构管理</a></li>
+     <li class="active"><a href="{:U('Orgadmin/add')}">添加机构</a></li>
+  </ul>
+  <form class="form-horizontal J_ajaxForm" action="{:U('Orgadmin/update')}" method="post" id="myform">
+  <div class="table_full">
+      <table width="100%" cellpadding="2" cellspacing="2">
+        <tr>
+          <th width="180">机构名称</th>
+          <td><input type="text" name="dwqc" value="{$vo.dwqc}" class="input" id="dwqc" style="width:500px;">  </input><span class="must_red">*</span></td>
+        </tr>
+        <tr>
+          <th>机构描述</th>
+          <td><textarea name="content" rows="2" cols="20" id="content" class="inputtext" style="height:100px;width:500px;">{$vo.content}</textarea></td>
+        </tr>
+
+        <tr>
+          <th>上级机构</th>
+          <td>
+              <select name="parent_id" class="normal_select"> 
+                {$select_categorys}
+              </select>
+
+          </td>
+        </tr>
+ 
+
+         <php>$dwlb_active_yh=($vo['dwlb'] ==2)?"checked":"";</php>
+          <php>$dwlb_active_zjw=($vo['dwlb'] ==1)?"checked":"";</php>
+
+        <tr>
+          <th>机构类别</th>
+          <td> 
+             <label class="radio inline" for="active_false">
+                <input type="radio" name="dwlb" value="2" id="dwlb_active_false" {$dwlb_active_yh}  />银行
+            </label>
+
+            <label class="radio inline" for="active_true">
+                <input type="radio" name="dwlb" value="1" id="dwlb_active_true" {$dwlb_active_zjw}  />住建委
+            </label>
+           
+          </td>
+        </tr>
+
+         <php>$dw_status_active_true=($vo['dw_status'] ==1)?"checked":"";</php>
+          <php>$dw_status_active_false=($vo['dw_status'] ==0)?"checked":"";</php>
+ 
+        <tr>
+          <th>是否开启</th>
+          <td>
+            <label class="radio inline" for="active_true">
+                <input type="radio" name="dw_status" value="1" {$dw_status_active_true} id="dw_status_active_true"/>开启
+            </label>
+            <label class="radio inline" for="active_false">
+                <input type="radio" name="dw_status" value="0" id="dw_status_active_false" {$dw_status_active_false} >禁止
+            </label>
+          </td>
+        </tr>
+      </table>
+
+      <input type="hidden" name="id" value="{$vo.id}" />
+  </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+        <a class="btn" href="__URL__">返回</a>
+    </div>
+    </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

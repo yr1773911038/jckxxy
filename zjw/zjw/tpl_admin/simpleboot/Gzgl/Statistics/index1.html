@@ -1,0 +1,73 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Statistics/index')}">银行存款数统计、银行发放工资总额统计</a></li>
+			<li><a href="{:U('Statistics/add')}">添加工资</a></li>
+            <li><a href="{:U('Statistics/importExcel')}">导入工资</a></li>
+		</ul>
+        <form class="well form-search" method="post" action="{:u('Statistics/index')}">
+        <div class="search_type cc mb10">
+        <div class="mb10"> 
+        <span class="mr20">时间：
+        <input type="text" name="start_time" class="input length_2 J_date" value="{$formget.start_time}" style="width:80px;" autocomplete="off">-<input autocomplete="off" type="text" class="input length_2 J_date" name="end_time" value="{$formget.end_time}" style="width:80px;">
+        <!-- 
+        <select class="select_2" name="posids"style="width:70px;">
+            <option value='' selected>全部</option>
+        </select>
+        <select class="select_2" name="searchtype" style="width:70px;">
+            <option value='0' >标题</option>
+        </select>
+            -->
+                            关键字：
+        <input type="text" class="input length_2" name="keyword" style="width:200px;" value="{$formget.keyword}" placeholder="请输入关键字...">
+        <button class="btn btn-primary">搜索</button>
+        </span>
+        </div>
+        </div>
+        </form>
+		<form name="myform" action="{:U('Statistics/index')}" method="post">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="60">编号</th>
+						<th align="left">单位全称</th> 
+						<th align="left">工资月份</th> 
+						<th align="left">工资金额</th> 
+						<th width="120">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.dwqc}</td>
+						<td>{$vo.gzny}</td>
+						<td>{$vo.je}</td>
+						<td> 
+								<a href="{:U('Statistics/edit',array('payid'=>$vo['payid']))}">修改</a>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+    <script>
+        setCookie('refersh_time', 0);
+        function refersh_window() {
+            var refersh_time = getCookie('refersh_time');
+            if (refersh_time == 1) {
+                window.location.reload();
+            }
+        }
+        setInterval(function () {
+            refersh_window()
+        }, 2000);
+
+</script>
+</body>
+</html>

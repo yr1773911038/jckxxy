@@ -1,0 +1,503 @@
+[ 2016-04-10T09:10:11+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003548s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0034s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='34',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 42 [ RunTime:0.8658s ]
+
+[ 2016-04-10T09:10:15+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003486s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0044s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='asdad',`bd_status`='1',`projectid`='34',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 42 [ RunTime:0.0981s ]
+
+[ 2016-04-10T09:10:29+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003955s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0051s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='123213213213',`bd_status`='1',`projectid`='34',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 42 [ RunTime:0.0465s ]
+
+[ 2016-04-10T09:10:52+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003533s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0045s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='11111',`bd_status`='1',`projectid`='21',`ssyhmc`='' WHERE `id` = 22 [ RunTime:0.1294s ]
+
+[ 2016-04-10T09:11:11+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003899s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0037s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='aaaaaaaaa',`bd_status`='1',`projectid`='24',`ssyhmc`=' ├ 中国邮政储蓄银行' WHERE `id` = 41 [ RunTime:0.0833s ]
+
+[ 2016-04-10T09:16:42+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003284s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0026s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='11111',`bd_status`='1',`projectid`='34',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 42 [ RunTime:0.0908s ]
+
+[ 2016-04-10T09:17:07+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002879s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0027s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='11111',`bd_status`='1',`projectid`='21',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 22 [ RunTime:0.0543s ]
+
+[ 2016-04-10T10:09:45+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003475s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0027s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='0',`projectid`='24',`ssyhmc`='撒旦撒旦' WHERE `id` = 26 [ RunTime:0.0541s ]
+
+[ 2016-04-10T10:10:47+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002863s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0039s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='123',`bd_status`='0',`projectid`='24',`ssyhmc`='撒旦撒旦' WHERE `id` = 26 [ RunTime:0.0406s ]
+
+[ 2016-04-10T10:11:51+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003113s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0346s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0028s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='34',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 42 [ RunTime:0.0491s ]
+
+[ 2016-04-10T10:38:23+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003011s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0024s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='阿斯达斯',`bd_status`='1',`projectid`='34',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 42 [ RunTime:0.0557s ]
+
+[ 2016-04-10T10:38:41+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003061s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0024s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='0',`projectid`='24',`ssyhmc`='撒旦撒旦' WHERE `id` = 26 [ RunTime:0.0514s ]
+
+[ 2016-04-10T10:39:53+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004549s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0025s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='34',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 42 [ RunTime:0.3321s ]
+
+[ 2016-04-10T10:54:01+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003107s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0032s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='34',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 42 [ RunTime:0.0599s ]
+
+[ 2016-04-10T10:54:03+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002991s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0026s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='34',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 42 [ RunTime:0.0472s ]
+
+[ 2016-04-10T10:54:10+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002717s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0033s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='24',`ssyhmc`=' └ 齐商银行' WHERE `id` = 24 [ RunTime:0.0607s ]
+
+[ 2016-04-10T10:54:43+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003119s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0032s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='阿斯达斯的',`bd_status`='1',`projectid`='24',`ssyhmc`=' └ 齐商银行' WHERE `id` = 24 [ RunTime:0.0573s ]
+
+[ 2016-04-10T10:54:51+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002932s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0033s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='24',`ssyhmc`=' └ 齐商银行' WHERE `id` = 24 [ RunTime:0.0550s ]
+
+[ 2016-04-10T10:55:04+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003289s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0057s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='21',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 22 [ RunTime:0.0599s ]
+
+[ 2016-04-10T10:56:05+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002753s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0027s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='0',`bd_status`='1',`projectid`='34',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 42 [ RunTime:0.1051s ]
+
+[ 2016-04-10T10:56:10+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003147s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0045s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='24',`ssyhmc`=' └ 齐商银行' WHERE `id` = 24 [ RunTime:0.0720s ]
+
+[ 2016-04-10T10:56:13+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003515s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0026s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='阿斯达斯的',`bd_status`='1',`projectid`='24',`ssyhmc`=' └ 齐商银行' WHERE `id` = 24 [ RunTime:0.0913s ]
+
+[ 2016-04-10T10:56:19+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003959s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0027s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='24',`ssyhmc`=' └ 齐商银行' WHERE `id` = 24 [ RunTime:0.0575s ]
+
+[ 2016-04-10T10:58:39+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003004s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0036s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='撒旦',`bd_status`='1',`projectid`='21',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 22 [ RunTime:0.0288s ]
+
+[ 2016-04-10T10:58:45+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002754s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0044s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='21',`ssyhmc`=' ├ 中国工商银行' WHERE `id` = 22 [ RunTime:0.0584s ]
+
+[ 2016-04-10T10:59:02+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002989s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0376s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0028s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='22',`ssyhmc`='a' WHERE `id` = 21 [ RunTime:0.0394s ]
+
+[ 2016-04-10T11:12:46+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002847s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0052s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='0',`projectid`='24',`ssyhmc`='c银行' WHERE `id` = 13 [ RunTime:0.5002s ]
+
+[ 2016-04-10T11:14:01+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002645s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0036s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='啊大大',`bd_status`='0',`projectid`='24',`ssyhmc`='c银行' WHERE `id` = 13 [ RunTime:0.0462s ]
+
+[ 2016-04-10T11:14:07+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002751s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0042s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='0',`projectid`='24',`ssyhmc`='c银行' WHERE `id` = 13 [ RunTime:0.0484s ]
+
+[ 2016-04-10T11:16:08+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002681s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0045s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='1',`projectid`='22',`ssyhmc`='a' WHERE `id` = 21 [ RunTime:0.0628s ]
+
+[ 2016-04-10T11:17:00+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002762s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001619s ]
+
+[ 2016-04-10T11:17:14+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003330s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2016-04-10T11:19:09+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002696s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2016-04-10T11:19:18+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002785s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2016-04-10T11:26:57+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002568s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0036s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='asda',`bd_status`='0',`projectid`='24',`ssyhmc`='撒旦撒旦' WHERE `id` = 26 [ RunTime:0.0540s ]
+
+[ 2016-04-10T12:08:57+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002859s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0062s ]
+SQL: INSERT INTO `sp_projectsbd` (`projectid`,`bdmc`,`yhzh`,`bd_status`,`id`,`ssyhmc`) VALUES ('4','阿萨德','阿萨德','1','0',' ├ 中国银行') [ RunTime:0.0758s ]
+
+[ 2016-04-10T12:42:16+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003004s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0041s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='',`bd_status`='0',`projectid`='24',`ssyhmc`='c银行' WHERE `id` = 13 [ RunTime:0.0738s ]
+
+[ 2016-04-10T12:46:16+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Projectadmin&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002853s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_projects` [ RunTime:0.0039s ]
+SQL: INSERT INTO `sp_projects` (`projectname`,`xmjj`,`ssyhid`,`xmzh`,`grsl`,`zj`,`xmkssj`,`ssdwid`,`sgfid`,`xm_status`,`ssqymc`,`ssyhmc`,`sgfmc`,`ssdwmc`) VALUES ('','','','','0','','','','','1','','','','') [ RunTime:0.1297s ]
+
+[ 2016-04-10T12:47:22+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Projectadmin&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002891s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projects` [ RunTime:0.0041s ]
+SQL: INSERT INTO `sp_projects` (`projectname`,`xmjj`,`ssyhid`,`xmzh`,`grsl`,`zj`,`xmkssj`,`ssdwid`,`sgfid`,`xm_status`,`ssqymc`,`ssyhmc`,`sgfmc`,`ssdwmc`) VALUES ('啦啦啦啦啦德玛西亚','啦啦啦啦啦德玛西亚','6','啦啦啦啦啦德玛西亚','1111','11111','2016-04-10','2','2','1',' ├ 石油大学',' ├ 石油大学',' ├ 中国施工一队',' ├ 山东建工集团东营总公司') [ RunTime:0.0568s ]
+
+[ 2016-04-10T12:47:33+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Projectadmin&a=delete&id=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003086s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projects` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `sp_projects` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `sp_projects` WHERE `id` = 37 [ RunTime:0.0796s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0035s ]
+SQL: DELETE FROM `sp_projectsbd` WHERE `projectid` = 37 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_projectsry` [ RunTime:0.0036s ]
+SQL: DELETE FROM `sp_projectsry` WHERE `projectid` = 37 [ RunTime:0.0003s ]
+
+[ 2016-04-10T12:47:35+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Projectadmin&a=delete&id=35
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002666s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projects` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sp_projects` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `sp_projects` WHERE `id` = 35 [ RunTime:0.0442s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0033s ]
+SQL: DELETE FROM `sp_projectsbd` WHERE `projectid` = 35 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_projectsry` [ RunTime:0.0040s ]
+SQL: DELETE FROM `sp_projectsry` WHERE `projectid` = 35 [ RunTime:0.0003s ]
+
+[ 2016-04-10T12:47:37+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Projectadmin&a=delete&id=36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002891s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projects` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `sp_projects` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `sp_projects` WHERE `id` = 36 [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0033s ]
+SQL: DELETE FROM `sp_projectsbd` WHERE `projectid` = 36 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_projectsry` [ RunTime:0.0042s ]
+SQL: DELETE FROM `sp_projectsry` WHERE `projectid` = 36 [ RunTime:0.0003s ]
+
+[ 2016-04-10T12:47:43+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Projectadmin&a=delete&id=33
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002834s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projects` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sp_projects` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `sp_projects` WHERE `id` = 33 [ RunTime:0.0657s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0034s ]
+SQL: DELETE FROM `sp_projectsbd` WHERE `projectid` = 33 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_projectsry` [ RunTime:0.0033s ]
+SQL: DELETE FROM `sp_projectsry` WHERE `projectid` = 33 [ RunTime:0.0003s ]
+
+[ 2016-04-10T12:47:47+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Projectadmin&a=delete&id=34
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002777s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projects` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sp_projects` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `sp_projects` WHERE `id` = 34 [ RunTime:0.0314s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0035s ]
+SQL: DELETE FROM `sp_projectsbd` WHERE `projectid` = 34 [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `sp_projectsry` [ RunTime:0.0033s ]
+SQL: DELETE FROM `sp_projectsry` WHERE `projectid` = 34 [ RunTime:0.0003s ]
+
+[ 2016-04-10T12:48:00+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003167s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0037s ]
+SQL: INSERT INTO `sp_projectsbd` (`projectid`,`bdmc`,`bd_status`,`id`,`ssyhmc`) VALUES ('38','啦啦啦啦啦德玛西亚','1','0',' ├ 中国银行') [ RunTime:0.0780s ]
+
+[ 2016-04-10T12:48:08+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003282s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0036s ]
+SQL: INSERT INTO `sp_projectsbd` (`projectid`,`bdmc`,`bd_status`,`id`,`ssyhmc`) VALUES ('38','啦啦啦啦啦德玛西亚','1','0',' ├ 中国工商银行') [ RunTime:0.0597s ]
+
+[ 2016-04-10T14:45:30+08:00 ] ::1 /zjw/index.php?g=Jcsj&m=Bdadmin&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007888s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_projectsbd` [ RunTime:0.0079s ]
+SQL: UPDATE `sp_projectsbd` SET `yhzh`='三翻四复的',`bd_status`='0',`projectid`='24',`ssyhmc`='c银行' WHERE `id` = 13 [ RunTime:0.0956s ]
+

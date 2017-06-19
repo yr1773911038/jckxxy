@@ -1,0 +1,108 @@
+<admintpl file="header"/>
+
+   <script type="text/javascript"> 
+   $(document).ready(function(){
+       $("#companyid").change(function(){  
+         $("#companyname").val ($(this).children('option:selected').text());
+      });
+
+        $("#orgid").change(function(){  
+         $("#orgname").val ($(this).children('option:selected').text());
+      });
+
+   $("#projectid").change(function(){  
+         $("#projectname").val ($(this).children('option:selected').text());
+      });
+
+       });         
+       </script>       
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+     <li><a href="{:U('Payadmin/index')}">工资管理</a></li>
+     <li class="active"><a href="{:U('Payadmin/add')}">添加工资</a></li>
+     <li><a href="{:U('Payadmin/importExcel')}">导入工资</a></li>
+  </ul>
+  <form class="form-horizontal J_ajaxForm" action="{:U('Payadmin/insert')}" method="post" id="myform">
+  <div class="table_full">
+      <table width="100%" cellpadding="2" cellspacing="2">
+        <tr>
+          <th width="180">姓名</th>
+          <td><input type="text" name="xm" value="" class="input" id="xm" style="width:100px;">  </input><span class="must_red">*</span></td>
+        </tr>
+      
+         <tr>
+          <th width="180">卡号</th>
+          <td><input type="text" name="kh" value="" class="input" id="kh" style="width:300px;">  </input><span class="must_red">*</span></td>
+        </tr>
+
+          <tr>
+          <th width="180">身份证号</th>
+          <td><input type="text" name="sfzh" value="" class="input" id="sfzh" style="width:300px;">  </input><span class="must_red">*</span></td>
+        </tr>
+        
+        <tr>
+          <th width="180">工资月份</th>
+           <td>
+       <input type="text" name="gzny" value="" class="input" id="gzny" style="width:100px;" maxlength="6">  </input>
+
+            <span class="must_red">YYYYMM*</span></td>
+        </tr>
+
+         <tr>
+          <th width="180">金额</th>
+          <td><input type="text" name="je" value="" class="input" id="je" style="width:100px;" >  </input><span class="must_red">*</span></td>
+        </tr>
+
+        <tr>
+          <th>所在公司</th>
+          <td>
+              <select name="companyid" id="companyid" class="normal_select"> 
+                <option value="">请选择</option>
+                {$select_categorys}
+              </select>
+
+          </td>
+        </tr>
+ 
+       <tr>
+          <th>所属银行</th>
+          <td>
+              <select name="orgid" id="orgid" class="normal_select"> 
+                <option value="">请选择</option>
+                {$select_org_categorys}
+              </select>
+
+          </td>
+        </tr>
+
+         <tr>
+          <th>所属项目</th>
+          <td>
+              <select name="projectid" id="projectid" class="normal_select"> 
+                <option value="">请选择</option> 
+                {$select_project_categorys}
+              </select>
+
+          </td>
+        </tr>
+
+
+
+
+        
+      </table>
+        <input type="hidden" class="input" name="companyname" id="companyname"  value="" />
+         <input type="hidden" class="input" name="orgname" id="orgname"  value="" />
+         <input type="hidden" class="input" name="projectname" id="projectname"  value="" />
+  </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+        <a class="btn" href="__URL__">返回</a>
+    </div>
+    </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

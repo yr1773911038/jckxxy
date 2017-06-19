@@ -1,0 +1,27 @@
+<admintpl file="header" />
+</head>
+<body class="J_scroll_fixed">
+	<table border='1'>
+<volist name="forms" id="vo">
+ 
+
+ <tr>
+    <td>{$vo.id}</td>
+    <td>{$vo.title}</td>
+     <td>{$vo.content}</td>
+     <td>
+
+     <a href='{:U("Formadmin/edit",array("id"=>$vo["id"]))}'>修改</a>
+     </td>
+      <td>
+     <a href='{:U("Formadmin/delete",array("id"=>$vo["id"]))}'>删除</a>
+     </td>
+ </tr>
+
+</volist>
+
+  
+ </table>
+ <div class="pagination">{$page}</div>
+</body>
+</html>
