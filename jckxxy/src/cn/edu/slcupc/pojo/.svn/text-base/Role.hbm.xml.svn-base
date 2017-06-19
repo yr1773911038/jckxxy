@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.slcupc.pojo">
+	<class name="Role">
+		<id name="id" type="long">
+			<generator class="native" />
+		</id>
+		<property name="name" type="string" />
+		<property name="description" type="string" />
+		<!-- role 与 user 是多对多的关系 -->
+		<set name="users" table="user_role" fetch="join" inverse="true">
+			<key column="roleId" />
+			<many-to-many column="userId" class="User" />
+		</set>
+		<!-- role 与privilege 是多对多关系 -->
+		<set name="privileges" table="role_priv" fetch="join" lazy="false">
+			<key column="roleId" />
+			<many-to-many column="privId" class="Privilege" />
+		</set>
+		<property name="updateTime" type="date" />
+		<property name="createTime" type="date" />
+	</class>
+
+</hibernate-mapping>
+

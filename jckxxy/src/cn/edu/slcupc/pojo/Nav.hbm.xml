@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.slcupc.pojo">
+	<class name="Nav">
+		<id name="id" type="long">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" type="string"/>
+		<!-- nav与新闻之间是一对多的关系 -->
+		<set name="news" inverse="false">
+			<key column="nid"/>
+			<one-to-many class="News" />
+		</set>
+		<!-- 获取上一级菜单  nav 与nav 形成多对一关系  （自关联） -->
+		<many-to-one name="parent" class="Nav" column="pid" />
+		<property name="path" type="string"/>
+		<!-- 获取导航分类  nav 与 navcat 是多对一：   -->
+		<many-to-one name="navcat" class="NavCat" column="cid" cascade="save-update">
+		</many-to-one>
+		<property name="createTime" type="date"/>
+		<property name="updateTime" type="date"/>
+	 </class>
+
+</hibernate-mapping>
+

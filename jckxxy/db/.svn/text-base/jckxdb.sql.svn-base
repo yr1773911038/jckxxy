@@ -1,0 +1,192 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : jckxxy
+Source Server Version : 50540
+Source Host           : localhost:3306
+Source Database       : jckxdb
+
+Target Server Type    : MYSQL
+Target Server Version : 50540
+File Encoding         : 65001
+
+Date: 2017-05-15 09:46:49
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for `nav`
+-- ----------------------------
+DROP TABLE IF EXISTS `nav`;
+CREATE TABLE `nav` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `path` varchar(255) DEFAULT NULL,
+  `cid` bigint(20) DEFAULT NULL,
+  `createTime` date DEFAULT NULL,
+  `updateTime` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK13103755D47` (`id`),
+  KEY `FK1310353DF38C8` (`cid`),
+  CONSTRAINT `FK1310353DF38C8` FOREIGN KEY (`cid`) REFERENCES `navcat` (`id`),
+  CONSTRAINT `FK13103755D47` FOREIGN KEY (`id`) REFERENCES `nav` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of nav
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `navcat`
+-- ----------------------------
+DROP TABLE IF EXISTS `navcat`;
+CREATE TABLE `navcat` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `remark` varchar(255) DEFAULT NULL,
+  `createTime` date DEFAULT NULL,
+  `updateTime` date DEFAULT NULL,
+  `postTime` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of navcat
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `news`
+-- ----------------------------
+DROP TABLE IF EXISTS `news`;
+CREATE TABLE `news` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `userId` bigint(20) DEFAULT NULL,
+  `createTime` date DEFAULT NULL,
+  `updateTime` date DEFAULT NULL,
+  `postTime` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK24FEF3DC635808` (`userId`),
+  CONSTRAINT `FK24FEF3DC635808` FOREIGN KEY (`userId`) REFERENCES `user` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of news
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `privilege`
+-- ----------------------------
+DROP TABLE IF EXISTS `privilege`;
+CREATE TABLE `privilege` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `pid` bigint(20) DEFAULT NULL,
+  `createTime` date DEFAULT NULL,
+  `updateTime` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK196D16914CEF2485` (`pid`),
+  CONSTRAINT `FK196D16914CEF2485` FOREIGN KEY (`pid`) REFERENCES `privilege` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of privilege
+-- ----------------------------
+INSERT INTO `privilege` VALUES ('1', '权限菜单', null, null, '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('2', '权限管理', null, '1', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('3', '内容管理', null, '1', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('4', '导航管理', null, '1', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('5', '文件管理', null, '1', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('6', '用户管理', '/user_user', '2', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('7', '角色管理', '/role_role', '2', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('8', '新闻管理', '/news_news', '3', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('9', '学院领导', '/teacher_teacher', '3', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('10', '一级导航管理', '/bigNav_bigNav', '4', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('11', '二级导航管理', '/smallNav_smallNav', '4', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('12', '下载管理', '/movie_movie', '5', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('13', '菜单管理', '/auth_auth', '2', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('14', '学院论坛', null, '1', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('15', '学生管理', '/student_student', '3', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('16', '二级管理', '/comScore_score', '3', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('17', '版块管理', '/forum_forum', '14', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('18', '主题管理', '/topic_topic', '14', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('19', '回复管理', '/reply_reply', '14', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('20', '密码管理', '/miMa_miMa', '5', '2017-05-14', '2017-05-14');
+INSERT INTO `privilege` VALUES ('21', '教师管理', '/teachers_teachers', '3', '2017-05-14', '2017-05-14');
+
+-- ----------------------------
+-- Table structure for `role`
+-- ----------------------------
+DROP TABLE IF EXISTS `role`;
+CREATE TABLE `role` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `updateTime` date DEFAULT NULL,
+  `createTime` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of role
+-- ----------------------------
+INSERT INTO `role` VALUES ('1', '超级管理员', 'yanran，xuhao', '2017-05-13', '2017-05-13');
+
+-- ----------------------------
+-- Table structure for `role_priv`
+-- ----------------------------
+DROP TABLE IF EXISTS `role_priv`;
+CREATE TABLE `role_priv` (
+  `roleId` bigint(20) NOT NULL,
+  `privId` bigint(20) NOT NULL,
+  PRIMARY KEY (`roleId`,`privId`),
+  KEY `FK1405B4D812843304` (`privId`),
+  KEY `FK1405B4D8D70E029E` (`roleId`),
+  CONSTRAINT `FK1405B4D812843304` FOREIGN KEY (`privId`) REFERENCES `privilege` (`id`),
+  CONSTRAINT `FK1405B4D8D70E029E` FOREIGN KEY (`roleId`) REFERENCES `role` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of role_priv
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `num` varchar(255) DEFAULT NULL,
+  `createTime` date DEFAULT NULL,
+  `updateTime` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of user
+-- ----------------------------
+INSERT INTO `user` VALUES ('1', '超级管理员', '123', 'adminyr', '2017-05-13', '2017-05-13');
+
+-- ----------------------------
+-- Table structure for `user_role`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_role`;
+CREATE TABLE `user_role` (
+  `userId` bigint(20) NOT NULL,
+  `roleId` bigint(20) NOT NULL,
+  PRIMARY KEY (`roleId`,`userId`),
+  KEY `FK143BF46AD70E029E` (`roleId`),
+  KEY `FK143BF46ADC635808` (`userId`),
+  CONSTRAINT `FK143BF46AD70E029E` FOREIGN KEY (`roleId`) REFERENCES `role` (`id`),
+  CONSTRAINT `FK143BF46ADC635808` FOREIGN KEY (`userId`) REFERENCES `user` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of user_role
+-- ----------------------------
+INSERT INTO `user_role` VALUES ('1', '1');

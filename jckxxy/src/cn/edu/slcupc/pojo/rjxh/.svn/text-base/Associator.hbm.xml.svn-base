@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.slcupc.pojo.rjxh">
+	<class name="Associator">
+		<id name="id" type="long">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" type="string" />
+		<property name="summary" type="string"></property>
+		<property name="torwards" type="integer"></property>
+		<!-- Associator与 codeWorks 是多对多关系 -->
+		<set name="codeWorks" table="ass_cod" lazy="false" fetch="join">
+			<key column="assId"></key>
+			<many-to-many column="codId" class="CodeWorks"></many-to-many>
+		</set>
+		<property name="startTime" type="date">
+		</property>
+		<property name="endTime" type="date">
+		</property>
+		<property name="pic" type="string"></property>
+	</class>
+
+</hibernate-mapping>
+

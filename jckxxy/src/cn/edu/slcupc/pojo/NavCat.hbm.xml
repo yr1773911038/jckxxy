@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.slcupc.pojo">
+	<class name="NavCat">
+		<id name="id" type="long">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" type="string"/>
+		<property name="remark" type="string"/>
+		<property name="postTime" type="date"/>
+		<property name="updateTime" type="date"/>
+		<!-- navcat与nav 是 1对多的关系 -->
+		<set name="navs" inverse="true">
+			<key column="cid"></key>
+			<one-to-many class="Nav"/>
+		</set>
+	 </class>
+
+</hibernate-mapping>
+

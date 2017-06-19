@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.slcupc.pojo.rjxh">
+	<class name="CodeWorks">
+		<id name="id" type="long">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" type="string"/>
+		<property name="description" type="string"/>
+		<property name="url" type="string"/>
+		<!-- codeWorks 与users 是多对多关系 -->
+		<set name="users" table="ass_cod" lazy="false"  inverse="false" fetch="join" cascade="save-update">
+			<key column="codId"></key>
+			<many-to-many column="assId" class="Associator" lazy="false" ></many-to-many>
+		</set>
+		<property name="achieveTime" type="date"/>
+	 </class>
+
+</hibernate-mapping>
+

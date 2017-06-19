@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>颜冉个人网站</title>
+<meta name="keywords" content="coffee, cup, free web templates, css templates" />
+<meta name="description" content="Coffee Template is a free CSS layout provided from cssMoban.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <script src="${pageContext.request.contextPath}/rjxh/js/jquery-1.2.1.pack.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/rjxh/js/jquery-easing.1.2.pack.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/rjxh/js/jquery-easing-compatibility.1.2.pack.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/rjxh/js/coda-slider.1.1.1.pack.js" type="text/javascript"></script>
+    <!-- Initialize each slider on the page. Each slider must have a unique id -->
+    <script type="text/javascript">
+    jQuery(window).bind("load", function() {
+    jQuery("div#slider1").codaSlider()
+    // jQuery("div#slider2").codaSlider()
+    // etc, etc. Beware of cross-linking difficulties if using multiple sliders on one page.
+    });
+    </script>
+
+</head>
+<body>
+
+<div id="templatemo_wrapper_outer">
+<div id="templatemo_wrapper_inner">
+
+	<div id="templatemo_header">
+        <div id="site_title">
+        	<a href="http://www.cssmoban.com" target="_parent">
+            	<!--<img src="images/templatemo_logo.png" alt="free templates" />-->
+               <h1> 软件协会</h1>
+            </a>
+        </div>
+    </div> <!-- end of templatemo_header -->
+    <div id="templatemo_content">
+<div class="slider-wrap">
+	<div id="slider1" class="csw">
+		<div class="panelContainer">
+			<div class="panel" title="个人主页">
+				<div class="wrapper">
+                    <h2>个人主页</h2>
+
+                    <div class="image_wrapper fl_image">
+                        <img  width="450px" height="250px" src="${pageContext.request.contextPath}/rjxh/img/psbYGZFVL1Z.jpg" alt="image 5"/>
+                        <p class="em_text">这就是我，颜冉 </p>
+                    </div>
+
+					<p></p>
+
+                    <p> </p>
+
+					<p><a href="#5" class="cross-link" title="Go to Page 5">&#171; Previous</a> | <a href="#2" class="cross-link" title="Go to Page 2">Next &#187;</a></p>
+				</div>
+			</div>
+			<div class="panel" title="个人简介">
+				<div class="wrapper">
+                
+					<h2>个人简介</h2>
+
+                    <p> <h4>我是计科二班颜冉 ,一个爱笑、爱玩、爱睡懒觉的小菇凉，平时也没啥爱好，不过经常会写一些代码，前台页面，后台，都有涉猎，生活有些枯燥，不过还是我所喜欢的,而我一直追逐！</p>
+                    </h4></p>
+                    
+                    <div class="cleaner_h20"></div>
+                    <ul class="service_list">
+                    	<li>html+css.</li>
+                        <li>php</li>
+                        <li>ps</li>
+                    </ul>
+                    <div class="cleaner_h20"></div>
+					<p><a href="#1" class="cross-link" title="Go to Page 1">&#171; Previous</a> | <a href="#3" class="cross-link" title="Go to Page 3">Next &#187;</a></p>
+				</div>
+			</div>
+			<div class="panel" title=" 图片秀秀">
+				<div class="wrapper">
+            		<h1>图片秀秀</h1>
+                        <div class="portfolio_box margin_r50">
+                        
+                            <h3>First Project</h3>
+                            <div class="port_img">
+                                <a href="http://www.cssmoban.com/page/3" target="_parent"><img width="200px" height="150px;"  src="${pageContext.request.contextPath}/rjxh/img/psb14AXP0S8.jpg" alt="project 1" /></a>
+                            </div>
+                            <p>  这是11111111 </p>
+                            <div class="button_01"><a href="http://www.cssmoban.com/page/3" target="_parent">Visit</a></div>
+                            
+                            <div class="cleaner"></div>
+                        </div>
+
+                        <div class="portfolio_box margin_r50">
+    
+                            <h3>Second Project</h3>
+                            
+                            <div class="port_img">
+                                <a href="" target="_parent"><img width="200px" height="150px;" src="${pageContext.request.contextPath}/rjxh/img/psbLKCD1CO7.jpg" alt="project 2" /></a>
+                            </div>
+                            <p>无论何时，都挡不住我爱玩的心情</p>
+                            <div class="button_01"><a href="" target="_parent">Visit</a></div>
+                            
+                            <div class="cleaner"></div>                                               
+                        </div>
+                        
+                        <div class="portfolio_box">
+    
+                            <h3>Third Project</h3>
+                            
+                            <div class="port_img">
+                                <a href="" target="_parent"><img width="200px" height="150px;" src="${pageContext.request.contextPath}/rjxh/img/psbODBPH9VS.jpg" alt="project 2" /></a>
+                            </div>
+                            <p></p>
+                            <div class="button_01"><a href="" target="_parent">Visit</a></div>
+                            <div class="cleaner"></div>                                               
+                        </div>
+                        
+                    <div class="cleaner"></div>
+                                        
+                    <p><a href="#2" class="cross-link" title="Go to Page 2">&#171; Previous</a> | <a href="#4" class="cross-link" title="Go to Page 4">Next &#187;</a></p>
+                     
+				</div>
+			</div>
+			<div class="panel" title="联系方式">
+				<div class="wrapper">
+					
+                    <h1>联系方式</h1>
+                        
+                    <div id="contact_form">
+                    
+                        <form method="get" name="contact" action="#5">
+                        
+                            <input type="hidden" name="post" value=" Send " />
+                            <label for="author">名字：</label> <input type="text" id="author" name="author" class="required input_field" />
+                            <div class="cleaner_h10"></div>
+                            
+                            <label for="email">邮箱：</label> <input type="text" id="email" name="email" class="validate-email required input_field" />
+                            <div class="cleaner_h10"></div>
+                            
+                            <label for="text">消息：</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+                            <div class="cleaner_h10"></div>
+                            
+                            <input style="font-weight: bold;" type="submit" class="submit_btn" name="submit" id="submit" value=" 发送 " />
+                            <input style="font-weight: bold;" type="reset" class="submit_btn" name="reset" id="reset" value=" 重置 " />
+                        
+                        </form>
+                    </div>
+
+                    
+                    <div class="address_info">
+                    	<h3>邮箱地址</h3>
+                    	1773911038@qq.com<br />
+                        欢迎联系我<br /><br />
+
+                    </div>
+                    
+                    <div class="cleaner_h20"></div>
+                    
+					<p><a href="#4" class="cross-link" title="Go to Page 4">&#171; 前一页</a> | <a href="#1" class="cross-link" title="Go to Page 1">后一页 &#187;</a></p>
+				</div>
+			</div>
+			
+		</div><!-- .panelContainer -->
+	</div><!-- #slider1 -->
+</div><!-- .slider-wrap -->
+
+<p id="cross-links" style="width:0px; height: 0px; font-size:0; overflow: hidden;">
+	Same-page cross-link controls:<br />
+	<a href="#1" class="cross-link">Page 1</a> | <a href="#2" class="cross-link">Page 2</a> | <a href="#3" class="cross-link">Page 3</a> | <a href="#4" class="cross-link">Page 4</a> | <a href="#5" class="cross-link">Page 5</a>
+</p>
+
+    <!-- end of slider -->
+      
+	</div> 
+	<!-- end of templatemo_content -->
+    
+    <div id="templatemo_footer"><span class="coffee_cup"></span>
+
+	    Copyright © 2048 <a href="#">颜冉</a>
+
+      
+	</div> <!-- end of templatemo_footer -->
+
+
+</div> 
+<!-- end of templatemo_wrapper_inner -->
+</div> <!-- end of templatemo_wrapper_outer -->
+
+</body>
+</html>

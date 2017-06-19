@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.slcupc.pojo">
+	<class name="User">
+		<id name="id" type="long">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" type="string"/>
+		<property name="password" type="string"/>
+		<property name="num" type="string"/>
+		<property name="createTime" type="date"/>
+		<property name="updateTime" type="date"/>
+		<!-- user与role 之间多对多关系 -->
+		<set name="roles" table="user_role" fetch="join" lazy="false" cascade="save-update">
+			<key column="userId"/>
+			<many-to-many column="roleId" class="Role"/>
+		</set> 
+		<!-- user 与 news之间是一对多关系 -->
+		<set name="news">
+			<key column="userId"/>
+			<one-to-many class="News" />
+		</set>
+	 </class>
+	 
+
+</hibernate-mapping>
+

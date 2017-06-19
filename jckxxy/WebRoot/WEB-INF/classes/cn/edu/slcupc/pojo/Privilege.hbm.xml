@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.edu.slcupc.pojo">
+
+	<class name="Privilege">
+		<id name="id" type="long">
+			<generator class="native"/>
+		</id>
+		<property name="text" type="string"/>	
+		<property name="url" type="string"/>	
+		<!-- privilege 与 role 的多对多关系 -->
+		<set name="roles" table="role_priv" inverse="true" fetch="join">
+			<key column="privId"></key>
+			<many-to-many column="roleId" class="Role"></many-to-many>
+		</set>
+		<!-- privilege 自关联查找parent :基于外键多对一的关系 -->
+		<many-to-one name="parent" column="pid" class="Privilege"  />
+		<!-- privilege 自关联查找children ：基于外键的一对多 -->
+		<set name="children">
+			<!--<key property-ref="parent"></key>
+			-->
+			<key column="pid"></key>
+			<one-to-many class="Privilege"/>
+		</set>
+		<property name="createTime" type="date"/>	
+		<property name="updateTime" type="date"/>	
+	</class>
+
+</hibernate-mapping>
+

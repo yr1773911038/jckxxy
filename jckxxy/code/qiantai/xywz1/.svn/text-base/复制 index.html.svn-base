@@ -1,0 +1,677 @@
+<!DOCTYPE>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<title>华中师范大学</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="apple-mobile-web-app-title" content="">
+		<meta name="application-name" content="">
+		<link href="resources/assets/css/metro-bootstrap.min.css" rel="stylesheet">
+		<link href="resources/assets/css/animate.css" rel="stylesheet">
+		<link href="resources/assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="resources/assets/css/style.css" rel="stylesheet">
+		<link href="resources/css/base.css" rel="stylesheet" />
+		<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+		<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="resources/js/bootstrap-hover-dropdown.min.js"></script>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="resources/assets/js/html5shiv.min.js"></script>
+		<script type="text/javascript" src="resources/assets/js/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript">
+			$(function() {
+				var winHeight = $(document).scrollTop();
+				$(window).scroll(function() {
+					var scrollY = $(document).scrollTop(); 
+
+					if(scrollY > 100) {
+
+						$("#topBarx").css({
+							"position": "fixed",
+							"top": "0px",
+							"margin": "auto",
+							"filter": "alpha(opacity=80)",
+							"opacity": "0.8",
+							"-moz-opacity": "0.8",
+							"-khtml-opacity": "0.8"
+						});
+					} else {
+						$("#topBarx").css({
+							"position": "static",
+							"filter": "alpha(opacity=100)",
+							"opacity": "1",
+							"-moz-opacity": "1",
+							"-khtml-opacity": "1"
+						});
+					}
+
+				});
+			});
+			
+		</script>
+		<style>
+			A.applink:hover {
+				border: 2px dotted #DCE6F4;
+				padding: 2px;
+				background-color: #ffff00;
+				color: green;
+				text-decoration: none
+			}
+			
+			A.applink {
+				border: 2px dotted #DCE6F4;
+				padding: 2px;
+				color: #2F5BFF;
+				background: transparent;
+				text-decoration: none
+			}
+			
+			A.info {
+				color: #2F5BFF;
+				background: transparent;
+				text-decoration: none
+			}
+			
+			A.info:hover {
+				color: green;
+				background: transparent;
+				text-decoration: underline
+			}
+		</style>
+
+		<style>
+			.lazy,
+			#xiaozhang {
+				cursor: pointer;
+				transition: all 0.6s;
+			}
+			
+			.lazy:hover,
+			#xiaozhang:hover {
+				transform: scale(1.4);
+			}
+		</style>
+
+		<script type="text/javascript">
+			$(function() {
+				var mydate = new Date();
+				var t = mydate.toLocaleString();
+				$("#yr_time").text(t);
+			});
+		</script>
+	</head>
+
+	<body id="top">
+		<!--标头 --->
+		<div style="background: #006699; line-height: 40px; font-size: 12px;">
+			<div class="container hidden-sm hidden-xs">
+				<div class="row">
+					<div class="col-md-3" style="font-size: 14px;color:white;margin-top: 5px;">
+						<span id="yr_time"></span>
+					</div>
+					<div class="col-md-7">
+						<div id="tp-weather-widget">
+						</div>
+					</div>
+					<div class="col-md-2 ">
+						<div class="topR pull-right">
+							<form method="post" action="#" role="search">
+								<input type="text" name="search" id="searchtext" value="检索..." onfocus="if(this.value==this.defaultValue)this.value=''" onblur="javascript:if(this.value=='')this.value='检索...';" class="word" style="outline: none;" />
+								<input type="submit" value="" class="search" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：offline
+        	时间：2017-05-11
+        	描述： 中国石油大学胜利学院 图标 显示
+        -->
+		<div class="section" style=" background: #1295D8;padding: 40px;">
+			<img src="resources/imgs/tubiao.png" alt="中国石油大学胜利学院" style="cursor: pointer;" onclick="" />
+			<div id="slxyxx" class="pull-right hidden-sm hidden-xs" style="">
+				<img src="resources/imgs/xiaoxun.png" alt="中国石油大学胜利学院" style="cursor: pointer;" onclick="" />
+			</div>
+		</div>
+		<!--
+	作者：offline
+	时间：2017-05-11
+	描述：导航菜单 部分
+-->
+		<div id="container" class="hidden-xs hidden-sm">
+			<div class="section" id="ban" style="width: 100%; text-align: center;">
+				<div class="top-bar" id="topBarx" style="position: relative;">
+					<div class="container">
+						<div class="row ">
+							<div class="col-xs-8 col-md-8">
+								<div class="" style="float: left; margin-left: 20px;">
+									<a href="#" class="" data-toggle="" data-hover="" style="color: #FFF;" onclick="">首&nbsp;&nbsp;页</a><s></s>
+								</div>
+								<div class="dropdown" style="float: left;">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;">学院概况</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" onclick="">学校简介</a>
+										</li>
+										<li>
+											<a href="#" onclick="">学院领导</a>
+										</li>
+										<li>
+											<a href="#" onclick="">联系方式</a>
+										</li>
+									</ul>
+								</div>
+								<div class="dropdown" style="float: left; margin-left: 20px;">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">机构设置</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" onclick="">综合办公室</a>
+										</li>
+										<li>
+											<a href="#" onclick="">学生工作办公室</a>
+										</li>
+										<li>
+											<a href="#" onclick="">信息技术系</a>
+										</li>
+										<li>
+											<a href="#" onclick="">数学物理系</a>
+										</li>
+										<li>
+											<a href="#" onclick="">外语系</a>
+										</li>
+										<li>
+											<a href="#" onclick="">体育教学部</a>
+										</li>
+										<li>
+											<a href="#" onclick="">思想政治理论教学部</a>
+										</li>
+									</ul>
+								</div>
+								<div class="dropdown " style="float: left; margin-left: 20px;">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">学院新闻</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" onclick="">通知公告</a>
+										</li>
+										<li>
+											<a href="#" onclick="">新闻中心</a>
+										</li>
+										<li>
+											<a href="#" onclick="">学生天地</a>
+										</li>
+										<li>
+											<a href="#" onclick="">学院风采</a>
+										</li>
+										<li>
+											<a href="#" onclick="">运动竞赛</a>
+										</li>
+										<li>
+											<a href="#" onclick="">思政教育</a>
+										</li>
+									</ul>
+
+								</div>
+								<div class="dropdown " style="float: left; margin-left: 20px;">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">教学科研</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" onclick="">教学科研</a>
+										</li>
+									</ul>
+								</div>
+								<div class="dropdown " style="float: left; margin-left: 20px;">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">学生工作</a><s></s>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" onclick="">学生工作</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!---导航栏右侧--->
+							<div class="col-sm-4">
+								<div class="pull-right">
+									<div class="dropdown" style="float: left; margin-left: 20px;">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">下载专区</a><s></s>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#" onclick="">下载专区</a>
+											</li>
+										</ul>
+									</div>
+									<div class="dropdown" style="float: left; margin-left: 20px;">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">学生中心</a><s></s>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#" onclick="">学生中心</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+                	作者：offline
+                	时间：2017-05-11
+                	描述：轮播项目
+                -->
+		<div class="" style="max-width:1920px;max-height:450px;">
+			<div id="myCarousel" class="carousel">
+				<ol class="carousel-indicators" style="margin-left: -25%;">
+
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+
+				</ol>
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner" style="width:100%;">
+					<div class="item active">
+						<a href="#" style="text-decoration: none;" onclick="">
+							<img src="resources/imgs/20173617cc2a73ac-f326-44e5-be94-054a4ce530c8.jpg" style="width:100%;z-index: 1;" />
+							<div class="carousel-caption">标题 1李海兵课题组在仿生离子通道研究方面取得重要进展李海兵课题组在仿生离子通道研究方面取得重要进展 李海兵课题组在仿生离子通道研究方面取得重要进展李海兵课题组在仿生离子通道研究方面取得重要进展李海兵课题组在仿生离子通道研究方面取得重要进展
+							</div>
+						</a>
+					</div>
+					<div class="item ">
+						<a href="#;" style="text-decoration: none;" onclick="">
+							<img src="resources/imgs/201739124bdc2e7e-5cf6-4237-8e25-e1efbbfc9d6e.jpg" style="width:100%;z-index: 1;" />
+							<div class="carousel-caption">标题 1李海兵课题组在仿生离子通道研究方面取得重要进展</div>
+						</a>
+
+					</div>
+
+					<div class="item ">
+						<a href="#" style="text-decoration: none;" onclick="">
+							<img src="resources/imgs/2017422950c53160-c494-4506-9766-d4e32e5bfad7.jpg" style="width:100%;z-index: 1;" />
+							<div class="carousel-caption">标题 1，李海兵课题组在仿生离子通道研究方面取得重要进展</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- 轮播（Carousel）导航 -->
+				<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+
+				</a>
+				<a href="#myCarousel" data-slide="next" class="carousel-control right">
+
+				</a>
+			</div>
+		</div>
+		<!--
+    	作者：offline
+    	时间：2017-05-11
+    	描述：第一部分 ：新闻类
+    -->
+		<div class="section">
+			<div class="container">
+				<div class="about-box triggerAnimation" data-animate="fadeInUp">
+					<div class="row" style="background: #EDEDED; padding: 15px 0 15px; margin-top: 20px;">
+						<!--
+                            	作者：offline
+                            	时间：2017-05-11
+                            	描述：新闻中心部分
+                            -->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h3 id="bx-pager-5">
+							<a class="yr_tit" data-slide-index="0"
+								href="#" onclick="">新闻中心</a> <span
+								style="float: right; font-size: 13px; margin-top: 8px;"><a
+								href="#" onclick=""
+								style="color: #BEBEBE;">更多</a></span>
+						</h3>
+							<ul class="yr_ul">
+								<li>
+									<div class="feature-content-s" style="padding: 0px 0px;">
+										<div class="date">
+											<span class="day">Fri</span><br /> <span class="month">May.12</span>
+										</div>
+										<div style="margin-left: 60px;">
+											<h3>
+												<a href="#" onclick="">教学名师讲坛</a>
+											</h3>
+											<p>
+												时间: 05月12日 下午07点00分<br>地点: 科学会堂一楼报告厅&nbsp;
+											</p>
+										</div>
+									</div>
+
+									<div class="feature-content-s" style="padding: 0px 0px;">
+										<div class="date">
+											<span class="day">Wed</span><br /> <span class="month">May.10</span>
+										</div>
+										<div style="margin-left: 60px;">
+											<h3>
+												<a href="#" onclick="">第一百二十九期“华大论坛”</a>
+											</h3>
+											<p>
+												时间: 05月10日 下午04点00分<br>地点: 研究生院406学术报告厅&nbsp;
+											</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--
+                            	作者：offline
+                            	时间：2017-05-11
+                            	描述：通知公告部分
+                            -->
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<h3 style=""><a class="yr_tit" href="#;" onclick="">通知公告 </a>
+								<span 
+								style="float: right; font-size: 12px; margin-top: 8px;"><a
+								href="#" onclick=""
+								style="color: #BEBEBE;">更多</a></span>
+								
+							</h3>
+							<ul class="infolist2 yr_ul">
+								<li>
+									<span>
+										 2017-05-10
+										</span>
+									<div style="word-break: break-all;">
+										<div style="margin-left: 100px;">
+											<a href="#;" onclick="">关于我校教职工子弟孙辈就读一附中初中部报名工作安排的通知</a>
+
+											&nbsp;
+
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<span>
+										 2017-02-15
+										</span>
+									<div style="word-break: break-all;">
+										<div style="margin-left: 100px;">
+											<a href="#;" onclick="">关于做好2017年人才招聘工作的通知</a>
+											&nbsp;
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<span>
+										 2017-05-09
+										</span>
+									<div style="word-break: break-all;">
+										<div style="margin-left: 100px;">
+											<a href="#;" onclick="">关于举办第三期学生党支部书记培训班的通知</a>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<span>
+										 2017-05-04
+										</span>
+									<div style="word-break: break-all;">
+										<div style="margin-left: 100px;">
+											<a href="#;" onclick="">会议通知</a>
+										</div>
+									</div>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+        	作者：offline
+        	时间：2017-05-11
+        	描述：学院风采 <div class="about-box triggerAnimation" data-animate="fadeInUp">
+        -->
+
+		<div class="" style="margin-bottom: 20px; ">
+			<div class="container triggerAnimation" style="margin-top: 10px;" data-animate="fadeInUp">
+				<div class="row" style="background:#EDEDED ; padding-bottom: 10px;">
+					<h3 class=""><a class="yr_tit" href="#;" onclick="">学院风采 </a></h3>
+				</div>
+				<div class="row" style="background:#EDEDED ;">
+					<div class="col-sm-6 col-md-3" style="">
+						<div class="thumbnail" style="background: #89cff0;">
+							<img class="lazy" src="resources/imgs/xyfc1.jpg" width="180px" alt="风采">
+							<div class="caption img-responsive" style="">
+								<h3>风采风采风采风采风采风采风采风采</h3>
+								<p>风采风采风采风采风采风采风采风采风采风采 风采风采风采风采风采风采风采风采风采风采 风采风采风采风采风采风采
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail" style="background:#89cff0;">
+							<img class="lazy img-responsive" src="resources/imgs/xyfc1.jpg" width="180px" alt="风采">
+							<div class="caption">
+								<h3>风采风采风采风采风采风采风采风采</h3>
+								<p>风采风采风采风采风采风采风采风采风采风采 风采风采风采风采风采风采风采风采风采风采 风采风采风采风采风采风采
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail" style="background:#89cff0;">
+							<img class="lazy img-responsive" src="resources/imgs/xyfc1.jpg" width="180px" alt="风采">
+							<div class="caption">
+								<h3>风采风采风采风采风采风采风采风采</h3>
+								<p>风采风采风采风采风采风采风采风采风采风采 风采风采风采风采风采风采风采风采风采风采 风采风采风采风采风采风采
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail" style="background: #89cff0;">
+							<img class="lazy img-responsive" src="resources/imgs/xyfc1.jpg" width="180px" alt="风采">
+							<div class="caption">
+								<h3>风采风采风采风采风采风采风采风采</h3>
+								<p>风采风采风采风采风采风采风采风采风采风采 风采风采风采风采风采风采风采风采风采风采 风采风采风采风采风采风采
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="confoot" style="">
+			<div class="container" style="">
+				<div class="row" style="margin-top: 15px;background:#EDEDED ;">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+							<div class="hot-post" onclick="">
+								<img class="yr_img img-responsive" alt="" src="upload/20162931321a12f1-395a-44a0-9208-4de247575b28.gif">
+								<div class="hot-content2" style="background: #EDEDED;">
+									<h3>华中师范大学“两学一做”专题教育网</h3>
+									<p>
+										<p>华中师范大学积极开展&ldquo;两学一做&rdquo;专题教育。</p>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+							<div class="hot-post" onclick="">
+								<img class="yr_img img-responsive" alt="" src="upload/2017042379e0172a-01f9-4bec-af4f-676ed20af4bd.jpg">
+								<div class="hot-content2" style="background: #EDEDED;">
+									<h3>学习贯彻全国高校思想政治工作会议精神</h3>
+									<p></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+
+							<div class="hot-post" onclick="">
+								<img class="yr_img img-responsive" alt="" src="upload/2017042379e0172a-01f9-4bec-af4f-676ed20af4bd.jpg">
+								<div class="hot-content2" style="background: #EDEDED;">
+									<h3>华师故事专题网</h3>
+									<p>
+										<p>共叙桂子情 同筑华师梦</p>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+
+							<div class="hot-post" onclick="">
+								<img class="yr_img img-responsive" alt="" src="upload/201635224e8e7bc4-9e29-4aec-9dd5-a33f2d4a041d.jpg">
+								<div class="hot-content2" style="background: #EDEDED;">
+									<h3>华中师大理论学习网</h3>
+									<p></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--
+            	作者：offline
+            	时间：2017-05-11
+            	描述：顶部
+            -->
+		<div class="pull-right" style="margin-right:20px ;margin-bottom: 10px;">
+			<a class="gotop" href=""><img src="resources/images/arrow2.png" style="width: 18px;" /></a>
+		</div>
+		<div class="footer">
+			<!--
+                	作者：offline
+                	时间：2017-05-11
+                	描述： position:fixed; right:50px; bottom:10px; width:20px; height:100px;
+                -->
+			<div class="container">
+				<div class="row col-lg-12 " style="margin-top: 30px;">
+					<div class="col-md-1 col-sm-2 hidden-xs" style="">
+						<img id="xiaozhang" class="img-responsive" src="resources/imgs/zhang.png" width="80px" alt="" />
+					</div>
+					<div class="col-md-9 col-sm-8 col-xs-12" style="padding-left: 30px; padding-top: 20px;">
+						<img class="img-responsive" src="resources/imgs/slxy.png" alt="" />
+						<p style="line-height: 22px; font-size: 15px; margin-top: 3px; color:white;">Copyright © 2017-7-3 版权所有：软件协会</p>
+
+					</div>
+					<div class="col-md-2 col-sm-2 hidden-xs" style="">
+						<div class="mainCR fl" style="width: 100%">
+							<a href="#;" title="官方微信" class="weixin" id='popover-wx' data-toggle='popover' data-placement="top" data-html="true" data-content="<img src='resources/images/hs_weixin.jpg' style='width: 200px;height: 200px;'/>">官方微信</a>
+							<a href="#;" title="官方微博" class="weibo" id='popover-wb' data-toggle='popover' data-placement="top" data-html="true" data-content="<img src='resources/images/hs_weibo.png' style='width: 200px;height: 200px;'/>">官方微博</a>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--
+				作者：offline
+				时间：2017-05-11
+				描述：最下角的固定导航
+			-->
+		<nav class="navbar-fixed-bottom fixbot " role="navigation">
+			<div class="container" style="position: relative;">
+				<div style="display: inline-block;max-width: 800px;min-width:300px;" class="">
+					<ul class="footinfo" id="bx4">
+						<li style="padding: 0px;"><span>
+								2017-05-11</span>
+							<a href="http://www.ccnu.com.cn/xin/zonghe/2017/0511/17573.html" target="_blank" title="李海兵课题组在仿生离子通道研究方面取得重要进展">李海兵课题组在仿生离子通道研究方面取得重要进展</a>
+						</li>
+					</ul>
+				</div>
+
+				<span class="pull-right hidden-xs hidden-sm">
+					<button type="button" class="btn btn-warning">点击登录后台管理系统</button>
+				</span>
+			</div>
+		</nav>
+
+		<!--
+	作者：offline
+	时间：2017-05-11
+	描述：
+-->
+		<div class="preloader">
+			<img alt="" src="resources/imgs/preloader.gif">
+		</div>
+
+	</body>
+
+	<script type="text/javascript">
+		/**
+		 * 轮播
+		 * 
+		 */
+		$(function() {
+			$('.carousel').carousel();
+		});
+	</script>
+	<script type="text/javascript">
+		/**
+		 * 天气
+		 */
+		(function(T, h, i, n, k, P, a, g, e) {
+			g = function() {
+				P = h.createElement(i);
+				a = h.getElementsByTagName(i)[0];
+				P.src = k;
+				P.charset = "utf-8";
+				P.async = 1;
+				a.parentNode.insertBefore(P, a)
+			};
+			T["ThinkPageWeatherWidgetObject"] = n;
+			T[n] || (T[n] = function() {
+				(T[n].q = T[n].q || []).push(arguments)
+			});
+			T[n].l = +new Date();
+			if(T.attachEvent) {
+				T.attachEvent("onload", g)
+			} else {
+				T.addEventListener("load", g, false)
+			}
+		}(window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
+		tpwidget("init", {
+			"flavor": "slim",
+			"location": "WX4FBXXFKE4F",
+			"geolocation": "enabled",
+			"language": "zh-chs",
+			"unit": "c",
+			"theme": "chameleon",
+			"container": "tp-weather-widget",
+			"bubble": "enabled",
+			"alarmType": "badge",
+			"uid": "U5981CC89F",
+			"hash": "ba867b3ee24ce988d5166e78dcf2761e"
+		});
+		tpwidget("show");
+	</script>
+	<script type="text/javascript" src="resources/assets/js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="resources/assets/js/bootstrap-collapse.js"></script>
+	<script type="text/javascript" src="resources/assets/js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="resources/assets/js/jquery.megamenu.js"></script>
+	<script type="text/javascript" src="resources/assets/js/waypoints.js"></script>
+	<script type="text/javascript" src="resources/assets/js/script.js"></script>
+
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- ckfinder文件上传配置 -->
+	<constant name="struts.action.excludePattern" value="/ckfinder.*" />
+	<!-- 配置为开发模式 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 把扩展名配置为action -->
+	<constant name="struts.action.extension" value="action" />
+	<!-- 把主题配置为simple -->
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 设置默认编码为 UTF-8 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!--上传文件最大不超过600M  -->
+	<constant name="struts.multipart.maxSize" value="629145600" />
+	<package name="default" extends="struts-default" namespace="/">
+		<!-- 设置全局错误页面 -->
+		<global-results>
+			<result name="error">/index.jsp</result>
+		</global-results>
+
+		<!-- 用户管理模块 -->
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="login_view">/admin/login.jsp</result>
+			<result name="admin_index">/WEB-INF/admin/index.jsp</result>
+			<result name="login_fail">/admin/login.jsp</result>
+			<result name="logout">/admin/login.jsp</result>
+			<result name="user">/WEB-INF/admin/user.jsp</result>
+		</action>
+		<!-- 角色管理 -->
+		<action name="role_*" class="roleAction" method="{1}">
+			<result name="role_view">/WEB-INF/admin/role.jsp</result>
+		</action>
+		<!-- 菜单管理 -->
+		<action name="nav_*" class="navAction" method="{1}">
+			<result name="bigNavview">/WEB-INF/admin/bigNav.jsp</result>
+			<result name="smallNavview">/WEB-INF/admin/smallNav.jsp</result>
+		</action>
+		<!--  权限管理 -->
+		<action name="priv_*" class="privAction" method="{1}">
+			<result name="priv_view">/WEB-INF/admin/auth.jsp</result>
+		</action>
+		<!-- 新闻管理 -->
+		<action name="news_*" class="newsAction" method="{1}">
+			<result name="news_view">/WEB-INF/admin/news.jsp</result>
+		</action>
+
+		<!-- ===========软件协会============ -->
+		<action name="ass_*" class="assAction" method="{1}">
+			<result name="ass_view">/WEB-INF/admin/rjxh/associator.jsp</result>
+		</action>
+		<action name="code_*" class="codeAction" method="{1}">
+			<result name="code_view">/WEB-INF/admin/rjxh/codeWorks.jsp</result>
+
+		</action>
+
+		<!-- ==========软件协会end============ -->
+	</package>
+
+
+
+	<package name="rjxh" extends="struts-default" namespace="/rjxh">
+		<!-- 设置全局错误页面 -->
+		<global-results>
+			<result name="error">/index.jsp</result>
+		</global-results>
+		<!-- ===========软件协会============ -->
+		<action name="ass_*" class="assAction" method="{1}">
+			<result name="ass_view">/WEB-INF/admin/rjxh/associator.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		<action name="code_*" class="codeAction" method="{1}">
+			<result name="code_view">/WEB-INF/admin/rjxh/codeWorks.jsp</result>
+
+		</action>
+
+		<!-- ==========软件协会end============ -->
+	</package>
+
+	<package name="qiantai" extends="struts-default" namespace="/qiantai">
+		<!-- ===========前台部分============= -->
+		<action name="home_*" class="homeAction" method="{1}">
+			<result name="index">/WEB-INF/index/index.jsp</result>
+			<result name="list">/WEB-INF/index/list.jsp</result>
+			<result name="page">/WEB-INF/index/page.jsp</result>
+			<!--<result name="wugbpage">/WEB-INF/index/page.jsp</result>
+		--></action>
+		<!-- 软件协会前台部分 -->
+		<action name="rjxhHome_*" class="rjxhHomeAction" method="{1}">
+			<result name="rjxh">/WEB-INF/rjxh/rjxh.jsp</result>
+		</action>
+
+		<!-- ==========前台部分end=========== -->
+	</package>
+
+</struts>

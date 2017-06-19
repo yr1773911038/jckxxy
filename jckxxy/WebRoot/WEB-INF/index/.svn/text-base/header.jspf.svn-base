@@ -1,0 +1,214 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>基础科学学院</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link
+	href="${pageContext.request.contextPath}/index/css/metro-bootstrap.min.css"
+	rel="stylesheet">
+<link href="${pageContext.request.contextPath}/index/css/animate.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/index/css/font-awesome.min.css"
+	rel="stylesheet">
+<link href="${pageContext.request.contextPath}/index/css/style.css"
+	rel="stylesheet">
+<link href="${pageContext.request.contextPath}/index/base.css"
+	rel="stylesheet" />
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/index/js/jquery.min.js"></script>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/index/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/index/js/bootstrap-hover-dropdown.min.js"></script>
+
+
+<!--[if lt IE 9]>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/index/js/html5shiv.min.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/index/js/respond.min.js"></script>
+		<![endif]-->
+<script type="text/javascript">
+	$(function() {
+		var winHeight = $(document).scrollTop();
+		$(window).scroll(function() {
+			var scrollY = $(document).scrollTop();
+
+			if (scrollY > 280) {
+
+				$("#topBarx").css( {
+					"position" : "fixed",
+					"top" : "0px",
+					"margin" : "auto",
+					"filter" : "alpha(opacity=80)",
+					"opacity" : "0.8",
+					"-moz-opacity" : "0.8",
+					"-khtml-opacity" : "0.8"
+				});
+			} else {
+				$("#topBarx").css( {
+					"position" : "static",
+					"filter" : "alpha(opacity=100)",
+					"opacity" : "1",
+					"-moz-opacity" : "1",
+					"-khtml-opacity" : "1"
+				});
+			}
+
+		});
+	});
+</script>
+<style>
+A.applink:hover {
+	border: 2px dotted #DCE6F4;
+	padding: 2px;
+	background-color: #ffff00;
+	color: green;
+	text-decoration: none
+}
+
+A.applink {
+	border: 2px dotted #DCE6F4;
+	padding: 2px;
+	color: #2F5BFF;
+	background: transparent;
+	text-decoration: none
+}
+
+A.info {
+	color: #2F5BFF;
+	background: transparent;
+	text-decoration: none
+}
+
+A.info:hover {
+	color: green;
+	background: transparent;
+	text-decoration: underline
+}
+</style>
+
+<style>
+.lazy,#xiaozhang {
+	cursor: pointer;
+	transition: all 0.6s;
+}
+
+.lazy:hover,#xiaozhang:hover {
+	transform: scale(1.4);
+}
+</style>
+<script type="text/javascript">
+	$(function() {
+		setInterval (showTime, 1000);
+		function showTime(){
+			var mydate = new Date();
+			var t = mydate.toLocaleString();
+			$("#yr_time").text(t);
+		}
+	});
+</script>
+<body id="top">
+	<!--标头 --->
+	<div style="background: #006699; line-height: 40px; font-size: 12px;">
+		<div class="container hidden-sm hidden-xs">
+			<div class="row">
+				<div class="col-md-3"
+					style="font-size: 14px; color: white; margin-top: 5px;">
+					<span id="yr_time"></span>
+				</div>
+				<div class="col-md-offset-5 col-md-3 ">
+					<div class="topR pull-right">
+						<div id="tp-weather-widget">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--
+        	作者：offline
+        	时间：2017-05-11
+        	描述： 中国石油大学胜利学院 图标 显示
+        -->
+	<div class="section" style="background: #1295D8; padding: 40px;">
+		<img src="${pageContext.request.contextPath}/index/imgs/tubiao.png"
+			alt="中国石油大学胜利学院" style="cursor: pointer;" onclick=; />
+		<div id="slxyxx" class="pull-right hidden-sm hidden-xs" style="">
+			<img src="${pageContext.request.contextPath}/index/imgs/xiaoxun.png"
+				alt="中国石油大学胜利学院" style="cursor: pointer;" onclick=; />
+		</div>
+	</div>
+
+	<!--
+	作者：offline
+	时间：2017-05-11
+	描述：导航菜单 部分
+-->
+	<div id="container" class="">
+		<div class="section" id="ban" style="width: 100%; text-align: center;">
+			<div class="top-bar" id="topBarx" style="position: relative;">
+				<div class="container">
+					<div class="row ">
+						<div class="col-xs-12 col-md-12">
+							<div class="" style="float: left; margin-left: 20px;">
+								<a href="${pageContext.request.contextPath}/index.jsp" class=""
+									data-toggle="" data-hover="" style="color: #FFF;">首 页</a><s></s>
+							</div>
+							<%--导航栏所有信息 --%>
+							<s:iterator value="#session.allNavList" status="statu" id="item"
+								var="all">
+								<s:iterator value="#all" var="allmap">
+									<div class="dropdown" style="float: left;">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+											data-hover="dropdown" style="color: #FFF;"> <s:property
+												value="#allmap.key" /> </a>
+										<s:if test="#allmap.value.size()!=0">
+
+											<ul class="dropdown-menu">
+												<s:iterator value="#allmap.value" var="er">
+
+													<li>
+														<a
+															href="${pageContext.request.contextPath }/<s:property value='#er.path'/>"><s:property
+																value='#er.name' /> </a>
+													</li>
+												</s:iterator>
+											</ul>
+										</s:if>
+									</div>
+
+								</s:iterator>
+							</s:iterator>
+							<!---导航栏右侧--->
+							<!--<div class="col-md-4 hidden-sm hidden-xs ">
+								<div class="pull-right">
+									<div class="dropdown" style="float: left; margin-left: 20px;">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+											data-hover="dropdown" style="color: #FFF;" onclick=;>下载专区</a><s></s>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#" onclick=;>下载专区</a>
+											</li>
+										</ul>
+									</div>
+									<div class="dropdown" style="float: left; margin-left: 20px;">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+											data-hover="dropdown" style="color: #FFF;" onclick=;>学生中心</a><s></s>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#" onclick=;>学生中心</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

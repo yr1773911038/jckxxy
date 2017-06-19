@@ -1,0 +1,404 @@
+<!DOCTYPE>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<title>华中师范大学</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="apple-mobile-web-app-title" content="">
+		<meta name="application-name" content="">
+		<link href="resources/assets/css/metro-bootstrap.min.css" rel="stylesheet">
+		<link href="resources/assets/css/animate.css" rel="stylesheet">
+		<link href="resources/assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="resources/assets/css/style.css" rel="stylesheet">
+		<link href="resources/css/base.css" rel="stylesheet" />
+		<link href="resources/css/inner.css" rel="stylesheet" />
+		<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+		<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="resources/js/bootstrap-hover-dropdown.min.js"></script>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="resources/assets/js/html5shiv.min.js"></script>
+		<script type="text/javascript" src="resources/assets/js/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript">
+			$(function() {
+				var winHeight = $(document).scrollTop();
+				$(window).scroll(function() {
+					var scrollY = $(document).scrollTop();
+
+					if(scrollY > 100) {
+
+						$("#topBarx").css({
+							"position": "fixed",
+							"top": "0px",
+							"margin": "auto",
+							"filter": "alpha(opacity=80)",
+							"opacity": "0.8",
+							"-moz-opacity": "0.8",
+							"-khtml-opacity": "0.8"
+						});
+					} else {
+						$("#topBarx").css({
+							"position": "static",
+							"filter": "alpha(opacity=100)",
+							"opacity": "1",
+							"-moz-opacity": "1",
+							"-khtml-opacity": "1"
+						});
+					}
+
+				});
+			});
+		</script>
+		<style>
+			A.applink:hover {
+				border: 2px dotted #DCE6F4;
+				padding: 2px;
+				background-color: #ffff00;
+				color: green;
+				text-decoration: none
+			}
+			
+			A.applink {
+				border: 2px dotted #DCE6F4;
+				padding: 2px;
+				color: #2F5BFF;
+				background: transparent;
+				text-decoration: none
+			}
+			
+			A.info {
+				color: #2F5BFF;
+				background: transparent;
+				text-decoration: none
+			}
+			
+			A.info:hover {
+				color: green;
+				background: transparent;
+				text-decoration: underline
+			}
+		</style>
+
+		<style>
+			.lazy,
+			#xiaozhang {
+				cursor: pointer;
+				transition: all 0.6s;
+			}
+			
+			.lazy:hover,
+			#xiaozhang:hover {
+				transform: scale(1.4);
+			}
+		</style>
+
+		<script type="text/javascript">
+			$(function() {
+				var mydate = new Date();
+				var t = mydate.toLocaleString();
+				$("#yr_time").text(t);
+			});
+		</script>
+	</head>
+
+	<body id="top">
+		<!--标头 --->
+		<div style="background: #006699; line-height: 40px; font-size: 12px;">
+			<div class="container hidden-sm hidden-xs">
+				<div class="row">
+					<div class="col-md-3" style="font-size: 14px;color:white;margin-top: 5px;">
+						<span id="yr_time"></span>
+					</div>
+					<div class="col-md-offset-7 col-md-2 ">
+						<div class="topR pull-right">
+							<div id="tp-weather-widget">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：offline
+        	时间：2017-05-11
+        	描述： 中国石油大学胜利学院 图标 显示
+        -->
+		<div class="section" style=" background: #1295D8;padding: 40px;">
+			<img src="resources/imgs/tubiao.png" alt="中国石油大学胜利学院" style="cursor: pointer;" onclick="" />
+			<div id="slxyxx" class="pull-right hidden-sm hidden-xs" style="">
+				<img src="resources/imgs/xiaoxun.png" alt="中国石油大学胜利学院" style="cursor: pointer;" onclick="" />
+			</div>
+		</div>
+		<!--
+	作者：offline
+	时间：2017-05-11
+	描述：导航菜单 部分
+-->
+		<div id="container" class="hidden-xs hidden-sm">
+			<div class="section" id="ban" style="width: 100%; text-align: center;">
+				<div class="top-bar" id="topBarx" style="position: relative;">
+					<div class="container">
+						<div class="row ">
+							<div class="col-xs-8 col-md-8">
+								<div class="" style="float: left; margin-left: 20px;">
+									<a href="#" class="" data-toggle="" data-hover="" style="color: #FFF;" onclick="">首&nbsp;&nbsp;页</a><s></s>
+								</div>
+								<div class="dropdown" style="float: left;">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;">学院概况</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" onclick="">学校简介</a>
+										</li>
+										<li>
+											<a href="#" onclick="">学院领导</a>
+										</li>
+										<li>
+											<a href="#" onclick="">联系方式</a>
+										</li>
+									</ul>
+								</div>
+								<div class="dropdown" style="float: left; margin-left: 20px;">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">机构设置</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" onclick="">综合办公室</a>
+										</li>
+										<li>
+											<a href="#" onclick="">学生工作办公室</a>
+										</li>
+										<li>
+											<a href="#" onclick="">信息技术系</a>
+										</li>
+										<li>
+											<a href="#" onclick="">数学物理系</a>
+										</li>
+										<li>
+											<a href="#" onclick="">外语系</a>
+										</li>
+										<li>
+											<a href="#" onclick="">体育教学部</a>
+										</li>
+										<li>
+											<a href="#" onclick="">思想政治理论教学部</a>
+										</li>
+									</ul>
+								</div>
+								<div class="dropdown " style="float: left; margin-left: 20px;">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">学院新闻</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" onclick="">通知公告</a>
+										</li>
+										<li>
+											<a href="#" onclick="">新闻中心</a>
+										</li>
+										<li>
+											<a href="#" onclick="">学生天地</a>
+										</li>
+										<li>
+											<a href="#" onclick="">学院风采</a>
+										</li>
+										<li>
+											<a href="#" onclick="">运动竞赛</a>
+										</li>
+										<li>
+											<a href="#" onclick="">思政教育</a>
+										</li>
+									</ul>
+
+								</div>
+								<div class="dropdown " style="float: left; margin-left: 20px;">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">教学科研</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" onclick="">教学科研</a>
+										</li>
+									</ul>
+								</div>
+								<div class="dropdown " style="float: left; margin-left: 20px;">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">学生工作</a><s></s>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" onclick="">学生工作</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!---导航栏右侧--->
+							<div class="col-sm-4">
+								<div class="pull-right">
+									<div class="dropdown" style="float: left; margin-left: 20px;">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">下载专区</a><s></s>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#" onclick="">下载专区</a>
+											</li>
+										</ul>
+									</div>
+									<div class="dropdown" style="float: left; margin-left: 20px;">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #FFF;" onclick="">学生中心</a><s></s>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#" onclick="">学生中心</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+        	作者：1773911038@qq.com
+        	时间：2017-05-12
+        	描述：这是正文列表部分
+        -->
+		<div class="container " style=" margin-top: 30px;">
+			<div class="row detailContent" style="">
+				<div class="pull-left"> 当前位置:首页/列表</div>
+				<hr width="100%" />
+				<div class="wenzhang_tit" align="center">
+					<h3>基础科学学院简介</h3>
+				</div>
+				<div class="wenzhang_desc" align="center" style="line-height: 80px;">
+					发布时间：2014-12-22发布人：基础科学学院浏览次数：2043 次
+				</div>
+				<div class="col-md-offset-1 col-md-10" style="min-height:400px;line-height: 30px; font-size: 16px;">
+					中国石油大学胜利学院基础科学学院成立于2014年8月，是为了更好的适应学院发展的需要，由原中国石油大学胜利学院信息与计算科学系、外语系、体育系三个系以及大学物理教研室、马列教研室等基础学科组建而成。学院下设综合办公室、学生工作办公室、数学物理系、信息技术系、外语系、思想政治理论教学部和体育教学部等7个部门。
+基础科学学院承担着信息与计算科学专业、计算机科学与技术专业、软件工程专业、英语专业的专业课教学和全校的思想政治理论、大学物理、高等数学、公共体育、基础外语等公共基础课教学。学院招生包含信息与计算科学、计算机科学与技术、软件工程、计算机科学与技术专升本、英语等5个本科专业，目前共有在校学生1172人。
+基础科学学院现有教职工111人，其中教授2人，副教授43人，具有博士学位教师3人，具有硕士学位教师80人。已形成一支职称、学历、专业、学缘结构合理，富有朝气的师资队伍。
+基础科学学院全体教职工决心在油地校三方合作办学会议精神的指引下，在校党委的领导下，继续遵循“循大河精进不息、依沧海虚怀博纳”的校训，努力发扬“顽强拼搏、勇于创新”的精神，使全院各项工作再上新台阶。
+				
+					
+				</div>
+				
+
+			</div>
+
+		</div>
+
+		<!--
+            	作者：offline
+            	时间：2017-05-11
+            	描述：顶部
+            -->
+		<div class="pull-right" style="margin-right:20px ;margin-bottom: 10px;">
+			<a class="gotop" href=""><img src="resources/images/arrow2.png" style="width: 18px;" /></a>
+		</div>
+		<div class="footer">
+			<!--
+                	作者：offline
+                	时间：2017-05-11
+                	描述： position:fixed; right:50px; bottom:10px; width:20px; height:100px;
+                -->
+			<div class="container">
+				<div class="row col-lg-12 " style="margin-top: 30px;">
+					<div class="col-md-1 col-sm-2 hidden-xs" style="">
+						<img id="xiaozhang" class="img-responsive" src="resources/imgs/zhang.png" width="80px" alt="" />
+					</div>
+					<div class="col-md-9 col-sm-8 col-xs-12" style="padding-left: 30px; padding-top: 20px;">
+						<img class="img-responsive" src="resources/imgs/slxy.png" alt="" />
+						<p style="line-height: 22px; font-size: 15px; margin-top: 3px; color:white;">Copyright © 2017-7-3 版权所有：软件协会</p>
+
+					</div>
+					<div class="col-md-2 col-sm-2 hidden-xs" style="">
+						<div class="mainCR fl" style="width: 100%">
+							<a href="#;" title="官方微信" class="weixin" id='popover-wx' data-toggle='popover' data-placement="top" data-html="true" data-content="<img src='resources/images/hs_weixin.jpg' style='width: 200px;height: 200px;'/>">官方微信</a>
+							<a href="#;" title="官方微博" class="weibo" id='popover-wb' data-toggle='popover' data-placement="top" data-html="true" data-content="<img src='resources/images/hs_weibo.png' style='width: 200px;height: 200px;'/>">官方微博</a>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--
+				作者：offline
+				时间：2017-05-11
+				描述：最下角的固定导航
+			-->
+		<nav class="navbar-fixed-bottom fixbot " role="navigation">
+			<div class="container" style="position: relative;">
+				<div style="display: inline-block;max-width: 800px;min-width:300px;" class="">
+					<ul class="footinfo" id="bx4">
+						<li style="padding: 0px;"><span>
+								2017-05-11</span>
+							<a href="http://www.ccnu.com.cn/xin/zonghe/2017/0511/17573.html" target="_blank" title="李海兵课题组在仿生离子通道研究方面取得重要进展">李海兵课题组在仿生离子通道研究方面取得重要进展</a>
+						</li>
+					</ul>
+				</div>
+
+				<span class="pull-right hidden-xs hidden-sm">
+					<button type="button" class="btn btn-warning">点击登录后台管理系统</button>
+				</span>
+			</div>
+		</nav>
+
+		<!--
+	作者：offline
+	时间：2017-05-11
+	描述：
+-->
+		<div class="preloader">
+			<img alt="" src="resources/imgs/preloader.gif">
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		/**
+		 * 天气
+		 */
+		(function(T, h, i, n, k, P, a, g, e) {
+			g = function() {
+				P = h.createElement(i);
+				a = h.getElementsByTagName(i)[0];
+				P.src = k;
+				P.charset = "utf-8";
+				P.async = 1;
+				a.parentNode.insertBefore(P, a)
+			};
+			T["ThinkPageWeatherWidgetObject"] = n;
+			T[n] || (T[n] = function() {
+				(T[n].q = T[n].q || []).push(arguments)
+			});
+			T[n].l = +new Date();
+			if(T.attachEvent) {
+				T.attachEvent("onload", g)
+			} else {
+				T.addEventListener("load", g, false)
+			}
+		}(window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
+		tpwidget("init", {
+			"flavor": "slim",
+			"location": "WX4FBXXFKE4F",
+			"geolocation": "enabled",
+			"language": "zh-chs",
+			"unit": "c",
+			"theme": "chameleon",
+			"container": "tp-weather-widget",
+			"bubble": "enabled",
+			"alarmType": "badge",
+			"uid": "U5981CC89F",
+			"hash": "ba867b3ee24ce988d5166e78dcf2761e"
+		});
+		tpwidget("show");
+	</script>
+	<script type="text/javascript" src="resources/assets/js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="resources/assets/js/bootstrap-collapse.js"></script>
+	<script type="text/javascript" src="resources/assets/js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="resources/assets/js/jquery.megamenu.js"></script>
+	<script type="text/javascript" src="resources/assets/js/waypoints.js"></script>
+	<script type="text/javascript" src="resources/assets/js/script.js"></script>
+
+</html>
