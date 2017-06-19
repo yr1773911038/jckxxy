@@ -1,0 +1,64 @@
+.rgcontent {
+border: 1px solid #E4E4E4;
+background: #FBFBFB;
+padding: 20px 35px;
+}
+
+.regleft {
+float: left;
+width: 290px;
+margin-top: 30px;
+margin-bottom: 20px;
+margin-right: 10px;
+}
+
+.regcenter {
+float: left;
+width: 300px;
+margin-top: 30px;
+margin-bottom: 20px;
+margin-right: 10px;
+}
+
+.regright {
+float: right;
+width: 290px;
+color: #333;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
+.blink {
+width: 207px;
+height: 80px;
+text-decoration: none;
+display: block;
+background: url(../images/comnreg.jpg);
+}
+
+.jlink {
+width: 207px;
+height: 79px;
+text-decoration: none;
+display: block;
+background: url(../images/fuwujigoureg.jpg);
+}
+
+.alink {
+width: 207px;
+height: 80px;
+text-decoration: none;
+display: block;
+background: url(../images/personreg.jpg);
+}
+
+.ptcrl {
+clear: both;
+height: 1px;
+}
+
+p {
+margin: 0;
+padding: 0;
+text-align: left;
+}

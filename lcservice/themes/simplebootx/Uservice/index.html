@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$site_name}</title>
+<meta name="keywords" content="{$site_seo_keywords}" />
+<meta name="description" content="{$site_seo_description}">
+<meta name="author" content="聊城市中小企业局">
+<meta name="keywords" content="index">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<tc_include file="Public:resourcss" />
+</head>
+<body class="body-white" id="top">
+	<tc_include file="Public:centertop" />
+	<div class="am-cf admin-main">
+		<tc_include file="Public:centerleft" />
+		<!-- content start -->
+  <div class="admin-content">
+
+    <div class="am-cf am-padding">
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">企业服务</strong> / <small>服务列表</small></div>
+    </div>
+
+    <div class="am-g">
+      <div class="am-u-sm-12 am-u-md-6">
+        <div class="am-btn-toolbar">
+          <div class="am-btn-group am-btn-group-xs">
+            <a href="{:U('uservice/index/add_fbservice')}">
+	            	<button type="button" class="am-btn am-btn-default">
+	            	<span class="am-icon-plus"></span> 新增
+            	</button>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="am-u-sm-12 am-u-md-3">
+        <div class="am-form-group">
+          <select data-am-selected="{btnSize: 'sm'}">
+            	<option value="1">节能减排</option>
+	            <option value="2">技术创新</option>
+	            <option value="3">人才培训</option>
+	            <option value="4">市场开拓</option>
+	            <option value="5">管理咨询</option>
+	            <option value="6">融资担保</option>
+	            <option value="7">法律服务</option>
+	            <option value="8">信息服务</option>
+	            <option value="9">创业服务</option>
+	            <option value="10">其他服务</option>
+          </select>
+        </div>
+      </div>
+      <div class="am-u-sm-12 am-u-md-3">
+        <div class="am-input-group am-input-group-sm">
+          <input type="text" class="am-form-field">
+          <span class="am-input-group-btn">
+            <button class="am-btn am-btn-default" type="button">搜索</button>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="am-g">
+      <div class="am-u-sm-12">
+        <form class="am-form">
+          <table class="am-table am-table-striped am-table-hover table-main">
+            <thead>
+              <tr>
+                <th class="table-check"><input type="checkbox" /></th><th class="table-id">ID</th><th class="table-title">标题</th><th class="table-type">类别</th><th class="table-author am-hide-sm-only">作者</th><th class="table-date am-hide-sm-only">修改日期</th><th class="table-set">操作</th>
+              </tr>
+          </thead>
+          <tbody>
+          
+          <foreach name="lists" item="vo">
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>{$vo.id}</td>
+              <td><a href="#">{$vo.servtitle}</a></td>
+              <td>{$vo.servfabutime}</td>
+              <td class="am-hide-sm-only">{$vo.servfangshi}</td>
+              <td class="am-hide-sm-only">{$vo.servfangshi}</td>
+              <td>
+                <div class="am-btn-toolbar">
+                  <div class="am-btn-group am-btn-group-xs">
+                    <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                    <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </foreach>
+          </tbody>
+        </table>
+          <div class="am-cf">
+  共 10 条记录
+  <div class="am-fr">
+    <ul class="am-pagination">
+      <li class="am-disabled"><a href="#">«</a></li>
+      <li class="am-active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">»</a></li>
+    </ul>
+  </div>
+</div>
+          <hr />
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <!-- content end -->
+	</div>
+	<tc_include file="Public:centerfooter" />
+	<tc_include file="Public:resourjs" />
+	<tc_include file="Public:scripts" />
+</body>
+</html>

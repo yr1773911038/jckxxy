@@ -1,0 +1,42 @@
+<admintpl file="header"/>
+ 
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+    <li><a  href="{:U('Study1/Index/index')}">学生信息查询</a></li>
+      <li  class="active"><a>修改</a></li>
+  </ul>
+  <form class="form-horizontal J_ajaxForm" action="{:U('Study1/Index/save')}" method="post" id="myform">
+  <div class="table_full">
+      <table width="100%" cellpadding="2" cellspacing="2">
+        <tr>
+          <th width="180">姓名</th>
+          <td><input type="text" name="xm" value="{$vo.xm}" class="input" id="xm" style="width:100px;">  </input><span class="must_red">*</span></td>
+        </tr>
+        <tr>
+          <th width="180">年龄</th>
+          <td><input type="text" name="nl" value="{$vo.nl}" class="input" id="nl" style="width:300px;">  </input><span class="must_red">*</span></td>
+        </tr>
+       
+         <tr>
+          <th width="180">学校</th>
+          <td><input type="text" name="xx" value="{$vo.xx}" class="input" id="xx" style="width:300px;">  </input><span class="must_red">*</span></td>
+        </tr>
+          <tr>
+          <th width="180">简介</th>
+          <td><textarea name="jj" rows="2" cols="20" id="jj" class="inputtext" style="height:100px;width:500px;">{$vo.jj}</textarea></td>
+        </tr>
+ 
+      </table>
+        <input type="hidden" class="input" name="id" id="id"  value="{$vo.id}" />
+  </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+        <a class="btn" href="__URL__">返回</a>
+    </div>
+    </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div class="scroll">
+			<p>
+				<php> 
+					$lists = sp_sql_posts_paged("cid:76;order:post_date DESC;",1);
+				</php>
+				<volist name="lists['posts']" id="vo">
+					<php>
+						$smeta=json_decode($vo['smeta'], true);
+					</php>
+				<marquee>
+					{$vo['post_content']}
+				</marquee>
+				</volist>
+			</p>
+		</div>

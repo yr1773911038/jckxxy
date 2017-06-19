@@ -1,0 +1,50 @@
+<admintpl file="header"/>
+ 
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+    <li><a  href="{:U('Content/Index/index')}">内容信息列表</a></li>
+      <li  class="active"><a>新增</a></li>
+  </ul>
+  <form class="form-horizontal J_ajaxForm" action="{:U('Content/Index/insert')}" method="post" id="myform">
+  <div class="table_full">
+      <table width="100%" cellpadding="2" cellspacing="2">
+        <tr>
+          <th width="180">内容标题</th>
+          <td><input type="text" name="title" value="{$vo.title}" class="input" id="title" style="width:100px;">  </input><span class="must_red">*</span></td>
+        </tr>
+        <tr>
+          <th width="180">内容关键字</th>
+          <td><input type="text" name="keyword" value="{$vo.keyword}" class="input" id="" style="width:300px;">  </input><span class="must_red">*</span></td>
+        </tr>
+		<tr>
+          <th width="180">内容信息</th>
+          <td><textarea name="news" rows="2" cols="20" id="news" class="inputtext" style="height:100px;width:500px;">{$vo.news}</textarea></td>
+        </tr>
+        <tr>
+		  <th width="180">内容分类</th>
+          <td><input type="text" name="type" value="{$vo.type}" class="input" id="type" style="width:300px;">  </input><span class="must_red">*</span></td>
+        </tr>
+		<tr>
+		  <th width="180">内容状态</th>
+		  <td>
+          <select name="state" id="state"> 
+		  <option value ="已发布">已发布</option>
+          <option value ="未发布">未发布</option></select>
+          </td>		  
+		</tr>
+ 
+      </table>
+        <input type="hidden" class="input" name="companyname" id="companyname"  value="" />
+  </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn_submit  J_ajax_submit_btn">提交</button>
+        <a class="btn" href="__URL__">返回</a>
+    </div>
+    </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>
+         

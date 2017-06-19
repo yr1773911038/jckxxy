@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$site_name}</title>
+<meta name="keywords" content="{$site_seo_keywords}" />
+<meta name="description" content="{$site_seo_description}">
+<meta name="author" content="聊城市中小企业局">
+<meta name="keywords" content="index">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<tc_include file="Public:resourcss" />
+<style type="text/css">
+.am-selected-btn {
+    text-align: right;
+    width: 513px;
+}
+.am-btn-default {
+    color: #444;
+    border-color: #CCCCCC;
+}
+</style>
+<script type="text/javascript">
+	saveUnService = function(){
+		
+		var servtitle = $("#_servtitle").val();
+		if (servtitle == null || "" == servtitle) {
+			alert('标题不能为空!!!');
+			$("#_servtitle").focus();
+			return false;
+		}
+		
+		var servtype = $("#_servtype option:selected").val();
+		
+		if (servtype == null || "" == servtype) {
+			alert('所属不能为空!!!');
+			$("#_servtype").focus();
+			return false;
+		}
+		
+		var servneirong = $("#_servneirong").val();
+		if (servneirong == null || "" == servneirong) {
+			alert('服务内容不能为空!!!');
+			$("#_servneirong").focus();
+			return false;
+		}
+		
+		var servfangshi = $("#_servfangshi").val();
+		if (servfangshi == null || "" == servfangshi) {
+			alert('服务方式不能为空!!!');
+			$("#servfangshi").focus();
+			return false;
+		}
+		
+		var servshoufei = $("#_servshoufei").val();
+		if (servshoufei == null || "" == servshoufei) {
+			alert('收费模式不能为空!!!');
+			$("#_servshoufei").focus();
+			return false;
+		}
+		
+		var servflow = $("#_servflow").val();
+		if (servflow == null || "" == servflow) {
+			alert('收费流程不能为空!!!');
+			$("#_servflow").focus();
+			return false;
+		}
+		
+		$('#addUnServiceForm').submit();
+	}
+		
+</script>
+
+
+</head>
+<body class="body-white" id="top">
+	<tc_include file="Public:centertop" />
+	<div class="am-cf admin-main">
+		<tc_include file="Public:centerleft" />
+		<!-- content start -->
+  <div class="admin-content">
+
+  <div class="am-cf am-padding">
+    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">企业服务</strong> / <small>服务信息添加</small></div>
+  </div>
+  <div class="am-tabs am-margin" data-am-tabs>
+        <form id="addUnServiceForm" class="am-form" method="post" action="{:U('uservice/index/addUnServices')}">
+          <div class="am-g am-margin-top">
+            <div class="am-u-sm-4 am-u-md-2 am-text-right">
+              标题<font color="red">*</font>
+            </div>
+            <div class="am-u-sm-8 am-u-md-4">
+              <input type="text" id="_servtitle" name="servtitle" class="am-input-sm">
+            </div>
+            <div class="am-hide-sm-only am-u-md-6"></div>
+          </div>
+        
+          
+          <div class="am-g am-margin-top">
+            <div class="am-u-sm-4 am-u-md-2 am-text-right">
+              所属分类<font color="red">*</font>
+            </div>
+            <div class="am-u-sm-8 am-u-md-5">
+              <select id="_servtype" name="servtype" data-am-selected="{btnSize: 'sm'}">
+	            <option value="1">节能减排</option>
+	            <option value="2">技术创新</option>
+	            <option value="3">人才培训</option>
+	            <option value="4">市场开拓</option>
+	            <option value="5">管理咨询</option>
+	            <option value="6">融资担保</option>
+	            <option value="7">法律服务</option>
+	            <option value="8">信息服务</option>
+	            <option value="9">创业服务</option>
+	            <option value="10">其他服务</option>
+	          </select>
+            </div>
+            <div class="am-hide-sm-only am-u-md-6"></div>
+          </div>
+
+
+          <div class="am-g am-margin-top-sm">
+            <div class="am-u-sm-8 am-u-md-2 am-text-right admin-form-text">
+              服务内容<font color="red">*</font>
+            </div>
+            <div class="am-u-sm-8 am-u-md-5" style="float:left;">
+              <textarea rows="10" id="_servneirong" name="servneirong"></textarea>
+            </div>
+            <div class="am-hide-sm-only am-u-md-6"></div>
+          </div>
+          
+       
+          
+		<div class="am-g am-margin-top">
+            <div class="am-u-sm-4 am-u-md-2 am-text-right">
+              服务方式<font color="red">*</font>
+            </div>
+            <div class="am-u-sm-8 am-u-md-4">
+              <input type="text" id="_servfangshi" name="servfangshi" class="am-input-sm">
+            </div>
+            <div class="am-hide-sm-only am-u-md-6"></div>
+          </div>
+          
+        
+          
+          <div class="am-g am-margin-top">
+            <div class="am-u-sm-4 am-u-md-2 am-text-right">
+              收费模式<font color="red">*</font>
+            </div>
+            <div class="am-u-sm-8 am-u-md-4">
+              <input type="text" id="_servshoufei" name="servshoufei" class="am-input-sm">
+            </div>
+            <div class="am-hide-sm-only am-u-md-6"></div>
+          </div>
+          
+         
+          
+          <div class="am-g am-margin-top-sm">
+            <div class="am-u-sm-8 am-u-md-2 am-text-right admin-form-text">
+              服务流程<font color="red">*</font>
+            </div>
+            <div class="am-u-sm-8 am-u-md-5" style="float:left;">
+              <textarea  rows="10" id="_servflow" name="servflow"></textarea>
+            </div>
+            <div class="am-hide-sm-only am-u-md-6"></div>
+          </div>
+          <input type="text" id="_servid" name="id" class="am-input-sm">
+        </form>
+  </div>
+
+  <div class="am-margin">
+    <button type="button" class="am-btn am-btn-primary am-btn-xs" onclick="saveUnService();" >提交保存</button>
+  </div>
+</div>
+
+
+
+
+<!-- content end -->
+	</div>
+	<tc_include file="Public:centerfooter" />
+	<tc_include file="Public:resourjs" />
+	<tc_include file="Public:scripts" />
+</body>
+</html>

@@ -1,0 +1,57 @@
+{:hook('body_start')}
+<div class="top" id="top">
+  <div class="container" id="summary-container">
+   <div class="row" style="margin-top: 20px; margin-bottom: 10px;">
+    <div class="col-sm-8">
+      <img src="__TMPL__Public/images/img/fl2.png" class="img-responsive abc" alt="Responsive image">
+    </div>
+
+     <div class="col-sm-4">
+     <img src="__TMPL__Public/images/img/fl22.gif" class="img-responsive abc" alt="Responsive image">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-danger">登录</button>
+        <button type="button" class="btn btn-danger">注册</button>
+     </div>
+   </div>
+  </div> <!--container-->
+  <div class="manu">
+    <nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0px;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand visible-xs" href="#">法律服务平台</a>
+            </div> <!--navbar-header-->
+          <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+              <?php
+        $effected_id="";
+        $filetpl="<a href='\$href' target='\$target'>\$label</a>";
+        $foldertpl="<a href='\$href' target='\$target' class='dropdown-toggle' data-toggle='dropdown'>\$label <b class='caret'></b></a>";
+        $ul_class="dropdown-menu" ;
+        $li_class="" ;
+        $style="nav navbar-nav li";
+        $showlevel=6;
+        $dropdown='dropdown';
+        echo sp_get_menu("6",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
+    ?>
+              <ul class="nav navbar-nav li" >
+              </ul>
+          </div>
+      </div>
+    </nav><!--nav结束-->
+  </div><!--manu-->
+<div class="weather" style="background:#F7F7F6 ">
+  <div class="container">
+      <tc_include file="Public:weather" />
+       <div class="col-md-offset-8" style="width: 80%; padding-left: 10%;">
+							<form action="{:leuu('list/index',array('id'=>23,'role'=>'parent'))}" method="post">
+					<div class=" col-md-5 input-group" style="margin-top:10px;">
+							<input type="text" class="form-control" name="find"  placeholder="search for">
+						 	<span class="input-group-btn">
+					        <button type="submit" class="btn btn-default">搜索</button>
+					      </span>
+						</div>
+						    </form>
+					</div>
+      </div>
+  </div>
+ </div>

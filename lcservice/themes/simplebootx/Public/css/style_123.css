@@ -1,0 +1,537 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 0;
+	text-decoration: none;
+	font-size: 13px;
+	font-family:"微软雅黑";
+}
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+/*顶部图片*/
+.top {
+	width: 100%;
+	background: #EEEEEE;
+	padding-bottom: 20px;
+}
+
+#sidebar .change {
+	padding-bottom: 0px;
+}
+
+@media screen and (max-width:980px) {
+	/*通知公告*/
+	#sidebar .change li {
+		white-space: nowrap;
+		width: 100%;
+		overflow: hidden;
+		line-height: 30px;
+	}
+	.server .list2 .tab-content .tab-pane ul li {
+		white-space: nowrap;
+		width: 100%;
+		overflow: hidden;
+		line-height: 25px;
+	}
+}
+
+@media screen and (max-width:820px) {}
+
+@media screen and (max-width:720px) {
+	.navbar .navbar-collapse .nav li {
+		width: 40%;
+		text-align: left;
+	}
+	/*底部*/
+	.navbar .navbar-collapse .nav li {
+		width: 100%;
+		text-align: left;
+	}
+	/*通知公告*/
+	#sidebar .change li {
+		white-space: nowrap;
+		width: 100%;
+		overflow: hidden;
+		line-height: 30px;
+	}
+	.server .list2 .tab-content .tab-pane ul li {
+		white-space: nowrap;
+		width: 100%;
+		overflow: hidden;
+		line-height: 25px;
+	}
+}
+
+@media screen and (max-width:1000px) {
+	/*最底部内容*/
+	.navbar-default .navbar-collapse {
+		display: block;
+	}
+}
+
+@media screen and (min-width:970px) {
+	.navbar .navbar-collapse .nav li {
+		width: 10%;
+	}
+	/*通知公告*/
+	.huicui .nav-tabs li {
+		width: 10%;
+	}
+	.sev-fuwu .nav-tabs li {
+		width: 10%;
+	}
+	#sidebar .change li {
+		white-space: nowrap;
+		width: 24em;
+		overflow: hidden;
+		line-height: 30px;
+	}
+	/*最新加入企业*/
+	.server .list2 .tab-content .tab-pane ul li {
+		white-space: nowrap;
+		width: 20em;
+		overflow: hidden;
+		line-height: 25px;
+	}
+	.navbar .navbar-collapse .nav li:hover {
+		background: #FF6600;
+	}
+}
+
+/*nav条*/
+
+.navbar {
+	background: #CC0000;
+	padding-top: 1px;
+	clear: both;
+	overflow: hidden;
+}
+
+.navbar .navbar-header a,
+.navbar .nav li a {
+	color: white;
+	font-size: 16px;
+}
+
+.navbar .navbar-collapse .nav {
+	width: 100%;
+	text-align: center;
+}
+
+.navbar .navbar-collapse .nav li a:hover {
+	color: white;
+	font-size: 18px;
+}
+
+/*滚动条*/
+
+.scroll {
+	background: #E0E0E0;
+	line-height: 25px;
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+
+/*轮播*/
+
+.carousel {
+	width: 100%;
+}
+
+.carousel-inner .item img {
+	width: 100%;
+	height: 310px;
+}
+
+
+/*右上侧table切换*/
+
+#sidebar .nav-tabs li.active {
+	background: #eee;
+}
+
+
+/*#sidebar  .change {padding-top:15px;}*/
+
+#sidebar .change li {
+	line-height: 25px;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	padding-left: 20px;
+	background: url(../images/2016-01-14_132601.png) 0 8px no-repeat;
+}
+
+#sidebar .nav li {
+	width: 25%;
+	border: solid 1px #CCCCCC;
+}
+
+#sidebar .nav li a:hover {
+	color: #CC0000;
+}
+
+#sidebar ul li a {
+	color: black;
+}
+
+#sidebar ul li a:hover {
+	text-decoration: none;
+}
+
+
+/*服务*/
+
+.server {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.server .list .t1 {
+	width: 100%;
+}
+
+.server h4 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.server .list .row1 button,
+.server .list .row2 button,
+.server .list .row3 button {
+	width: 45%;
+	line-height: 25px;
+	margin-left: 10px;
+}
+
+.server .list .row2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+/*最新加入的企业*/
+/*
+.list .news li a{color:black;}
+.list .news li a:hover{color:rgb(204,0,0);text-decoration:none;}*/
+
+.server .list2 {}
+
+.server .list2 #myTab22 {
+	margin-top: 10px;
+}
+
+.server .list2 #myTab22 li {
+	width: 49%;
+	font-size: 16px;
+}
+
+.server .list2 .tab-content {
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.server .list2 .tab-content .tab-pane ul li {
+	text-indent: 0.1em;
+	line-height: 22px;
+	font-size: 15px;
+	padding-left: 20px;
+	background: url(../images/2016-01-14_132601.png) 0 8px no-repeat;
+}
+/*.server .list2 .tab-content .tab-pane ul li a{text-decoration: none;color:black;}
+.server .list2 .tab-content .tab-pane ul li a:hover{text-decoration: none;}*/
+
+
+/*登陆部分*/
+
+.login {
+	border: solid 1px #CCCCCC;
+	width: 100%;
+	height: 150px;
+}
+
+.login .nav li {
+	width: 25%;
+	border: solid 1px #CCCCCC;
+}
+
+.login .nav li a {
+	color: black;
+}
+
+.login .log_con {
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.login .nav-tabs {
+	border-bottom: solid 1px white;
+}
+
+
+/**服务荟萃*/
+
+.huicui .nav-tabs {
+	border-bottom: solid 1px white;
+}
+
+.sev-huicui {
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.sev-huicui li {
+	border: solid 1px #CCCCCC;
+}
+
+.sev-huicui li a {
+	color: black;
+}
+
+.huicui h4 {
+	margin-bottom: 20px;
+}
+
+.hc-1 .col-md-6 h4 a {
+	color: black;
+}
+
+.hc-1 {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.hc-1 .col-md-6 h4 a:hover {
+	text-decoration: none;
+}
+
+
+/*融资服务*/
+
+.middle {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.rongzi_nav {
+	height: 50px;
+}
+
+.rongzi_nav .rz_list {
+	width: 20%;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: solid 1px #CCC;
+}
+
+.rongzi_nav .rz_list:hover {
+	background: #C9302C;
+}
+
+.rongzi_nav .rz_list a {
+	color: black;
+}
+
+.rongzi_nav .rz_list a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+@media all and (max-width:400px) {
+	.rz .panel .panel-heading {
+		height: 90px;
+	}
+}
+
+@media all and (max-width:340px) {
+	.rongzi_nav {
+		height: 70px;
+	}
+}
+
+.rz {
+	margin-top: 20px;
+}
+
+
+/*
+.rz .nav{margin-top:0px; background: #F5F5F5;height:30px;}
+.rz .nav a:hover{background:#D9534F ;color: black;}
+.rz .nav a{color: black;}
+*/
+
+.rz_img {
+	clear: both;
+	margin-top: 20px;
+}
+
+.rz_img tr td a {
+	color: black;
+}
+.rz_img tr td a:hover {
+	text-decoration: none;
+}
+.rz .panel .panel-heading {
+	padding-top: -20px;
+}
+.rz-ul {
+	margin-top: -10px;
+}
+.rz-ul li a {
+	color: black;
+}
+
+/*.rz-ul li:hover{background: gray; }*/
+
+/*
+.sev-list{background: pink;}
+.sev-list li{background-color:#E9E9E9;}
+.sev-list li{float:left;width:20%;border:solid 1px #CCCCCC;height:40px;padding-top:10px;}
+.sev-list li:hover{background:#CC0000;}
+.sev-list li a:hover{color:white;}
+.sev-list li a{color:black;text-decoration:none;}
+*/
+/*优秀服务商推荐**/
+
+.sev-man {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-bottom: solid 1px white;
+}
+
+.sev-man li {
+	border: solid 1px #CCCCCC;
+}
+
+.sev-man li a {
+	color: black;
+}
+
+.sev-fuwu h4 {
+	margin-bottom: 20px;
+}
+
+/*底部导航*/
+.daohang h4{
+	padding-left: 30px;
+}
+.daohang img {
+	width: 100%;
+}
+.daohang .row_xialas {
+	margin-top: 10px;
+	border: solid 1px #EEEEEE;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+/*小于769px*/
+
+@media all and (max-width:768px) {
+	.navbar .navbar-collapse .nav li {
+		width: 40%;
+		text-align: left;
+	}
+	.navbar .container-fluid .navbar-collapse ul li {
+		width: 60%;
+		text-align: left;
+	}
+	#sidebar ul {
+		margin-top: 10px;
+	}
+	.rz .panel-heading {
+		height: 80px;
+	}
+}
+
+footer {
+	background: #EEEEEE;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+}
+
+
+/*小于970*/
+
+@media all and (max-width:970px) {
+	.navbar1 .nav li {
+		text-align: center;
+	}
+	#sidebar .nav {
+		margin-top: 20px;
+	}
+	.dao_pic img {
+		width:
+	}
+	.server .list .row3 button {
+		width: 92%;
+	}
+}
+/*大于970*/
+
+@media all and (min-width:970px) {
+	.navbar .navbar-collapse .nav li {
+		width: 10%;
+		text-align: center;
+	}
+	.navbar1 .nav .f1 {
+		background: url(../images/2016-01-16_141513.png) left no-repeat;
+		padding-left: 40px;
+		/*margin-top: -30px;*/
+	}
+	.navbar1 .nav .f2,
+	.navbar1 .nav .f3 {
+		background: url(../images/2016-01-16_141601.png) left repeat-y;
+	}
+	.rz .panel-default {
+		height: 240px;
+	}
+	.rz .panel-heading {
+		height: 50px;
+	}
+	.server .list .row3 button {
+		width: 95%;
+	}
+}
+
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+
+
+/*.container{border:solid 1px black;}*/
+
+
+/*.list{border:solid 1px red;}*/
+
+.brand .img-responsive {
+	display: inline;
+}
+
+.pull-left {
+	float: left !important;
+	margin-left: 15%;
+}
+
+.pull-right {
+	float: right !important;
+	margin-right: 15%;
+}
+
+
+/*.tabler tr td a{font-size:18px;}*/
+/*style="margin-bottom:20px;"*/

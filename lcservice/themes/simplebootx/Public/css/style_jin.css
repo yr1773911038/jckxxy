@@ -1,0 +1,91 @@
+
+
+html {
+  font-family:"����";
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin:0;
+  font-family:"΢���ź�";
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*--------------�Ӳ˵�������ƽ̨--------------*/
+.navbtn img{margin-top:6px;margin-left:5px;}
+.submenu_ckpt div{text-align:left;}
+.submenu_ckpt{width:700px;height:485px;margin-top:0px;margin-left:5px;border:2px solid #910001;position:absolute;background:#ffffff;z-index:100;}
+.submenu_ckpt .content{margin-left:15px;margin-top:15px;}
+.submenu_ckpt .content .links_left{letter-spacing:1px;line-height:24px;}
+.submenu_ckpt .content .links_left a{text-align:left;font-size:12px;font-family:"����";font-weight:normal;color:#444444;margin-left:10px;margin-right:8px;margin-bottom:8px;word-wrap:break-word;word-break:break-all;display:inline;}
+.submenu_ckpt .content .links_left a:visited{color:#444444;}
+.submenu_ckpt .content .links_left a:hover{color:#0285E2;background:none;text-decoration:underline;}
+.submenu_ckpt .content .links_right{letter-spacing:1px;line-height:24px;}
+.submenu_ckpt .content .links_right a{text-align:left;font-size:12px;font-family:"����";font-weight:normal;color:#444444;margin-left:10px;margin-right:10px;margin-bottom:8px;word-wrap:break-word;word-break:break-all;display:inline;}
+.submenu_ckpt .content .links_right a:visited{color:#444444;}
+.submenu_ckpt .content .links_right a:hover{color:#0285E2;background:none;text-decoration:underline;}
+.box_left{width:265px;height:160px;overflow:hidden;float:left;border-right:1px solid #910001;}
+.box_bottom{width:700px;height:320px;overflow:hidden;float:left;margin:0px 0px 0px 0px;border-top:1px solid #910001;}
+.content{margin-left:15px;margin-top:5px;}
+.titleline{letter-spacing:1px;line-height:36px;}
+.titleline a{font-size:18px;}
+.titleline  a:hover{color:#0285E2;background:none;text-decoration:underline;}
+.links_left{letter-spacing:1px;line-height:24px;}
+.box_right{width:420px;height:160px;overflow:hidden;	float:left;}
+.links_right{letter-spacing:1px;line-height:14px;}
+.nav_spline{width:2px;height:20px;margin-left:2px;margin-right:2px;overflow:hidden;background:url(images/headtop/navbar_spline.png);}
+.float_left {float:left;}
+.navbar1 li{text-align:left;float:left;}
+.ipull {height: 20px;width: 545px;}
+
+
+
+
+li{list-style-type:none;}
+/*.row{width:1200px;height:20px;background:#EEE;}*/
+.row  .col-md-4 .smallbtn{height:20px;line height:20px;vertical-align:middle;text-align:center;color:#FFF !important;float:right;margin-top:6px;margin-right:10px;border:medium none;cursor;pointer;padding-left:10px !important;padding-right:10px !important;overflow:hidden;background: transparent url("images/common/redline.png") repeat-x scroll 0% 0%;}
+.row  .row .col-md-10 col-md-offset-1 col-sm-9 col-sm-offset-2{width:1000;height:110;margin-left:190px;}
+
+
+
+/*����*/
+.find{margin-top:3px;width:150px;padding-left:10px;background:#fff;border-radius:20px 0 0 20px;height:25px;border:1px solid #d6d6d6;margin-right:0;border-right:0;}
+  find:focus{}
+  .find_btn{width:65px;font-family:'����';border-radius:0 20px 20px 0;height:25px;border:1px solid #d6d6d6;margin-left:0;border-left:0;
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #fff, #d6d6d6);
+  /* Safari 4-5, Chrome 1-9 */
+  /* -webkit-gradient(,  [, ]?,  [, ]? [, ]*) */
+  background: -webkit-gradient(linear,top,from(#fff),to(#d6d6d6));
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #fff, #d6d6d6);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #fff, #d6d6d6);}
+
+
+
+	*{margin:0;padding:0; list-style:none; border:0;text-decoration:none;}
+			/*顶部图片*/
+			.top{width:100%; background:#EEEEEE;padding-bottom:20px;}
+			a{color: black;}
+			a:hover{text-decoration: none;}
+			/*nav条*/
+			.navbar{background:#CC0000; padding-top: 1px;clear: both; overflow: hidden;}
+			.navbar .navbar-header a,.navbar .nav li a{color:white;font-size:16px;}
+			.navbar .navbar-collapse .nav {width:100%; text-align:center;}
+			.navbar .navbar-collapse .nav li a:hover{color:white;font-size:18px;}	
+			.navbar .navbar-collapse .nav li{width:10%;}
+			.yr_news{white-space:nowrap; width:20em; overflow:hidden;line-height: 30px;}
+			.yr_ul{margin-top: 20px;}
+
+
+
+
+
+
+
+
+

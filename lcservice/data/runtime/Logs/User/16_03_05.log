@@ -1,0 +1,62 @@
+[ 2016-03-05T08:50:40+08:00 ] ::1 /lcservice/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: url E:\xampp\htdocs\lcservice\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-03-05T08:50:47+08:00 ] ::1 /lcservice/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_unit_service` [ RunTime:0.0400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_unit_service` WHERE ( companyid=2 AND gqlx='1' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_unit_service` WHERE ( companyid=2 AND gqlx='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT cmf_unit_service.companyid AS companyid,cmf_users.enterprise AS enterprise,cmf_unit_service.servtitle AS servtitle,cmf_unit_service.servtype AS servtype,cmf_unit_service.servstarttime AS starttime FROM `cmf_unit_service` Inner JOIN cmf_users ON cmf_users.id=cmf_unit_service.companyid   WHERE ( cmf_unit_service.gqlx  = '2'  ) ORDER BY `servstarttime` DESC LIMIT 5   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: url E:\xampp\htdocs\lcservice\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-03-05T08:50:50+08:00 ] ::1 /lcservice/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_unit_service` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_unit_service` WHERE ( companyid=2 AND gqlx='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_unit_service` WHERE ( companyid=2 AND gqlx='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT cmf_unit_service.companyid AS companyid,cmf_users.enterprise AS enterprise,cmf_unit_service.servtitle AS servtitle,cmf_unit_service.servtype AS servtype,cmf_unit_service.servstarttime AS starttime FROM `cmf_unit_service` Inner JOIN cmf_users ON cmf_users.id=cmf_unit_service.companyid   WHERE ( cmf_unit_service.gqlx  = '2'  ) ORDER BY `servstarttime` DESC LIMIT 5   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: url E:\xampp\htdocs\lcservice\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-03-05T08:50:55+08:00 ] ::1 /lcservice/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_unit_service` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_unit_service` WHERE ( companyid=2 AND gqlx='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_unit_service` WHERE ( companyid=2 AND gqlx='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT cmf_unit_service.companyid AS companyid,cmf_users.enterprise AS enterprise,cmf_unit_service.servtitle AS servtitle,cmf_unit_service.servtype AS servtype,cmf_unit_service.servstarttime AS starttime FROM `cmf_unit_service` Inner JOIN cmf_users ON cmf_users.id=cmf_unit_service.companyid   WHERE ( cmf_unit_service.gqlx  = '2'  ) ORDER BY `servstarttime` DESC LIMIT 5   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: url E:\xampp\htdocs\lcservice\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-03-05T14:32:01+08:00 ] ::1 /lcservice/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cmf_unit_service` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_unit_service` WHERE ( companyid=2 AND gqlx='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_unit_service` WHERE ( companyid=2 AND gqlx='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT cmf_unit_service.companyid AS companyid,cmf_users.enterprise AS enterprise,cmf_unit_service.servtitle AS servtitle,cmf_unit_service.servtype AS servtype,cmf_unit_service.servstarttime AS starttime FROM `cmf_unit_service` Inner JOIN cmf_users ON cmf_users.id=cmf_unit_service.companyid   WHERE ( cmf_unit_service.gqlx  = '2'  ) ORDER BY `servstarttime` DESC LIMIT 5   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: url E:\xampp\htdocs\lcservice\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-03-05T14:38:19+08:00 ] ::1 /lcservice/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cmf_unit_service` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_unit_service` WHERE ( companyid=2 AND gqlx='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_unit_service` WHERE ( companyid=2 AND gqlx='2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT cmf_unit_service.companyid AS companyid,cmf_users.enterprise AS enterprise,cmf_unit_service.servtitle AS servtitle,cmf_unit_service.servtype AS servtype,cmf_unit_service.servstarttime AS starttime FROM `cmf_unit_service` Inner JOIN cmf_users ON cmf_users.id=cmf_unit_service.companyid   WHERE ( cmf_unit_service.gqlx  = '2'  ) ORDER BY `servstarttime` DESC LIMIT 5   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: url E:\xampp\htdocs\lcservice\application\Common\Controller\AppframeController.class.php 第 24 行.
+

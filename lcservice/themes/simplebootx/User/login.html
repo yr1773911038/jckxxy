@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$site_name}</title>
+<meta name="keywords" content="{$site_seo_keywords}" />
+<meta name="description" content="{$site_seo_description}">
+<meta name="keywords" content="index">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" href="__TMPL__Public/css/style.css">
+<link rel="stylesheet" href="__TMPL__Public/css/userlogin.css">
+<tc_include file="Public:resourcss" />
+
+<style>
+    .header {
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 200%;
+      color: #333;
+      margin-top: 30px;
+    }
+    .header p {
+      font-size: 14px;
+    }
+    
+  </style>
+</head>
+
+<body class="body-white2" id="jn">
+	<div class="wraper">
+        <div class="header"><img alt="" src="__TMPL__Public/images/right_bg.png"></div>
+        
+       <div class="content">
+        <!--<div class="left_bg">
+         <div class="title_font">登录说明</div>
+         <div>
+          <p> 个人用户请勾选“个人登录”；企业与服务机构请填写“企业域”；</p>
+          <p> 企业域是一个企业的唯一标识，一个企业域下可以创建多个用户，但是一个用户只能属于一个企业域；</p>
+         </div>
+        </div>
+         -->
+         <form class="form-horizontal js-ajax-forms" id="user_login_form" action="{:U('user/login/dologin')}" method="post">
+         <div class="right_bg">
+            <div class="ibox">
+            </div>
+            <div class="yhm">
+            <input type="text" value="" id="input_username" name="username" maxlength="30" autocomplete="off"
+             onkeydown="if(event.keyCode==13) $('#password').focus()"/></div>
+            <div class="mima">
+            <input type="password" id="input_password" name="password" maxlength="30" onkeydown="if(event.keyCode==13) FormSubmit()"/></div>
+            <div class="iButton">
+                <ul>
+                    <li><a href="javascript:void(0)"  onclick="FormSubmit()" id="btn_submit" hidefocus="true" >登录</a></li>
+                    <li><a class="reg" href="{:U('User/Register/index')}" id="btn_reset" hidefocus="true" >注册</a></li>
+                </ul>
+            </div>
+            <div class="ibox">
+                <span class="fb"><a href="./">返回首页</a></span>
+            </div>
+        </div>
+        </form>
+        	<!-- 用户功能提示开始 -->
+        	<div  class="permission">
+        		<div class="title">用户权限：</div>
+        		<ul>
+	        		<li>
+		        		<div>
+							<div class="ft">服务机构：</div>
+							<div class="ml5"><p>发布服务项目</p><p>回应服务需求</p></div>
+		        		</div>
+	        		</li>
+	        		<li>
+		        		<div>
+							<div class="ft">企业：</div>
+							<div class="ml5"><p>发布服务需求</p><p>申请服务项目</p></div>
+		        		</div>
+	        		</li>
+	        		<li style="margin:0;">
+		        		<div>
+							<div class="ft">一般用户：</div>
+							<div class="ml5"><p>发布服务需求</p><p>申请服务项目</p></div>
+		        		</div>
+	        		</li>        		        		
+				</ul>
+        	</div>
+        	<!-- 用户功能提示结束 -->
+        </div>
+        <div class="footer">
+            <p>主办单位：聊城市中小企业局 指导单位：中华人民共和国工业和信息化部中小企业司 承办单位:聊城市中小企业信息中心 鲁ICP备16000887号</p>
+        </div>
+    </div>
+	<tc_include file="Public:scripts" />
+	<script language="javascript">
+	FormSubmit = function (){
+			$('#user_login_form').submit();
+		}
+	</script>
+</body>
+</html>

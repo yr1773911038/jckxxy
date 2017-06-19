@@ -1,0 +1,24 @@
+   {:hook('body_start')}
+   <nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0px;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand visible-xs" href="#">法律服务平台</a>
+            </div> <!--navbar-header-->
+          <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+              <?php
+        $effected_id="";
+        $filetpl="<a href='\$href' target='\$target'>\$label</a>";
+        $foldertpl="<a href='\$href' target='\$target' class='dropdown-toggle' data-toggle='dropdown'>\$label <b class='caret'></b></a>";
+        $ul_class="dropdown-menu" ;
+        $li_class="" ;
+        $style="nav navbar-nav li";
+        $showlevel=6;
+        $dropdown='dropdown';
+        echo sp_get_menu("main",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
+    ?>
+              <ul class="nav navbar-nav li" >
+              </ul>
+          </div>
+      </div>
+    </nav><!--nav结束-->

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<title>服务公告</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/bootstrap.css">
+<script src="js/jquery-2.1.1/jquery.js" type="__TMPL__Public/text/javascript"></script>
+<script src="js/bootstrap.min.js" type="__TMPL__Public/text/javascript"></script>
+<style>
+	.navbar{border:0;border-radius:0;
+		    background-color: #980906;
+			background-image: linear-gradient(-45deg,#920706 16%, #aa0b07 17%,#aa0b07 33%, #920706 34%,#920706 66%, #aa0b07 67%,#aa0b07 83%, #920706 84%);
+			background-repeat:repeat;
+			background-size:7px 7px;
+			background: -moz-repeating-linear-gradient(top left -45deg, #920706, #920706 3px, #aa0b07 5px, #aa0b07 3px);
+	}
+	.navbar .top .row{background:#fff;}
+	.logns{margin-right:6px}
+	.navbar-inverse{margin-bottom:0;}
+	.logn{border-radius:2px;background:#D44E42;border:1px solid #C08C8C;color:#fff;width:48px;height:19px;font-size:13px;padding:0;float:right;margin:2px;}
+	.logn:hover{color:#8A5B5B;background:#E7A7A7;border-color:#E4DBDB;}
+	.navigations{padding:0;height:0;}
+	.navigations div{margin:0;background:#a90201;}
+	.navigation{margin-right:12px;}
+	.navigation li a{font-weight:bold;font-size: 17px;font-family: 仿宋;height: 31px;border-right:1px solid #fff;padding:1px;padding-top: 4px;margin-bottom:0;border-radius:0;color:#fff;
+	background-color: #980906;
+	background-image: linear-gradient(-45deg,#920706 16%, #aa0b07 17%,#aa0b07 33%, #920706 34%,#920706 66%, #aa0b07 67%,#aa0b07 83%, #920706 84%);
+	background-repeat:repeat;
+	background-size:7px 7px;
+	background: -moz-repeating-linear-gradient(top left -45deg, #920706, #920706 3px, #aa0b07 5px, #aa0b07 3px);}
+	.navigation li a:hover{font-size: 17px;color:#000;padding-bottom:4px;
+	background-color: #eee;
+	background-image: linear-gradient(-45deg,#eee 16%, #fff 17%,#fff 33%, #eee 34%,#eee 66%, #fff 67%,#fff 83%, #eee 84%);
+	background-repeat:repeat;
+	background-size:7px 7px;
+	background: -moz-repeating-linear-gradient(top left -45deg, #eee, #eee 3px, #fff 5px, #fff 3px);
+	}
+	.navigation li a:focus{color:#000;}
+	.navbars{height:0;}
+	.navbars div{
+	height:30px;
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #fff, #f6f5f4);
+	/* Safari 4-5, Chrome 1-9 */
+	/* -webkit-gradient(,  [, ]?,  [, ]? [, ]*) */
+	background: -webkit-gradient(linear,top,from(#fff),to(#f6f5f4));
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #fff, #f6f5f4);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #fff, #f6f5f4);}
+	.navbars div a{color:#000;}
+	.navbars div a:hover{color:red;}
+	.weather{font-size:12px;padding-top:7px;}
+	.warning{color:#cc0000}
+	.success{color:#009944}
+	.navbar-brand{height:43px;}
+	.navbar-inverse .navbar-collapse{border-color: #8F0C0C}
+	.navbar-inverse .navbar-toggle{border-color:#FFF;height:27px;padding:5px;}
+	.navbar-inverse .navbar-toggle:hover{background-color:#C80606;}
+	.navbar-inverse .navbar-toggle:focus{background-color:#C80606;}
+	.navbar-inverse .navbar-brand{padding-top:11px;color:#FFF;}
+	.finds{font-size:12px;}
+	.find{margin-top:2px;width:150px;padding-left:9px;background:#fff;border-radius:20px 0 0 20px;height:25px;border:1px solid #d6d6d6;margin-right:0;border-right:0;}
+	.find:focus{}
+	.find_btn{width:65px;font-family:'黑体';border-radius:0 20px 20px 0;height:25px;border:1px solid #d6d6d6;margin-left:0;border-left:0;
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #fff, #d6d6d6);
+	/* Safari 4-5, Chrome 1-9 */
+	/* -webkit-gradient(,  [, ]?,  [, ]? [, ]*) */
+	background: -webkit-gradient(linear,top,from(#fff),to(#d6d6d6));
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #fff, #d6d6d6);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #fff, #d6d6d6);}
+	.tel{margin-left:17px;float:right;padding-top:7px;}
+	.site{margin-top:8px;margin-bottom:8px;border-bottom:3px solid #a90201}
+	.site a:hover{color:red;text-decoration:none;}
+	.site span{font-family:楷体}
+	.site span span a{font-family:楷体；color:#000;}
+	.contents{border-bottom:3px solid #a90201;margin-bottom:2px;}
+	.content ul li{font-size:15px;margin-top:2px;backgroundPosition:1px 0;list-style: none;background:url(__TMPL__Public/images/d.png) no-repeat;text-indent:10px;}
+	.content ul li a{font-family:"微软雅黑";font-size:14px;color:#000;}
+	.content ul li span{float:right;color:#757171;font-family:"kaiti";width: 86px;
+overflow: hidden;white-space: nowrap;}
+	.content a:hover{color:red;text-decoration:none;}
+	.end{
+	    background-color: #980906;
+		background-image: linear-gradient(-45deg,#920706 16%, #aa0b07 17%,#aa0b07 33%, #920706 34%,#920706 66%, #aa0b07 67%,#aa0b07 83%, #920706 84%);
+		background-repeat:repeat;
+		background-size:7px 7px;
+		background: -moz-repeating-linear-gradient(top left -45deg, #920706, #920706 3px, #aa0b07 5px, #aa0b07 3px);
+	}
+	.end div div{color:#fff;}
+	.alt{color:#000;padding:0 10px;border:0;}
+	.pagination > li > span:focus{background-color: #fff;color:#000;}
+	.pagination > li > span:hover{background-color: #fff;color:#000;}
+	.pagination > li > span{color:#000;padding: 0 10px;border:0;font-family:"fangsong"}
+	.pagination > li > a:focus{background-color: #fff;color:red;}
+	.pagination > li > a:hover{background-color: #fff;color:red;}
+	.pagination > li > a{color:#000;padding: 0 10px;border:0;}
+	.pagination > li:first-child > a{border-radius:0;}
+	.pagination > li:last-child > a{border-radius:0;}
+	.end div div:hover{color:#000;
+	background-color: #eee;
+	background-image: linear-gradient(-45deg,#eee 16%, #fff 17%,#fff 33%, #eee 34%,#eee 66%, #fff 67%,#fff 83%, #eee 84%);
+	background-repeat:repeat;
+	background-size:7px 7px;
+	background: -moz-repeating-linear-gradient(top left -45deg, #eee, #eee 3px, #fff 5px, #fff 3px);
+	}
+	.ends{background:#f3f3f3;font-size:12px;color:#646464;padding-top:6px;padding-bottom:6px;}
+	.page{margin:0;}
+	.visits{font-size:12px;padding:6px;}
+	.visits div strong{color:red;}
+	.shows{display:none;}
+@media screen and (min-width:1200px){
+	.home{display:none;}
+}
+@media screen and (max-width: 1200px) and (min-width:992px){
+	.home{display:none;}
+}
+@media screen and (max-width: 992px) and (min-width:768px){
+	.tel{display:none;}
+	.home{display:none;}
+}
+@media screen and (max-width:768px){
+	.weather{font-size:10px;padding-top:10px;padding-left:6px;}
+	.navigation li a{border-right:0;}
+	.tel{display:none;}
+	.sites{padding:0;}
+	.sites ul{padding:0;}
+}
+@media screen and (max-width:720px){
+	.content ul li span{display:none;}
+}
+@media screen and (max-width:361px){
+	.noshows{display:none;}
+	.shows{display:block;}
+	.few_page{color:#000;padding: 0 10px;border:0;font-family:"fangsong"}
+}
+@media screen and (max-width:333px){
+	.week{display:none;}
+	.navigation li a{border-right:0;}
+	.tel{display:none;}
+	.finds{padding:0;}
+	.find{width:80px;}
+	.site{font-size:10px;padding-left:8px;}
+	.end div div{color:#fff;font-size:10px;}
+	.ends{font-size:8px;}
+}
+</style>
+</head>
+<body>
+<!-- top -->
+<div class="navbar navbar-inverse">
+<div class="top container col-xs-12 col-lg-12 col-sm-12 col-md-12">
+    <div class="row server">
+        <div class="col-md-offset-1 col-sm-offset-1 col-sm-7 col-md-6">
+			<img src="__TMPL__Public/images/flfwpt.png" class="img-responsive" alt="法律服务平台">
+		</div>
+<!-- 注册 -->
+        <div class="col-md-offset-1 col-xs-12 col-sm-3 col-md-3 list">
+           <img src="__TMPL__Public/images/zxrx.png" style="font-size:12px;" class="hidden-xs img-responsive" alt="咨询热线">
+		   <div class="row row1 pull-right logns">
+				<button type="button" class="btn btn-default logn" >&nbsp;&nbsp;注册&nbsp;&nbsp;</button>
+				<button type="button" class="btn btn-default logn" >&nbsp;&nbsp;登陆&nbsp;&nbsp;</button>
+			</div>
+        </div>
+    </div>
+</div>
+
+    <div class="navbar-header">
+      <!-- 自适应隐藏导航展开按钮 -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+      </button>
+      <!-- 导航条LOGO -->
+      <a class="home navbar-brand hidden-md hidden-lg hidden-sm" href="#">首页</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+		<php>
+	    $effected_id="menu-header";
+	    $filetpl="<a href='\$href' target='\$target'>\$label</a>";
+	    $foldertpl="<a class='dropdown-toggle' href='\$href' target='\$target'>\$label</a>";
+	    $ul_class="dropdown-menu" ;/*内部ul标签的class属性值*/
+	    $li_class="" ;/*内部li标签的class属性值*/
+	    $style="nav nav-pills nav-justified navigation";/*最外层ul标签的class属性值*/
+	    $showlevel=6;/*显示的层级*/
+	    $dropdown='';/*含有子目录的li标签的class属性值*/
+		</php>
+		{:sp_get_menu("main",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown)}
+		 <!--   <ul class="nav nav-pills nav-justified navigation">
+				<li class="hidden-xs"><a href="#">首页</a></li>
+				<li><a href="#">法界热点</a></li>
+				<li><a href="#">惠企资讯</a></li>
+				<li><a href="#">公司法务</a></li>
+				<li><a href="#">法律机构</a></li>
+				<li><a href="#">合同管理</a></li>
+				<li><a href="#">律师讲堂</a></li>
+				<li><a href="#" style="border-right:0;">在线咨询</a></li>
+			</ul> -->
+		</div>
+    </div>
+</div>
+
+<!-- 导航条 -->
+<div class="container-fluid">
+	<div class="row navbars">
+		<div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 weather">
+			<strong>
+				<a href="#">东营</a>
+				<a href="#">今天(<span class="warning">周日</span>)：-<span class="success">8</span><span class="warning">~1℃</span>小雪</a>
+			</strong>
+			&nbsp;&nbsp;<span class="week">20</span>16年1月17日 <span class="week">星期日</span>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-7 col-lg-8 blockquote-reverse finds">
+				站内搜索：<input type="text" class="find" placeholder="Q"><input type="button" class="find_btn" value="搜 索">
+				<div class="tel">联系电话：<strong>96700000</strong></div>
+			</div>
+	</div>
+</div>
+<!-- 内容 -->
+
+<div class="container-fluid contents">
+	<div class="row">
+<!-- 您的位置 -->
+
+		<div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10 site">
+			<span>您的位置：<span>
+			<a href="{:leuu('list/index',array('id'=>$cat_id))}">法律服务平台</a>
+			<php>
+				$term = sp_get_term($cat_id);
+				$href = leuu('list/index',array('id'=>$cat_id));
+				$echo = ">><a href=" . $href  . ">" . $term["name"] . "</a>";
+				while($term["parent"]!=0){
+				$term=sp_get_term($term["parent"]);
+				$href = leuu('list/index',array('id'=>$term["term_id"]));
+				$echo = ">><a href=" . $href  . ">" . $term["name"] . "</a>" .$echo;
+				}
+				echo $echo;
+		  </php>
+		</div>
+		<php>
+			$lists = sp_sql_posts_paged("cid:5;order:post_date DESC;",10);
+
+		</php>
+		<div class="sites col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10 content">
+			<ul>
+<!-- 列内容 -->
+				<volist name="lists['posts']" id="vo">
+					<php>
+						$smeta=json_decode($vo['smeta'], true);
+					</php>
+					<li>
+						<a href="{:leuu('article/index',array('id'=>$vo['tid']))}">{$vo.post_title}</a> <span>{$vo.post_date}</span>
+					</li>
+				</volist>
+			</ul>
+		</div>
+
+	</div>
+
+	<center>
+		<nav>
+		  <ul class="hidden-xs pagination page pagination-page">
+			<li class="to_page">
+			  <a href="#" aria-label="Previous">
+				<span aria-hidden="true" style="color:red">首页</span>
+			  </a>
+			  <a href="#" aria-label="Previous">
+				<span aria-hidden="true"  style="color:red">上一页</span>
+			  </a>
+			</li>
+			<li><a href="#" style="color:red">1</a></li>
+			<li><a href="#">2</a></li>
+			<li class="to_page">
+			  <a href="#" aria-label="Next">
+				<span aria-hidden="true">下一页</span>
+			  </a>
+			  <a href="#" aria-label="Next">
+				<span aria-hidden="true">尾页</span>
+			  </a>
+			  <span class="alt">共2页</span>
+			</li>
+		  </ul>
+		  <ul class="hidden-sm hidden-md hidden-lg pagination page pagination-page">
+			<li class="to_page">
+			  <a href="#" aria-label="Previous" style="padding:0;">
+				<span aria-hidden="true" style="color:red">首页</span>
+			  </a>
+			  <a href="#" aria-label="Previous" style="padding:0;">
+				<span aria-hidden="true"  style="color:red">上一页</span>
+			  </a>
+			</li>
+			<li><a href="#" style="color:red">1</a></li>
+			<li><a href="#">2</a></li>
+			<li class="to_page">
+			  <a href="#" aria-label="Next" style="padding:0;">
+				<span aria-hidden="true">下一页</span>
+			  </a>
+			  <a href="#" aria-label="Next" style="padding:0;">
+				<span aria-hidden="true">尾页</span>
+			  </a>
+			  <span class="alt noshows">共2页</span>
+			</li>
+		  </ul>
+		</nav>
+		<center><span class="alt few_page shows">共2页</span><center/>
+</center>
+</div>
+<!-- 底栏 -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 end">
+			<div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="text-center col-xs-4 col-sm-4 col-md-4 col-lg-4">平台首页</div>
+				<div class="text-center col-xs-4 col-sm-4 col-md-4 col-lg-4">联系我们</div>
+				<div class="text-center col-xs-4 col-sm-4 col-md-4 col-lg-4">技术支持</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 底 -->
+<div class="container-fluid">
+	<div class="row ends">
+		<div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">主办单位：山东省中小企业局　　 指导单位：中华人民共和国工业和信息化部中小企业司</div>
+		<div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">承办单位：山东省中小企业信息中心  邮箱:smesd@smesd.gov.cn   门户管理  业务管理</div>
+		<div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">鲁ICP备06016837号</div>
+
+		</div>
+	</div>
+<div>
+<!-- 访问量 -->
+<div class="container-fluid">
+	<div class="row visits">
+		<div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">您是第<strong>1488575</strong>位浏览者</div>
+		<div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">在线人数: 2394</div>
+	</div>
+<div>

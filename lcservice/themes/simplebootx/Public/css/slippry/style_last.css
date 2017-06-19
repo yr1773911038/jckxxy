@@ -1,0 +1,10 @@
+
+*{margin:0;padding:0; list-style:none; border:0;text-decoration:none;}
+/*顶部图片*/
+.top {width:100%; background:#EEEEEE;padding-bottom:20px;}
+
+
+@media all and (max-width:768px) {
+.navbar .navbar-collapse .nav li {width:100%; border: solid 1px black;}
+
+}

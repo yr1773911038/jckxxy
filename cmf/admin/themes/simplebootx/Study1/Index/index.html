@@ -1,0 +1,41 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a>学生信息查询</a></li>
+			<li><a href="{:U('Study1/Index/add')}">新增</a></li>
+		</ul>
+		<form method="post" class="js-ajax-form">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>姓名</th>
+						<th>年龄</th>
+						<th>学校</th>
+						<th>简介</th> 
+						<th align="center">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr>
+						<td align="center">{$vo.id}</td>
+						<td>{$vo.xm}</td>
+						<td>{$vo.nl}</td>  
+						<td>{$vo.xx}</td>
+						<td>{$vo.jj}</td>
+						<td align="center">
+						 	<a href="{:U('Study1/Index/edit',array('id'=>$vo['id']))}">修改</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

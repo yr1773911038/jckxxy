@@ -1,0 +1,15 @@
+<hr id="hr"></hr>
+<footer class="footer">
+	<php>
+		$links=sp_getlinks();
+	</php>
+	<foreach name="links" item="vo">		
+		<a id="a" href="{$vo.link_url}">{$vo.link_name}</a><span> | </span>	
+	</foreach>		
+		<p id="p">
+			{$site_copyright}
+		</p>
+	</div>
+</footer>
+ 
+ 

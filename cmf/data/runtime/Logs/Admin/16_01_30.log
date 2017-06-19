@@ -1,0 +1,121 @@
+[ 2016-01-30T10:44:39+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav_cat` [ RunTime:0.0156s ]
+SQL: UPDATE `cmf_nav` SET `cid`='1',`parentid`='0',`label`='领导讲话',`href`='a:2:{s:6:\"action\";s:17:\"Portal/List/index\";s:5:\"param\";a:1:{s:2:\"id\";s:2:\"26\";}}',`target`='',`icon`='',`status`='1',`path`='0-6' WHERE `id` = 6 [ RunTime:0.0000s ]
+
+[ 2016-01-30T10:44:48+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav_cat` [ RunTime:0.0156s ]
+SQL: UPDATE `cmf_nav` SET `cid`='1',`parentid`='0',`label`='机构设置',`href`='a:2:{s:6:\"action\";s:17:\"Portal/List/index\";s:5:\"param\";a:1:{s:2:\"id\";s:2:\"25\";}}',`target`='',`icon`='',`status`='1',`path`='0-7' WHERE `id` = 7 [ RunTime:0.0000s ]
+
+[ 2016-01-30T10:44:56+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav_cat` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_nav` SET `cid`='1',`parentid`='0',`label`='融资服务',`href`='a:2:{s:6:\"action\";s:17:\"Portal/List/index\";s:5:\"param\";a:1:{s:2:\"id\";s:2:\"24\";}}',`target`='',`icon`='',`status`='1',`path`='0-8' WHERE `id` = 8 [ RunTime:0.0000s ]
+
+[ 2016-01-30T10:45:03+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav_cat` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_nav` SET `cid`='1',`parentid`='0',`label`='人才服务',`href`='a:2:{s:6:\"action\";s:17:\"Portal/List/index\";s:5:\"param\";a:1:{s:2:\"id\";s:2:\"23\";}}',`target`='',`icon`='',`status`='1',`path`='0-9' WHERE `id` = 9 [ RunTime:0.0000s ]
+
+[ 2016-01-30T10:45:12+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cmf_nav_cat` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_nav` SET `cid`='1',`parentid`='0',`label`='专题活动',`href`='a:2:{s:6:\"action\";s:17:\"Portal/List/index\";s:5:\"param\";a:1:{s:2:\"id\";s:2:\"20\";}}',`target`='',`icon`='',`status`='1',`path`='0-10' WHERE `id` = 10 [ RunTime:0.0000s ]
+
+[ 2016-01-30T10:45:20+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cmf_nav_cat` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_nav` SET `cid`='1',`parentid`='0',`label`='通知公告',`href`='a:2:{s:6:\"action\";s:17:\"Portal/List/index\";s:5:\"param\";a:1:{s:2:\"id\";s:2:\"19\";}}',`target`='',`icon`='',`status`='1',`path`='0-11' WHERE `id` = 11 [ RunTime:0.0156s ]
+
+[ 2016-01-30T10:45:39+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_nav` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cmf_nav_cat` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_nav` SET `cid`='1',`parentid`='0',`label`='重要新闻',`href`='a:2:{s:6:\"action\";s:17:\"Portal/List/index\";s:5:\"param\";a:1:{s:2:\"id\";s:1:\"4\";}}',`target`='',`icon`='',`status`='1',`path`='0-12' WHERE `id` = 12 [ RunTime:0.0000s ]
+
+[ 2016-01-30T13:54:41+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_email` = '1003270759@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0060s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###9498f252f9674c06b25a963b1f220793',`user_nicename`='admin',`user_email`='1003270759@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2016-01-30 13:54:41',`create_time`='2016-01-10 09:24:57',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0010s ]
+
+[ 2016-01-30T14:42:39+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_email` = '1003270759@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0050s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###9498f252f9674c06b25a963b1f220793',`user_nicename`='admin',`user_email`='1003270759@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2016-01-30 14:42:39',`create_time`='2016-01-10 09:24:57',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0000s ]
+
+[ 2016-01-30T17:46:21+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_email` = '1003270759@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0230s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0150s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###9498f252f9674c06b25a963b1f220793',`user_nicename`='admin',`user_email`='1003270759@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2016-01-30 17:46:21',`create_time`='2016-01-10 09:24:57',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0010s ]
+
+[ 2016-01-30T18:58:29+08:00 ] 127.0.0.1 /cmf/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_email` = '1003270759@qq.com' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###9498f252f9674c06b25a963b1f220793',`user_nicename`='admin',`user_email`='1003270759@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2016-01-30 18:58:29',`create_time`='2016-01-10 09:24:57',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0000s ]
+

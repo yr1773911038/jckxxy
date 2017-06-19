@@ -1,0 +1,20 @@
+				<php>
+					$home_slides=sp_getslide("slide_top");
+					</php>
+      			<div id="myCarousel" class="carousel slide">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+					     <foreach name="home_slides" item="vo" key="k" >
+					     	<li data-target="#myCarousel" data-slide-to=$k></li>
+					     </foreach>
+        			</ol>
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+        				 <foreach name="home_slides" item="vo" key="k" >
+          						<div class='item <if condition="$k eq 0">active</if>
+       '> <img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" alt="{$vo.slide_name}"> </div>
+        				 </foreach>
+        			</div> 
+					<a class="carousel-control left" href="#myCarousel"  data-slide="prev">&lsaquo;</a>
+                	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a> 
+                </div><!--轮播结束myCarousel-->

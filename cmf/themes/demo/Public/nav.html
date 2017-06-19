@@ -1,0 +1,25 @@
+<div class="manu">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+				data-target="#bs-example-navbar-collapse-1"> 
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand visible-xs" href="#">菜单</a> 
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<?php
+					$effected_id="main-nav";
+					$filetpl="<a href='\$href' target='\$target' >\$label</a>";
+					$style="nav navbar-nav";/*最外层ul标签的class属性值*/
+					$showlevel=1;/*显示的层级*/
+				    echo sp_get_menu("main",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
+				?>
+			</div>
+		</div>
+	</nav>
+</div>

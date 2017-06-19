@@ -1,0 +1,38 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>itcast</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript"></script>
+<style type="text/css"></style>
+</head>
+<body>
+
+
+
+
+<php>
+  $id = 0;
+  $User = M('terms');
+  $where = 'parent=' . $id;
+  $list = $User -> where($where) -> select();
+</php>
+<volist name='list' id='vo'>
+    <div id="" class="center">
+        
+    
+        <a href="#">{$vo['name']}</a>
+        <p>{$vo['term_id']}</p>
+    </div>
+</volist>
+
+
+
+
+</body>
+</html>
+
+

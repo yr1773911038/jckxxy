@@ -1,0 +1,6 @@
+[ 2016-02-29T10:32:05+08:00 ] ::1 /cmf/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-02-29T10:32:30+08:00 ] ::1 /cmf/
+ERR: SQLSTATE[HY000] [1049] Unknown database 'cmf'
+

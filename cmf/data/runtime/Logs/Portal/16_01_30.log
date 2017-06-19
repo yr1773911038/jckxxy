@@ -1,0 +1,370 @@
+[ 2016-01-30T10:44:04+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2016-01-30T10:44:10+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPage&a=delete&id=87
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+SQL: SHOW COLUMNS FROM `cmf_posts` [ RunTime:0.0100s ]
+SQL: UPDATE `cmf_posts` SET `post_status`='0' WHERE `id` = 87 [ RunTime:0.0200s ]
+
+[ 2016-01-30T10:44:11+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2016-01-30T10:47:08+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0156s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='重要新闻',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='article' WHERE `term_id` = '4' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-4' WHERE ( term_id=4 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T11:43:26+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: INSERT INTO `cmf_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('3','焦点新闻','','article','','','','list','article') [ RunTime:0.0468s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-29' WHERE ( term_id=29 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T11:43:42+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='焦点新闻',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='article' WHERE `term_id` = '29' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-29' WHERE ( term_id=29 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T11:43:52+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T11:43:56+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=add&term=
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T11:45:10+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+SQL: SHOW COLUMNS FROM `cmf_posts` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cmf_term_relationships` [ RunTime:0.0040s ]
+SQL: INSERT INTO `cmf_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_modified`,`post_status`,`istop`,`recommended`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('中共中央政治局召开会议 习近平主持','中共中央政治局召开会议 习近平主持','','中共中央政治局召开会议 习近平主持','2016-01-30 11:43:56','1','0','0','<p>　一周时间，读懂三年。</p><p>　　这是一次，不虚此行的思想之旅。</p><p>　　读懂这三年，需读懂一党；读懂一党，需读懂一人；读懂一人，需读懂他的治国理政新思想、新理念、新战略、新境界。</p><p>　　他就是习近平。</p><p>　　本周一到周五，学习小组（微信号：xuexixiaozu）尝试和组员一起，读懂习近平这三年，乃至中国的这三年。此前，从周一到周四，我们分别推送了周新民谈“习近平治国理政秘笈”中的四大贡献、四大支柱、四大特征、四大核心能力。</p><p>　　今天，学习小组（微信号xuexixiaozu）集合而成全文版，含4部分：四大贡献、四大支柱、四大特征、四大核心能力。因单篇微信字数限定2万字，本文有删节。完整的内容，大家往前翻看。本次推荐，到此完成。祝大家周末愉快。</p><p>　　今天，习总主持政治局会议。会议强调，只有增强政治意识、大局意识、核心意识、看齐意识，自觉在思想上政治上行动上同以习近平同志为总书记的党中央保持高度一致，才能使我们党更加团结统一、坚强有力，始终成为中国特色社会主义事业的坚强领导核心。</p><p>　　大家请留意4个意识。尤其要向以习近平同志为总书记的党中央看齐。</p><p>　　【独家】习近平治国理政秘笈（全文版）</p><p>　　（1）这三年，习近平治国理政的四大贡献</p><p>　　周新民</p><p>　　习近平总书记履新三年。这三年产生的新理念、新思想、新战略，不仅功在当代，而且利在千秋。可以预见，这三年已经践行、正在践行的思想路线和政策方略，必将对未来中国产生持续而深远的影响。</p><p>　　有理由相信，这三年不断积累的宝贵经验和升华形成的思想成果、理论成果，必将为在全新起点上开创更高的治国理政境界发挥不可估量的作用，必将有力指导、引领和推动治国理政的伟大实践不断向纵深推进。</p><p>　　根据这三年治国理政呈现的特点和取得的巨大成就，可以把习近平总书记治国理政的贡献归结为四个方面。就是：</p><p>　　（1）全面重塑了党在人民群众心中的良好形象；</p><p>　　（2）形成了“中国梦”引领下的治国理政思想体系；</p><p>　　（3）构建了执政党治理、国家治理、全球治理“三合一”的治理格局；</p><p>　　（4）巩固了符合中国政治体制特点的高效领导模式。</p><p>　　贡献一：</p><p>　　全面重塑党在人民群众心中的良好形象</p><p>　　领导我们事业的核心是中国共产党。历史经验表明，党在人民群众心中的形象越好，事业就越兴旺，前景就越光明。但必须正视，脱离群众的危险不以人
+的意志为转移，尖锐地摆到了党和国家的面前。事实上，一个时期以来，党在人民群众心目中的形象较过去相比，不是变高了，而是变低了、变小了、变差了，主要
+是一些贪官污吏损害了党的形象，败坏了党的名声，伤害了人民群众对党的感情。</p><p>　　十八大以来，党中央以清醒的认知，看到了人民群众对党的向心力在变弱的杀伤力和危害性。在凝聚党心的同时，迈开了凝聚民心的新步伐，以自信的态
+度、果敢的勇气、坚定的意志、正义的情怀，坚定不移执行“八项规定”，反对“四风”，深层发力破除潜规则，重拳出击打击腐败，积极构建清正廉明的政治生
+态，维护社会公平正义，重塑党在人民群众心中的形象，取得了超出预期的成效，党在短时间内重塑形象，赢取人民群众的信任，为开创治国理政新局面夯实了坚实
+的人心根基。</p><p>　　1</p><p>　　政治局带头执行“八项规定”，让人民群众领略了党的鲜明姿态。</p><p>　　重塑党的形象，坚持从党中央做起，响亮喊出了“向中央看齐”的口号。无论“八项规定”，还是“群众路线教育实践活动”、“三严三实专题教育”，
+党中央高层以上率下反四风、转作风、树新风，让人民群众眼前为之一亮，心头为之一热，看到了党中央与人民群众一条心的自觉姿态。习总书记到地方调研，吃自
+助餐，一顿饭限定6个菜。</p>','2016-01-30 11:45:09','1','{\"thumb\":\"\",\"photo\":[{\"url\":\"20160130\\/56ac31c287ee5.png\",\"alt\":\"1\"}]}') [ RunTime:0.0730s ]
+SQL: INSERT INTO `cmf_term_relationships` (`term_id`,`object_id`) VALUES ('29','90') [ RunTime:0.0010s ]
+
+[ 2016-01-30T11:45:11+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T11:46:09+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='焦点新闻',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='neirongxiangqing' WHERE `term_id` = '29' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-29' WHERE ( term_id=29 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T11:46:41+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T11:46:43+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=edit&term=29&id=90
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T11:46:53+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+SQL: SHOW COLUMNS FROM `cmf_posts` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_term_relationships` [ RunTime:0.0100s ]
+SQL: DELETE FROM `cmf_term_relationships` WHERE `object_id` = 90 AND `term_id` NOT IN ('29') [ RunTime:0.0500s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_term_relationships` WHERE `object_id` = 90 AND `term_id` = '29' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_term_relationships` SET `status`='1' WHERE `object_id` = 90 AND `term_id` = '29' [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_posts` SET `post_title`='中共中央政治局召开会议 习近平主持',`post_keywords`='中共中央政治局召开会议 习近平主持',`post_source`='百度新闻',`post_excerpt`='中共中央政治局召开会议 习近平主持',`post_modified`='2016-01-30 11:43:56',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>　一周时间，读懂三年。</p><p>　　这是一次，不虚此行的思想之旅。</p><p>　　读懂这三年，需读懂一党；读懂一党，需读懂一人；读懂一人，需读懂他的治国理政新思想、新理念、新战略、新境界。</p><p>　　他就是习近平。</p><p>　　本周一到周五，学习小组（微信号：xuexixiaozu）尝试和组员一起，读懂习近平这三年，乃至中国的这三年。此前，从周一到周四，我们分别推送了周新民谈“习近平治国理政秘笈”中的四大贡献、四大支柱、四大特征、四大核心能力。</p><p>　　今天，学习小组（微信号xuexixiaozu）集合而成全文版，含4部分：四大贡献、四大支柱、四大特征、四大核心能力。因单篇微信字数限定2万字，本文有删节。完整的内容，大家往前翻看。本次推荐，到此完成。祝大家周末愉快。</p><p>　　今天，习总主持政治局会议。会议强调，只有增强政治意识、大局意识、核心意识、看齐意识，自觉在思想上政治上行动上同以习近平同志为总书记的党中央保持高度一致，才能使我们党更加团结统一、坚强有力，始终成为中国特色社会主义事业的坚强领导核心。</p><p>　　大家请留意4个意识。尤其要向以习近平同志为总书记的党中央看齐。</p><p>　　【独家】习近平治国理政秘笈（全文版）</p><p>　　（1）这三年，习近平治国理政的四大贡献</p><p>　　周新民</p><p>　　习近平总书记履新三年。这三年产生的新理念、新思想、新战略，不仅功在当代，而且利在千秋。可以预见，这三年已经践行、正在践行的思想路线和政策方略，必将对未来中国产生持续而深远的影响。</p><p>　　有理由相信，这三年不断积累的宝贵经验和升华形成的思想成果、理论成果，必将为在全新起点上开创更高的治国理政境界发挥不可估量的作用，必将有力指导、引领和推动治国理政的伟大实践不断向纵深推进。</p><p>　　根据这三年治国理政呈现的特点和取得的巨大成就，可以把习近平总书记治国理政的贡献归结为四个方面。就是：</p><p>　　（1）全面重塑了党在人民群众心中的良好形象；</p><p>　　（2）形成了“中国梦”引领下的治国理政思想体系；</p><p>　　（3）构建了执政党治理、国家治理、全球治理“三合一”的治理格局；</p><p>　　（4）巩固了符合中国政治体制特点的高效领导模式。</p><p>　　贡献一：</p><p>　　全面重塑党在人民群众心中的良好形象</p><p>　　领导我们事业的核心是中国共产党。历史经验表明，党在人民群众心中的形象越好，事业就越兴旺，前景就越光明。但必须正视，脱离群众的危险不以人
+的意志为转移，尖锐地摆到了党和国家的面前。事实上，一个时期以来，党在人民群众心目中的形象较过去相比，不是变高了，而是变低了、变小了、变差了，主要
+是一些贪官污吏损害了党的形象，败坏了党的名声，伤害了人民群众对党的感情。</p><p>　　十八大以来，党中央以清醒的认知，看到了人民群众对党的向心力在变弱的杀伤力和危害性。在凝聚党心的同时，迈开了凝聚民心的新步伐，以自信的态
+度、果敢的勇气、坚定的意志、正义的情怀，坚定不移执行“八项规定”，反对“四风”，深层发力破除潜规则，重拳出击打击腐败，积极构建清正廉明的政治生
+态，维护社会公平正义，重塑党在人民群众心中的形象，取得了超出预期的成效，党在短时间内重塑形象，赢取人民群众的信任，为开创治国理政新局面夯实了坚实
+的人心根基。</p><p>　　1</p><p>　　政治局带头执行“八项规定”，让人民群众领略了党的鲜明姿态。</p><p>　　重塑党的形象，坚持从党中央做起，响亮喊出了“向中央看齐”的口号。无论“八项规定”，还是“群众路线教育实践活动”、“三严三实专题教育”，
+党中央高层以上率下反四风、转作风、树新风，让人民群众眼前为之一亮，心头为之一热，看到了党中央与人民群众一条心的自觉姿态。习总书记到地方调研，吃自
+助餐，一顿饭限定6个菜。</p>',`smeta`='{\"thumb\":\"\",\"photo\":[{\"url\":\"20160130\\/56ac31c287ee5.png\",\"alt\":\"1\"}]}' WHERE `id` = '90' [ RunTime:0.0000s ]
+
+[ 2016-01-30T11:46:55+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T11:47:51+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: INSERT INTO `cmf_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('3','政策法规','','article','','','','list','article') [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-30' WHERE ( term_id=30 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T11:48:04+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='政策法规',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='neirongxiangqing' WHERE `term_id` = '30' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-30' WHERE ( term_id=30 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T11:48:08+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=add&term=
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T11:48:36+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+SQL: SHOW COLUMNS FROM `cmf_posts` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `cmf_term_relationships` [ RunTime:0.0000s ]
+SQL: INSERT INTO `cmf_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_modified`,`post_status`,`istop`,`recommended`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES (' 李克强:决不让留守儿童成社会之殇  经济指标 ',' 李克强:决不让留守儿童成社会之殇  经济指标 ','百度新闻',' 李克强:决不让留守儿童成社会之殇  经济指标 ','2016-01-30 11:48:08','1','0','0','<p><strong><a href=\"http://china.huanqiu.com/article/2016-01/8475361.html?from=bdwz\" target=\"_blank\" class=\"a3\">李克强:决不让留守儿童成社会之殇</a>&nbsp;<a href=\"http://china.huanqiu.com/article/2016-01/8475372.html?from=bdwz\" target=\"_blank\" class=\"a3\">经济指标</a></strong></p>','2016-01-30 11:48:36','1','{\"thumb\":\"\"}') [ RunTime:0.0000s ]
+SQL: INSERT INTO `cmf_term_relationships` (`term_id`,`object_id`) VALUES ('30','91') [ RunTime:0.0000s ]
+
+[ 2016-01-30T11:48:38+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T11:49:02+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: INSERT INTO `cmf_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('3','区域动态','','article','','','','userlist','neirongxiangqing') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-31' WHERE ( term_id=31 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T11:49:07+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=add&term=
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T11:49:40+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+SQL: SHOW COLUMNS FROM `cmf_posts` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `cmf_term_relationships` [ RunTime:0.0100s ]
+SQL: INSERT INTO `cmf_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_modified`,`post_status`,`istop`,`recommended`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('小米面临中年危机 国产手机急需维护品牌形象','小米面临中年危机 国产手机急需维护品牌形象','百度新闻','小米面临中年危机 国产手机急需维护品牌形象','2016-01-30 11:49:07','1','0','0','<p><strong><a href=\"http://jiangbojing.baijia.baidu.com/article/313160\" target=\"_blank\" class=\"a3\">小米面临中年危机 &nbsp;<strong><a href=\"http://jiangbojing.baijia.baidu.com/article/313160\" target=\"_blank\" class=\"a3\">小米面临中年危机 &nbsp;国产手机急需维护品牌形象</a></strong>国产手机急需维护品牌形象</a></strong></p>','2016-01-30 11:49:40','1','{\"thumb\":\"\"}') [ RunTime:0.0000s ]
+SQL: INSERT INTO `cmf_term_relationships` (`term_id`,`object_id`) VALUES ('31','92') [ RunTime:0.0000s ]
+
+[ 2016-01-30T11:49:41+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T12:28:28+08:00 ] 127.0.0.1 /cmf/index.php?g=portal&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:09:50+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:10:00+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:11:45+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPage&a=index&menuid=25
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2016-01-30T16:11:47+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:11:48+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:11:58+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:25:39+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `parent`='0',`name`='首页',`description`='关键字',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='neirongxiangqing' WHERE `term_id` = '3' [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3' WHERE ( term_id=3 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T16:26:21+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0156s ]
+SQL: UPDATE `cmf_terms` SET `parent`='0',`name`='首页',`description`='关键字',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='neirongxiangqing' WHERE `term_id` = '3' [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3' WHERE ( term_id=3 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T16:33:19+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0070s ]
+SQL: UPDATE `cmf_terms` SET `parent`='0',`name`='首页',`description`='关键字',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='index',`one_tpl`='neirongxiangqing' WHERE `term_id` = '3' [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3' WHERE ( term_id=3 ) [ RunTime:0.0010s ]
+
+[ 2016-01-30T16:42:17+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:42:32+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:42:36+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminPost&a=index
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:52:22+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:53:29+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:53:47+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='焦点新闻',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='neirongxiangqing' WHERE `term_id` = '29' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-29' WHERE ( term_id=29 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T16:53:49+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0624s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='焦点新闻',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='neirongxiangqing' WHERE `term_id` = '29' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-29' WHERE ( term_id=29 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T16:55:17+08:00 ] 127.0.0.1 /cmf/index.php?g=Portal&m=AdminPost&a=index&menuid=7
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2016-01-30T16:55:29+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='焦点新闻',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='neirongxiangqing' WHERE `term_id` = '29' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-29' WHERE ( term_id=29 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T16:55:30+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0010s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='焦点新闻',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='neirongxiangqing' WHERE `term_id` = '29' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-29' WHERE ( term_id=29 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T16:55:41+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0156s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='重要新闻',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='article' WHERE `term_id` = '4' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-4' WHERE ( term_id=4 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T16:55:43+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='重要新闻',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='article' WHERE `term_id` = '4' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-4' WHERE ( term_id=4 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T17:42:47+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0156s ]
+SQL: UPDATE `cmf_terms` SET `parent`='3',`name`='重要新闻',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='userlist',`one_tpl`='neirongxiangqing' WHERE `term_id` = '4' [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cmf_terms` SET `path`='0-3-4' WHERE ( term_id=4 ) [ RunTime:0.0000s ]
+
+[ 2016-01-30T17:45:44+08:00 ] 127.0.0.1 /cmf/index.php?g=&m=AdminTerm&a=delete&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cmf_terms` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_terms` WHERE `parent` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `cmf_terms` WHERE `term_id` = 1 [ RunTime:0.0000s ]
+

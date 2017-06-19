@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<title>服务公告</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/bootstrap.css">
+<script src="js/jquery-2.1.1/jquery.js" type="__TMPL__Public/text/javascript"></script>
+<script src="js/bootstrap.min.js" type="__TMPL__Public/text/javascript"></script>
+</head><!--[if IE]>
+	
+<![endif]-->
+<body>
+
+<volist name='listc' id='vos'>
+        <php>
+        	$tag = "cid:$cat_id;order:post_date DESC";
+				$lists = sp_sql_posts_paged($tag,20);$role == "parent"
+            $cat_id=$vos['term_id'];
+            $lists = sp_sql_posts_paged("cid:".$cat_id.";order:post_date DESC;",20);
+            
+        </php>
+        <volist name="lists['posts']" id="vo">
+        <php>
+            $smeta=json_decode($vo['smeta'], true);
+        </php>
+        <li class="li1"><a href="{:leuu('article/index',array('id'=>$vo['tid']))}" class="a1">{$vo.post_title}</a>
+            <span class="span1">{$vo.post_date}</span>
+        </li>
+        </volist>
+</volist>
+
+
+
+
+
+</body>
+</html>

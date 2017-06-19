@@ -1,0 +1,50 @@
+@charset "gb2312";
+/* CSS Document */
+body{ padding-top:40px;font-size: 12px;}
+#header{ background-color:#F5F5F5; min-height:29px; border-bottom:1px solid #ACAAAB; box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+#header .pull-left,
+#header .pull-right{ height:29px; line-height:29px; font-size:12px;}
+#header .pull-right .btn-group{ padding:0px; margin:0px; font-size:12px; vertical-align:top;}
+#header .pull-right .btn-group a{ font-size:12px; vertical-align:middle; padding: 0px 8px;}
+#header .pull-right .dropdown-menu a{ padding:5px 10px;}
+#header .pull-right .btn{ height:20px; padding:0px 5px; margin:0px; line-height:20px;}
+
+#agreement{ padding:30px 0px; text-align:center;}
+#agreement #agreement-content{ border:1px solid #646464; border-radius:5px; text-align:left; margin:0px 100px; padding:20px; font-size:14px; line-height:2; height:300px; overflow:auto;}
+#agreement #agreement-content p{ margin-bottom:10px;}
+#agree{ font-size:12px; margin:10px 0px 20px 0px;}
+#agree input{ vertical-align:middle;}
+
+#body-center{ padding:10px; margin-bottom:20px; width:1000px; border:1px solid #ccc; 
+box-shadow:0px 0px 5px rgba(0,0,0,0.3); background-color:#fff; margin: 0 auto;}
+#stepprogress{ border-radius:0px; height:auto; margin:0px; margin:1px 0px;}
+#stepprogress .bar{ padding:3px 0px; font-size:14px;}
+#stepprogress .bar.bar-success{ cursor:pointer;}
+
+.breadcrumb{ margin:0px;}
+.breadcrumb li.pull-right{ float:right;}
+
+#topbanner{ background:url(../images/topbarPhoto3.png) left center no-repeat; height:110px;}
+
+.regform{ margin:50px 0px 150px 0px; white-space:nowrap;}
+.regform .step{ display:none; width:500px;}
+.regform .step h1{ font-size:18px; margin:0px; padding:0px; line-height:2; height:20px;}
+
+.reg_ptsy2014 {float:right; height: 20px;line-height: 20px; margin-right: 10px; margin-top: 6px;padding-left: 25px;
+			   background: url("../images/sme_logo_reg.png") no-repeat scroll 5px center rgba(0, 0, 0, 0);color: #646464;
+			  }
+
+
+
+
+
+
